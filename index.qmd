@@ -1,0 +1,24 @@
+# Preface to {{< var ay >}} BM214 Workshop 3: Enumeration of Bacteria and Bacteriophace {.unnumbered}
+
+Welcome to the BM214 (Being a Biomolecular Scientist 2) workshop on enumeration of bacteria and bacteriophage, for {{< var ay >}}.
+
+This year is the first presentation of the workshop material in this format, and we would be very grateful to hear feedback [by email](mailto:{{< var admin.email >}}) or through the [GitHub repository Issues page]({{< var github.issues >}}).
+
+## Overview
+
+[**FILL TEXT HERE**]
+
+::: { .callout-warning title="Important Note" }
+There is new material in this workshop that is not covered in lectures, and this material is examinable. Please take care to reach the text in the expandable callout boxes, as well as that for the workshop activities, to be sure you have understood the topic and obtain full value from the exercises.
+:::
+
+## Learning Objectives
+
+By the end of this workshop, students will be able to:
+
+- [**FILL TEXT HERE**]
+
+## Assessment
+
+The workshop is not formally assessed although, as noted, all the material contained in the workshop is examinable. [**FILL TEXT HERE**]
+

@@ -1,0 +1,13 @@
+ay: "2023-24"
+  
+admin:
+  name: "Leighton Pritchard"
+  email: "leighton.pritchard@strath.ac.uk"
+  homepage: "https://www.strath.ac.uk/staff/pritchardleightondr/"
+  
+github:
+  repo: "https://github.com/sipbs-compbiol/BM214-Workshop-3"
+  issues: "https://github.com/sipbs-compbiol/BM214-Workshop-3/issues"
+
+myplace:
+  bm214: "https://classes.myplace.strath.ac.uk/course/view.php?id=21632"

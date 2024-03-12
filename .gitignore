@@ -1,0 +1,17 @@
+# R project files
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+.RBuildignore
+
+# Quarto files
+/.quarto/
+_book/
+_freeze/
+
+# macOS files
+.DS_Store
+
+# Office temp files
+~*
