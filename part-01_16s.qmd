@@ -1,1 +1,23 @@
 # 16S Sequence Identification
+
+As part of BM214 Laboratories 1 and 2 (@fig-expt-2), you:
+
+- isolated your unknown bacterium in [axenic culture](glossary.qmd#axenic-culture)
+- made decimal [serial dilutions](https://microbenotes.com/serial-dilution/) and plated these on selective and differential media
+- streaked a single colony from the selective plate onto nutrient agar
+
+![Overview of BM214 Laboratory 3, experiment 2.](assets/images/experiment-2.png){#fig-expt-2 width="80%"}
+
+In Laboratory 3, you set up a PCR reaction with primers that annealed specifically to the 16S rRNA gene (@fig-pcr), so that you could specifically amplify and sequence that gene in order to identify your unknown organism.
+
+![Schematic of 16S PCR amplification](assets/images/16s-amplification.png){#fig-pcr}
+
+::: { .callout-note }
+In this workshop you will use online bioinformatics tools to find a match to the 16S sequence of the bacterium you isolated, and in doing so identify your unknown organism.
+:::
+
+::: { .callout-tip collapse="true" }
+## Use what you know from BM214 Workshop 2
+
+In [Workshop 2](https://sipbs-compbiol.github.io/BM214-Workshop-2/scenario-1.html) you used NCBI's `BLAST` service to identify an unknown isolate from a contaminated industrial site, using its 16S sequence. You can use what you have already learned from that exercise to help you. here.
+:::

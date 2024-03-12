@@ -1,0 +1,67 @@
+# Glossary { .unnumbered }
+
+## Axenic culture
+
+A culture in which only a single species, variety, or strain of organism is present. An axenic culture is free of all other contaminating organisms.
+
+## BLAST (Basic Local Alignment Search Tool)
+
+**BLAST** is a family of software tools that compares one or more query biological sequences against a database of sequences, or against a file containing one or more sequences. 
+
+## blastn 
+
+`blastn` is the BLAST suite tool for searching with a query nucleic acid sequence against a database containing nucleic acid sequences - for example when querying a 16S rDNA sequence against a genome sequence database.
+## Coverage (percent coverage)
+
+**Coverage** is the proportion of symbols in a sequence that participate in an alignment.
+
+::: { .callout-note }
+The best alignment of two sequences may not include the full length of either the query or subject sequence. The _query coverage_ expresses the proportion of the query sequence involved in the alignment as a percentage, and the _subject coverage_ expresses the proportion of the subject sequence (usually a database sequence) involved in the alignment as a percentage. 
+:::
+
+::: { .callout-warning }
+The query coverage and subject coverage are not always equal.
+:::
+
+## E-value (expectation value)
+
+The **E-value** for a returned match/alignment is an estimate of the number of alignments with the _same bitscore or higher_ (i.e. alignments of _equal quality or better_) that would be expected if you were to search a database of the same size that contained completely random sequences. 
+
+::: { .callout-important }
+The E-value is not a probability, and E-values should not be used to compare between searches of different databases. Use the alignment [bitscore](#bitscore) to compare results between databases.
+:::
+
+## FASTA Format
+
+`FASTA` is a common file format used to describe sequence data. The FASTA record for a sequence has a header line that begins with a right-angled bracket (`>`), e.g: `>NC_000913.3:223903-225030`. The corresponding sequence begins on the following line.
+
+::: { .callout-note collapse="true" }
+## An example `FASTA` format file
+
+```
+>MCHU - Calmodulin - Human, rabbit, bovine, rat, and chicken
+MADQLTEEQIAEFKEAFSLFDKDGDGTITTKELGTVMRSLGQNPTEAELQDMINEVDADGNGTID
+FPEFLTMMARKMKDTDSEEEIREAFRVFDKDGNGYISAAELRHVMTNLGEKLTDEEVDEMIREA
+DIDGDGQVNYEEFVQMMTAK*
+```
+:::
+
+## Identity (percentage identity)
+
+**Sequence identity** is the proportion of symbols (nucleotides or amino acids) that are identical and aligned in both sequences of an alignment or match. 
+
+::: { .callout-warning }
+Note that an alignment or match may not extend for the full length of either the query or subject sequence, so it is not always useful to assume that higher sequence identity implies a better sequence match. See [coverage](#coverage-percent-coverage).
+:::
+
+## Match
+
+A **match** is a sequence returned from the database being searched that has appreciable sequence similarity with the query sequence. "*Match*" is often used synonymously with [alignment](#alignment), though a single match may comprise more than one alignment.
+
+## Query Sequence
+
+The biological sequence used as a search term.
+
+## Subject Sequence
+
+A **subject sequence** is a specific match returned by the database search.
