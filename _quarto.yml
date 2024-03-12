@@ -1,14 +1,33 @@
 project:
   type: book
+  output-dir: _book
 
 book:
-  title: "BM214-Workshop-3"
-  author: "Norah Jones"
-  date: "3/12/2024"
+  title: "BM214 Workshop 3: Enumeration of Bacteria and Bacteriophage"
+  reader-mode: true
+  
+  cover-image: sipbs_compbio_800.png
+  favicon: icon_32.png
+  
+  page-footer:
+    left: |
+      This workshop was written by Dr Leighton Pritchard and Dr Morgan Feeney
+    right: |
+      This book was built with <a href="https://quarto.org/">Quarto</a>.
+  
+  repo-url: https://github.com/sipbs-compbiol/BM214-Workshop-3
+  repo-branch: main
+  repo-actions: [edit, issue]
+  
+  author: "Leighton Pritchard and Morgan Feeney"
+  date: "2024-03-18"
+  
   chapters:
     - index.qmd
     - intro.qmd
     - summary.qmd
+#    - glossary.qmd
+#    - resources.qmd
     - references.qmd
 
 bibliography: references.bib
@@ -16,8 +35,10 @@ bibliography: references.bib
 format:
   html:
     theme: cosmo
-  pdf:
-    documentclass: scrreprt
-
+    code-link: true
+    author-meta: "Leighton Pritchard"
+    
+execute: 
+  freeze: auto
 
 

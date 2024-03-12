@@ -1,4 +1,4 @@
-# Preface to {{< var ay >}} BM214 Workshop 3: Enumeration of Bacteria and Bacteriophace {.unnumbered}
+# Preface to {{< var ay >}} BM214 Workshop 3: Enumeration of Bacteria and Bacteriophage {.unnumbered}
 
 Welcome to the BM214 (Being a Biomolecular Scientist 2) workshop on enumeration of bacteria and bacteriophage, for {{< var ay >}}.
 
