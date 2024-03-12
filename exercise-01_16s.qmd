@@ -1,4 +1,4 @@
-# 16S Sequence Identification
+# 16S Sequence Taxonomic Identification
 
 ## Introduction
 
@@ -219,7 +219,7 @@ Click on the `Run Tool` button (lower right of @fig-silva-04).
 ![`silva`'s `Aligner Taskmanager` table ](assets/images/05-silva.png){#fig-silva-05 width=80%}
 :::
 
-### Interpret the `silva` report (MyPlace Questions)
+### Interpret the `silva` report (**MyPlace Questions**)
 
 Unlike `BLAST`, `silva` provides the identity of the [_last common ancestor_ (LCA)](https://evolution.berkeley.edu/glossary/most-recent-common-ancestor/), rather than reporting a sequence search match. It displays results in the `Alignment Result Table` (@fig-silva-06). This table displays scores but, by clicking on the `Display Classification` button, you can see the taxonomic identification `silva` has made for your sequence (@fig-silva-07).
 
