@@ -24,7 +24,16 @@ book:
   
   chapters:
     - index.qmd
-    - intro.qmd
+#    - intro.qmd
+    - part: part-01_16s.qmd
+      chapters:
+        - exercise-01_16s.qmd
+    - part: part-02_yeast.qmd
+      chapters:
+        - exercise-02_yeast.qmd
+    - part: part-03_reporter.qmd
+      chapters:
+        - exercise-03_reporter.qmd
     - summary.qmd
 #    - glossary.qmd
 #    - resources.qmd
