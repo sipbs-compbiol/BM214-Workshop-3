@@ -9,7 +9,7 @@ To do this, you will use two online bioinformatics services:
 1. NCBI's [`BLAST` tool](https://blast.ncbi.nlm.nih.gov/Blast.cgi) (you have already met this in [Workshop 2](https://sipbs-compbiol.github.io/BM214-Workshop-2/scenario-1.html))
 2. [`silva`](https://www.arb-silva.de/), a quality-checked and curated 16S sequence database service
 
-![Bioinformatics. So easy even penguins can do it.](assets/images/penguin_sequence_search.jpg){#fig-penguin-bioinformatics width=60%}
+![Bioinformatics confuses kittens.](assets/images/biokittenformatics.jpg){#fig-biokittenformatics width=60%}
 
 ::: { .callout-caution collapse="true"}
 ## Why are we using two different services?
