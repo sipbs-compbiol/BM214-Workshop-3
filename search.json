@@ -2,36 +2,51 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "BM214-Workshop-3",
+    "title": "BM214 Workshop 3: Enumeration of Bacteria and Bacteriophage",
     "section": "",
-    "text": "Preface to 2023-24 BM214 Workshop 3: Enumeration of Bacteria and Bacteriophace\nWelcome to the BM214 (Being a Biomolecular Scientist 2) workshop on enumeration of bacteria and bacteriophage, for 2023-24.\nThis year is the first presentation of the workshop material in this format, and we would be very grateful to hear feedback by email or through the GitHub repository Issues page."
+    "text": "Preface to 2023-24 BM214 Workshop 3: Enumeration of Bacteria and Bacteriophage\nWelcome to the BM214 (Being a Biomolecular Scientist 2) workshop on enumeration of bacteria and bacteriophage, for 2023-24.\nThis year is the first presentation of the workshop material in this format, and we would be very grateful to hear feedback by email or through the GitHub repository Issues page.",
+    "crumbs": [
+      "Preface to {{< var ay >}} BM214 Workshop 3: Enumeration of Bacteria and Bacteriophage"
+    ]
   },
   {
     "objectID": "index.html#overview",
     "href": "index.html#overview",
-    "title": "BM214-Workshop-3",
+    "title": "BM214 Workshop 3: Enumeration of Bacteria and Bacteriophage",
     "section": "Overview",
-    "text": "Overview\n[FILL TEXT HERE]\n\n\n\n\n\n\nImportant Note\n\n\n\nThere is new material in this workshop that is not covered in lectures, and this material is examinable. Please take care to reach the text in the expandable callout boxes, as well as that for the workshop activities, to be sure you have understood the topic and obtain full value from the exercises."
+    "text": "Overview\n[FILL TEXT HERE]\n\n\n\n\n\n\nImportant Note\n\n\n\nThere is new material in this workshop that is not covered in lectures, and this material is examinable. Please take care to reach the text in the expandable callout boxes, as well as that for the workshop activities, to be sure you have understood the topic and obtain full value from the exercises.",
+    "crumbs": [
+      "Preface to {{< var ay >}} BM214 Workshop 3: Enumeration of Bacteria and Bacteriophage"
+    ]
   },
   {
     "objectID": "index.html#learning-objectives",
     "href": "index.html#learning-objectives",
-    "title": "BM214-Workshop-3",
+    "title": "BM214 Workshop 3: Enumeration of Bacteria and Bacteriophage",
     "section": "Learning Objectives",
-    "text": "Learning Objectives\nBy the end of this workshop, students will be able to:\n\n[FILL TEXT HERE]"
+    "text": "Learning Objectives\nBy the end of this workshop, students will be able to:\n\n[FILL TEXT HERE]",
+    "crumbs": [
+      "Preface to {{< var ay >}} BM214 Workshop 3: Enumeration of Bacteria and Bacteriophage"
+    ]
   },
   {
     "objectID": "index.html#assessment",
     "href": "index.html#assessment",
-    "title": "BM214-Workshop-3",
+    "title": "BM214 Workshop 3: Enumeration of Bacteria and Bacteriophage",
     "section": "Assessment",
-    "text": "Assessment\nThe workshop is not formally assessed although, as noted, all the material contained in the workshop is examinable. [FILL TEXT HERE]"
+    "text": "Assessment\nThe workshop is not formally assessed although, as noted, all the material contained in the workshop is examinable. [FILL TEXT HERE]",
+    "crumbs": [
+      "Preface to {{< var ay >}} BM214 Workshop 3: Enumeration of Bacteria and Bacteriophage"
+    ]
   },
   {
     "objectID": "summary.html",
     "href": "summary.html",
     "title": "2  Summary",
     "section": "",
-    "text": "In summary, this book has no content whatsoever.\n\n1 + 1\n\n[1] 2"
+    "text": "In summary, this book has no content whatsoever.\n\n1 + 1\n\n[1] 2",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Summary</span>"
+    ]
   }
 ]
