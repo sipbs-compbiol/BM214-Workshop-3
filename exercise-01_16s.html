@@ -8,7 +8,7 @@
 
 <meta name="author" content="Leighton Pritchard">
 
-<title>BM214 Workshop 3: Enumeration of Bacteria and Bacteriophage - 1&nbsp; 16S Sequence Identification</title>
+<title>BM214 Workshop 3: Enumeration of Bacteria and Bacteriophage - 1&nbsp; 16S Sequence Taxonomic Identification</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -83,7 +83,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./part-01_16s.html">16S Sequence Identification</a></li><li class="breadcrumb-item"><a href="./exercise-01_16s.html"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">16S Sequence Identification</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./part-01_16s.html">16S Sequence Identification</a></li><li class="breadcrumb-item"><a href="./exercise-01_16s.html"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">16S Sequence Taxonomic Identification</span></a></li></ol></nav>
         <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -134,7 +134,7 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./exercise-01_16s.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">16S Sequence Identification</span></span></a>
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">16S Sequence Taxonomic Identification</span></span></a>
   </div>
 </li>
       </ul>
@@ -212,7 +212,7 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#enter-the-query-sequence-1" id="toc-enter-the-query-sequence-1" class="nav-link" data-scroll-target="#enter-the-query-sequence-1"><span class="header-section-number">1.4.2</span> Enter the query sequence</a></li>
   <li><a href="#set-appropriate-parameter-choices-1" id="toc-set-appropriate-parameter-choices-1" class="nav-link" data-scroll-target="#set-appropriate-parameter-choices-1"><span class="header-section-number">1.4.3</span> Set appropriate parameter choices</a></li>
   <li><a href="#run-the-silva-search" id="toc-run-the-silva-search" class="nav-link" data-scroll-target="#run-the-silva-search"><span class="header-section-number">1.4.4</span> Run the <code>silva</code> search</a></li>
-  <li><a href="#interpret-the-silva-report-myplace-questions" id="toc-interpret-the-silva-report-myplace-questions" class="nav-link" data-scroll-target="#interpret-the-silva-report-myplace-questions"><span class="header-section-number">1.4.5</span> Interpret the <code>silva</code> report (MyPlace Questions)</a></li>
+  <li><a href="#interpret-the-silva-report-myplace-questions" id="toc-interpret-the-silva-report-myplace-questions" class="nav-link" data-scroll-target="#interpret-the-silva-report-myplace-questions"><span class="header-section-number">1.4.5</span> Interpret the <code>silva</code> report (<strong>MyPlace Questions</strong>)</a></li>
   </ul></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/sipbs-compbiol/BM214-Workshop-3/edit/main/exercise-01_16s.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/sipbs-compbiol/BM214-Workshop-3/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
@@ -220,9 +220,9 @@ ul.task-list li input[type="checkbox"] {
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./part-01_16s.html">16S Sequence Identification</a></li><li class="breadcrumb-item"><a href="./exercise-01_16s.html"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">16S Sequence Identification</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./part-01_16s.html">16S Sequence Identification</a></li><li class="breadcrumb-item"><a href="./exercise-01_16s.html"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">16S Sequence Taxonomic Identification</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">16S Sequence Identification</span></h1>
+<h1 class="title"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">16S Sequence Taxonomic Identification</span></h1>
 </div>
 
 
@@ -738,7 +738,7 @@ Figure&nbsp;1.11: <code>silva</code>’s <code>Aligner Taskmanager</code> table
 </div>
 </section>
 <section id="interpret-the-silva-report-myplace-questions" class="level3" data-number="1.4.5">
-<h3 data-number="1.4.5" class="anchored" data-anchor-id="interpret-the-silva-report-myplace-questions"><span class="header-section-number">1.4.5</span> Interpret the <code>silva</code> report (MyPlace Questions)</h3>
+<h3 data-number="1.4.5" class="anchored" data-anchor-id="interpret-the-silva-report-myplace-questions"><span class="header-section-number">1.4.5</span> Interpret the <code>silva</code> report (<strong>MyPlace Questions</strong>)</h3>
 <p>Unlike <code>BLAST</code>, <code>silva</code> provides the identity of the <a href="https://evolution.berkeley.edu/glossary/most-recent-common-ancestor/"><em>last common ancestor</em> (LCA)</a>, rather than reporting a sequence search match. It displays results in the <code>Alignment Result Table</code> (<a href="#fig-silva-06" class="quarto-xref">Figure&nbsp;<span>1.12</span></a>). This table displays scores but, by clicking on the <code>Display Classification</code> button, you can see the taxonomic identification <code>silva</code> has made for your sequence (<a href="#fig-silva-07" class="quarto-xref">Figure&nbsp;<span>1.13</span></a>).</p>
 <div id="fig-silva-06" class="quarto-figure quarto-figure-center quarto-float anchored">
 <figure class="quarto-float quarto-float-fig figure">

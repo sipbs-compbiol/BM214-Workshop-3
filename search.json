@@ -52,56 +52,56 @@
   {
     "objectID": "exercise-01_16s.html",
     "href": "exercise-01_16s.html",
-    "title": "1  16S Sequence Identification",
+    "title": "1  16S Sequence Taxonomic Identification",
     "section": "",
     "text": "1.1 Introduction\nIn this exercise you will use the 16S sequence that you amplified from your unknown bacterium in order to make a taxonomic identification.\nTo do this, you will use two online bioinformatics services:",
     "crumbs": [
       "16S Sequence Identification",
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>16S Sequence Identification</span>"
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>16S Sequence Taxonomic Identification</span>"
     ]
   },
   {
     "objectID": "exercise-01_16s.html#introduction",
     "href": "exercise-01_16s.html#introduction",
-    "title": "1  16S Sequence Identification",
+    "title": "1  16S Sequence Taxonomic Identification",
     "section": "",
     "text": "NCBI’s BLAST tool (you have already met this in Workshop 2)\nsilva, a quality-checked and curated 16S sequence database service\n\n\n\n\n\n\n\nFigure 1.1: Bioinformatics confuses kittens.\n\n\n\n\n\n\n\n\n\nWhy are we using two different services?\n\n\n\n\n\nIt might tempting to take computational results at face value, and to believe that the “computer can’t be wrong.” But, in bioinformatics as elsewhere in life, computers and databases can sometimes be in error or give imprecise answers. In general the results of a sequence database search, like querying a 16S sequence against a public database, depend on a number of factors, including:\n\nthe query sequence (obviously)\nthe contents of the database\nthe search tool used to query the database\nthe parameter settings for the search tool\n\nand even if the query sequence is the same, using a different service will often change at least one of the other three factors - and maybe other thigs besides.\nThis exercise will give you experience in using alternative bioinformatics tools for the same task.",
     "crumbs": [
       "16S Sequence Identification",
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>16S Sequence Identification</span>"
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>16S Sequence Taxonomic Identification</span>"
     ]
   },
   {
     "objectID": "exercise-01_16s.html#your-data",
     "href": "exercise-01_16s.html#your-data",
-    "title": "1  16S Sequence Identification",
+    "title": "1  16S Sequence Taxonomic Identification",
     "section": "1.2 Your data",
     "text": "1.2 Your data\n\n\n\n\n\n\nImportant\n\n\n\nYou should download the 16S sequence file you obtained from your experiment in Laboratory 3.\nThis will be a plain-text file in FASTA format.",
     "crumbs": [
       "16S Sequence Identification",
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>16S Sequence Identification</span>"
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>16S Sequence Taxonomic Identification</span>"
     ]
   },
   {
     "objectID": "exercise-01_16s.html#analysis-1-ncbi-blast",
     "href": "exercise-01_16s.html#analysis-1-ncbi-blast",
-    "title": "1  16S Sequence Identification",
+    "title": "1  16S Sequence Taxonomic Identification",
     "section": "1.3 Analysis 1: NCBI BLAST",
     "text": "1.3 Analysis 1: NCBI BLAST\nFollow the steps below to carry out a blastn search using your 16S sequence data.\n\n1.3.1 Navigate to the NCBI BLAST webservice\n\nNCBI BLAST homepage\n\n\n\n1.3.2 Select the BLAST Tool\n\n\n\n\n\n\nHint: Which BLAST tool should I use?\n\n\n\n\n\nYour query sequence is a nucleotide sequence, and the 16S sequences of other organisms are also nucleotide sequences, so this is a nucleotide vs nucleotide search.\nFor a reminder, see Workshop 2.\n\n\n\n\n\n\n\n\n\nAnswer: The BLAST tool to use\n\n\n\n\n\nThis is a nucleotide vs nucleotide search, so use the Nucleotide BLAST tool.\n\n\n\n\n\n\nFigure 1.2: Nucleotide BLAST image\n\n\n\n\n\n\n\n\n1.3.3 Enter the query sequence\n\n\n\n\n\n\nAnswer: Entering the query sequence\n\n\n\n\n\nYou can enter the query sequence in either of two ways.\n\nOpen your 16S sequence file in a text editor, copy the data, and paste the data into the Enter Query Sequence field.\n\n\n\n\n\n\n\nFigure 1.3: Query sequence pasted into the query field\n\n\n\n\nClick on the Browse… button to open a file selection dialogue box, then select your 16S sequence file. The uploaded file’s name will then be visible next to the Browse… button.\n\n\n\n\n\n\n\nFigure 1.4: Query sequence uploaded as a file. Note the filename next to the Browse… button\n\n\n\n\n\n\n\n\n1.3.4 Set appropriate parameter choices\n\n\n\n\n\n\nHint: Which database should I use?\n\n\n\n\n\nThe NCBI BLAST webservice provides specialised databases for common, well-defined search tasks.\nYou have a well-defined set of target sequences that you want to compare your query with: they are all 16S sequences. Can you see a database on the search page that might be suitable?\n\n\n\n\n\n\n\n\n\nAnswer: Which database to use\n\n\n\n\n\nThe NCBI BLAST webservice provides specialised databases for common, well-defined search tasks, including searching for 16S or ITS (Internally-Transcribed Spacer) sequences when identifying unknown microorganisms.\nSelect the rRNA/ITS databases radio button, and ensure that the “Bacteria and Archaea” database is selected.\n\n\n\n\n\n\nFigure 1.5: NCBI BLAST 16S database choice\n\n\n\n\n\n\n\n\n1.3.5 Run the BLAST search\n\n\n\n\n\n\nAnswer: Running the BLAST search\n\n\n\n\n\nClick on the BLAST button.\n\n\n\n\n\n\nFigure 1.6: NCBI BLAST button\n\n\n\n\n\n\n\n\n1.3.6 Interpret the BLAST report (MyPlace Questions)\nIt is common for 16S rDNA sequences to match many other bacterial sequences in the database. However, by identifying those most closely-related to the query sequence, you should be able to establish a likely identity for this organism.\n\n\n\n\n\n\nImportant\n\n\n\nPlease answer the questions below in the formative quiz on MyPlace\n\nMyPlace formative quiz\n\nClicking on the green box should give you a hint to the answer, or where to find it.\n\n\n\n\n\n\n\n\nWhat is the accession number of the best match to your query?\n\n\n\n\n\nCheck the Accession column under “Sequences producing significant alignments” in the report’s Descriptions tab.\n\n\n\n\n\n\n\n\n\nWhat organism is the best match to your query?\n\n\n\n\n\nCheck the Description column under “Sequences producing significant alignments” in the report’s Descriptions tab.\n\n\n\n\n\n\n\n\n\nWhat is the total score for the best matching alignment?\n\n\n\n\n\nCheck the Total Score column under “Sequences producing significant alignments” in the report’s Descriptions tab.\n\n\n\n\n\n\n\n\n\nWhat is the query coverage against the best matching alignment?\n\n\n\n\n\nCheck the Query Cover column under “Sequences producing significant alignments” in the report’s Descriptions tab.\n\n\n\n\n\n\n\n\n\nWhat is the alignment percentage identity for the best matching alignment?\n\n\n\n\n\nCheck the Per. Ident column under “Sequences producing significant alignments” in the report’s Descriptions tab.",
     "crumbs": [
       "16S Sequence Identification",
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>16S Sequence Identification</span>"
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>16S Sequence Taxonomic Identification</span>"
     ]
   },
   {
     "objectID": "exercise-01_16s.html#analysis-2-silva",
     "href": "exercise-01_16s.html#analysis-2-silva",
-    "title": "1  16S Sequence Identification",
+    "title": "1  16S Sequence Taxonomic Identification",
     "section": "1.4 Analysis 2: silva",
     "text": "1.4 Analysis 2: silva\nsilva is a curated, quality-checked database of rRNA sequence data that has been run by the Liebniz Institute DSMZ German Collection of Microorganisms and Cell Cultures for about two decades. The silva site provides a number of online tools and services, including the ACT service that enables users to search the database with their own rRNA sequences to find the best matches and identify their organism.\n\nsilva rRNA database project\nsilva Alignment, Classification, and Tree (ACT) webservice\nACT online tutorial\n\n\n1.4.1 Navigate to the silva webservice\n\nsilva ACT (Alignment, Classification, and Tree) service\n\n\n\n\n\n\n\nFigure 1.7: The silva ACT landing page\n\n\n\n\n\n1.4.2 Enter the query sequence\n\n\n\n\n\n\nAnswer: Entering the query sequence\n\n\n\n\n\nYou can enter the query sequence in either of two ways.\n\nOpen your 16S sequence file in a text editor, copy the data, and paste the data into the Input data field (where it says “Paste your FASTA sequence here”).\n\n\n\n\n\n\n\nFigure 1.8: silva landing page with sequence pasted into the Input data field\n\n\n\n\nClick on the Select file button to open a file selection dialogue box, then select your 16S sequence file. The uploaded file’s name will then be visible in the field next to the Select file button.\n\n\n\n\n\n\n\nFigure 1.9: silva landing page with sequence uploaded as a file\n\n\n\n\n\n\n\n\n1.4.3 Set appropriate parameter choices\n\n\n\n\n\n\nHint: What parameters are important?\n\n\n\n\n\nsilva is designed specifically to assign taxonomy from 16S sequence data, so you shouldn’t usually need to modify any parameters. However, you do need to tell silva what actions you want it to take.\nYou want to search with your sequence and classify it.\n\n\n\n\n\n\n\n\n\nAnswer: What parameters to set\n\n\n\n\n\nYou need to tell silva that you want to search with your sequence and classify it. So check the box marked Search and classify.\nThe default settings (95% minimum sequence identity, reporting ten neighbours) are a good starting point.\nOnce you select Search and classify, a new set of options will appear in the window (Figure 1.10) and these can also be left as they are.\n\n\n\n\n\n\nFigure 1.10: silva’s default Search and classify options.\n\n\n\n\n\n\n\n\n1.4.4 Run the silva search\n\n\n\n\n\n\nAnswer: Running the silva search\n\n\n\n\n\nClick on the Run Tool button (lower right of Figure 1.10).\n\n\n\n\n\n\n\n\n\nCaution\n\n\n\nsilva does not provide results as quickly as NCBI’s BLAST server. Keep your eye on the Aligner Taskmanager section of the page, to monitor progress.\nsilva’s progress will run through several stages, from initialising to finished.\n\n\n\n\n\n\nFigure 1.11: silva’s Aligner Taskmanager table\n\n\n\n\n\n\n\n1.4.5 Interpret the silva report (MyPlace Questions)\nUnlike BLAST, silva provides the identity of the last common ancestor (LCA), rather than reporting a sequence search match. It displays results in the Alignment Result Table (Figure 1.12). This table displays scores but, by clicking on the Display Classification button, you can see the taxonomic identification silva has made for your sequence (Figure 1.13).\n\n\n\n\n\n\nFigure 1.12: silva’s Alignment Result Table\n\n\n\n\n\n\n\n\n\nFigure 1.13: silva’s Alignment Result Table, showing classification information\n\n\n\n\n\n\n\n\n\nHelp! I can’t see the full classification!\n\n\n\n\n\nUse the “handles” to drag the size of the column headers to the left or right, until you can see the classification, as in Figure 1.14.\n\n\n\n\n\n\nFigure 1.14: silva’s Alignment Result Table, showing classification information with wider columns\n\n\n\nAlternatively, use the Export to CSV option to download a plain-text .csv file containing silva’s results for your sequence. You can open this in a text editor, or in Excel.\n\n\n\n\n\n\n\n\n\nImportant\n\n\n\nPlease answer the questions below in the formative quiz on MyPlace\n\nMyPlace formative quiz\n\nClicking on the green box should give you a hint to the answer, or where to find it.\n\n\n\n\n\n\n\n\nWhat is the the taxonomic identity of the last common ancestor (LCA) silva assigns to your organism?\n\n\n\n\n\nYou can find this in the LCA tax. SILVA column of the Alignment Result Table, or in the lca_tax_slv column of the downloaded .csv file.\n\n\n\n\n\n\n\n\n\nWhat sequence identity does your isolate’s sequence share with the sequence of the reported last common ancestor?\n\n\n\n\n\nYou can find this in the Identity column of the Alignment Result Table, or in the identity column of the downloaded .csv file.\n\n\n\n\n\n\n\n\n\nDo the BLAST and silva searches give the same taxonomic identity for your 16S sequence?\n\n\n\n\n\nInspect the outputs of both methods, and compare the taxonomic assignments.\n\n\n\n\n\n\n\n\n\nWhat is your current opinion about the identity of your isolate? How confident are you in the identification made by each tool?\n\n\n\n\n\nAmong other things, you may want to consider:\n\ndid both tools give the same identification?\nhow much sequence identity was shared between your query sequence and the matches each tool found?\nis your organism common enough that there are many examples of its 16S sequence known?",
     "crumbs": [
       "16S Sequence Identification",
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>16S Sequence Identification</span>"
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>16S Sequence Taxonomic Identification</span>"
     ]
   },
   {
