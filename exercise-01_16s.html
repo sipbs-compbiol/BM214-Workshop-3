@@ -191,7 +191,31 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction"><span class="header-section-number">1.1</span> Introduction</a></li>
+  <li><a href="#your-data" id="toc-your-data" class="nav-link" data-scroll-target="#your-data"><span class="header-section-number">1.2</span> Your data</a></li>
+  <li><a href="#analysis-1-ncbi-blast" id="toc-analysis-1-ncbi-blast" class="nav-link" data-scroll-target="#analysis-1-ncbi-blast"><span class="header-section-number">1.3</span> Analysis 1: NCBI <code>BLAST</code></a>
+  <ul class="collapse">
+  <li><a href="#navigate-to-the-ncbi-blast-webservice" id="toc-navigate-to-the-ncbi-blast-webservice" class="nav-link" data-scroll-target="#navigate-to-the-ncbi-blast-webservice"><span class="header-section-number">1.3.1</span> Navigate to the NCBI <code>BLAST</code> webservice</a></li>
+  <li><a href="#select-the-blast-tool" id="toc-select-the-blast-tool" class="nav-link" data-scroll-target="#select-the-blast-tool"><span class="header-section-number">1.3.2</span> Select the BLAST Tool</a></li>
+  <li><a href="#enter-the-query-sequence" id="toc-enter-the-query-sequence" class="nav-link" data-scroll-target="#enter-the-query-sequence"><span class="header-section-number">1.3.3</span> Enter the query sequence</a></li>
+  <li><a href="#set-appropriate-parameter-choices" id="toc-set-appropriate-parameter-choices" class="nav-link" data-scroll-target="#set-appropriate-parameter-choices"><span class="header-section-number">1.3.4</span> Set appropriate parameter choices</a></li>
+  <li><a href="#run-the-blast-search" id="toc-run-the-blast-search" class="nav-link" data-scroll-target="#run-the-blast-search"><span class="header-section-number">1.3.5</span> Run the <code>BLAST</code> search</a></li>
+  <li><a href="#interpret-the-blast-report-myplace-questions" id="toc-interpret-the-blast-report-myplace-questions" class="nav-link" data-scroll-target="#interpret-the-blast-report-myplace-questions"><span class="header-section-number">1.3.6</span> Interpret the <code>BLAST</code> report (<strong>MyPlace Questions</strong>)</a></li>
+  </ul></li>
+  <li><a href="#analysis-2-silva" id="toc-analysis-2-silva" class="nav-link" data-scroll-target="#analysis-2-silva"><span class="header-section-number">1.4</span> Analysis 2: <code>silva</code></a>
+  <ul class="collapse">
+  <li><a href="#navigate-to-the-silva-webservice" id="toc-navigate-to-the-silva-webservice" class="nav-link" data-scroll-target="#navigate-to-the-silva-webservice"><span class="header-section-number">1.4.1</span> Navigate to the <code>silva</code> webservice</a></li>
+  <li><a href="#enter-the-query-sequence-1" id="toc-enter-the-query-sequence-1" class="nav-link" data-scroll-target="#enter-the-query-sequence-1"><span class="header-section-number">1.4.2</span> Enter the query sequence</a></li>
+  <li><a href="#set-appropriate-parameter-choices-1" id="toc-set-appropriate-parameter-choices-1" class="nav-link" data-scroll-target="#set-appropriate-parameter-choices-1"><span class="header-section-number">1.4.3</span> Set appropriate parameter choices</a></li>
+  <li><a href="#run-the-silva-search" id="toc-run-the-silva-search" class="nav-link" data-scroll-target="#run-the-silva-search"><span class="header-section-number">1.4.4</span> Run the <code>silva</code> search</a></li>
+  <li><a href="#interpret-the-silva-report-myplace-questions" id="toc-interpret-the-silva-report-myplace-questions" class="nav-link" data-scroll-target="#interpret-the-silva-report-myplace-questions"><span class="header-section-number">1.4.5</span> Interpret the <code>silva</code> report (MyPlace Questions)</a></li>
+  </ul></li>
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://github.com/sipbs-compbiol/BM214-Workshop-3/edit/main/exercise-01_16s.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/sipbs-compbiol/BM214-Workshop-3/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -215,8 +239,644 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<section id="introduction" class="level2" data-number="1.1">
+<h2 data-number="1.1" class="anchored" data-anchor-id="introduction"><span class="header-section-number">1.1</span> Introduction</h2>
+<p>In this exercise you will use the 16S sequence that you amplified from your unknown bacterium in order to make a taxonomic identification.</p>
+<p>To do this, you will use two online bioinformatics services:</p>
+<ol type="1">
+<li>NCBI’s <a href="https://blast.ncbi.nlm.nih.gov/Blast.cgi"><code>BLAST</code> tool</a> (you have already met this in <a href="https://sipbs-compbiol.github.io/BM214-Workshop-2/scenario-1.html">Workshop 2</a>)</li>
+<li><a href="https://www.arb-silva.de/"><code>silva</code></a>, a quality-checked and curated 16S sequence database service</li>
+</ol>
+<div id="fig-penguin-bioinformatics" class="quarto-figure quarto-figure-center quarto-float anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-penguin-bioinformatics-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="assets/images/penguin_sequence_search.jpg" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-penguin-bioinformatics-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1.1: Bioinformatics. So easy even penguins can do it.
+</figcaption>
+</figure>
+</div>
+<div class="callout callout-style-default callout-caution callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Why are we using two different services?
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-1" class="callout-1-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>It might tempting to take computational results at face value, and to believe that the “computer can’t be wrong.” But, <em>in bioinformatics as elsewhere in life</em>, <strong>computers and databases can sometimes be in error or give imprecise answers</strong>. In general the results of a sequence database search, like querying a 16S sequence against a public database, depend on a number of factors, including:</p>
+<ul>
+<li>the query sequence (obviously)</li>
+<li>the contents of the database</li>
+<li>the search tool used to query the database</li>
+<li>the parameter settings for the search tool</li>
+</ul>
+<p>and even if the query sequence is the same, using a different service will often change at least one of the other three factors - and maybe other thigs besides.</p>
+<p><strong>This exercise will give you experience in using alternative bioinformatics tools for the same task.</strong></p>
+</div>
+</div>
+</div>
+</section>
+<section id="your-data" class="level2" data-number="1.2">
+<h2 data-number="1.2" class="anchored" data-anchor-id="your-data"><span class="header-section-number">1.2</span> Your data</h2>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Important
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>You should download the 16S sequence file you obtained from your experiment in Laboratory 3.</strong></p>
+<p>This will be a plain-text file in <a href="glossary.qmd#fasta-format">FASTA format</a>.</p>
+</div>
+</div>
+</section>
+<section id="analysis-1-ncbi-blast" class="level2" data-number="1.3">
+<h2 data-number="1.3" class="anchored" data-anchor-id="analysis-1-ncbi-blast"><span class="header-section-number">1.3</span> Analysis 1: NCBI <code>BLAST</code></h2>
+<p>Follow the steps below to carry out a <a href="glossary.qmd#blastn"><code>blastn</code></a> search using your 16S sequence data.</p>
+<section id="navigate-to-the-ncbi-blast-webservice" class="level3" data-number="1.3.1">
+<h3 data-number="1.3.1" class="anchored" data-anchor-id="navigate-to-the-ncbi-blast-webservice"><span class="header-section-number">1.3.1</span> Navigate to the NCBI <code>BLAST</code> webservice</h3>
+<ul>
+<li>NCBI <a href="https://blast.ncbi.nlm.nih.gov/Blast.cgi"><code>BLAST</code> homepage</a></li>
+</ul>
+</section>
+<section id="select-the-blast-tool" class="level3" data-number="1.3.2">
+<h3 data-number="1.3.2" class="anchored" data-anchor-id="select-the-blast-tool"><span class="header-section-number">1.3.2</span> Select the BLAST Tool</h3>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Hint: Which <code>BLAST</code> tool should I use?
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-3" class="callout-3-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Your query sequence is a nucleotide sequence, and the 16S sequences of other organisms are also nucleotide sequences, so this is a <strong>nucleotide vs nucleotide</strong> search.</p>
+<p>For a reminder, see <a href="https://sipbs-compbiol.github.io/BM214-Workshop-2/blast.html">Workshop 2</a>.</p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Answer: The <code>BLAST</code> tool to use
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-4" class="callout-4-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>This is a <strong>nucleotide vs nucleotide</strong> search, so use the <code>Nucleotide BLAST</code> tool.</p>
+<div id="fig-nucleotide-blast-cover" class="quarto-figure quarto-figure-center quarto-float anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-nucleotide-blast-cover-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="assets/images/nucleutide-blast-cover.png" class="img-fluid figure-img" style="width:80.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-nucleotide-blast-cover-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1.2: Nucleotide BLAST image
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="enter-the-query-sequence" class="level3" data-number="1.3.3">
+<h3 data-number="1.3.3" class="anchored" data-anchor-id="enter-the-query-sequence"><span class="header-section-number">1.3.3</span> Enter the query sequence</h3>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-5-contents" aria-controls="callout-5" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Answer: Entering the query sequence
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-5" class="callout-5-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>You can enter the query sequence in either of two ways.</strong></p>
+<ol type="1">
+<li>Open your 16S sequence file in a text editor, copy the data, and paste the data into the <code>Enter Query Sequence</code> field.</li>
+</ol>
+<div id="fig-scenario-1-query" class="quarto-figure quarto-figure-center quarto-float anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-scenario-1-query-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="assets/images/scenario-1-query.png" class="img-fluid figure-img" style="width:80.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-scenario-1-query-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1.3: Query sequence pasted into the query field
+</figcaption>
+</figure>
+</div>
+<ol start="2" type="1">
+<li>Click on the <code>Browse…</code> button to open a file selection dialogue box, then select your 16S sequence file. The uploaded file’s name will then be visible next to the <code>Browse…</code> button.</li>
+</ol>
+<div id="fig-blastn-filename" class="quarto-figure quarto-figure-center quarto-float anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-blastn-filename-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="assets/images/blastn_with_filename.png" class="img-fluid figure-img" style="width:80.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-blastn-filename-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1.4: Query sequence uploaded as a file. Note the filename next to the <code>Browse…</code> button
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="set-appropriate-parameter-choices" class="level3" data-number="1.3.4">
+<h3 data-number="1.3.4" class="anchored" data-anchor-id="set-appropriate-parameter-choices"><span class="header-section-number">1.3.4</span> Set appropriate parameter choices</h3>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-6-contents" aria-controls="callout-6" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Hint: Which database should I use?
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-6" class="callout-6-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>The NCBI <code>BLAST</code> webservice provides specialised databases for common, well-defined search tasks.</p>
+<p>You have a well-defined set of target sequences that you want to compare your query with: <strong>they are all 16S sequences.</strong> Can you see a database on the search page that might be suitable?</p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-7-contents" aria-controls="callout-7" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Answer: Which database to use
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-7" class="callout-7-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>The NCBI <code>BLAST</code> webservice provides specialised databases for common, well-defined search tasks, including searching for 16S or ITS (Internally-Transcribed Spacer) sequences when identifying unknown microorganisms.</p>
+<p><strong>Select the <code>rRNA/ITS databases</code> radio button, and ensure that the “Bacteria and Archaea” database is selected.</strong></p>
+<div id="fig-scenario-1-database" class="quarto-figure quarto-figure-center quarto-float anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-scenario-1-database-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="assets/images/scenario-1-database.png" class="img-fluid figure-img" style="width:80.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-scenario-1-database-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1.5: NCBI BLAST 16S database choice
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="run-the-blast-search" class="level3" data-number="1.3.5">
+<h3 data-number="1.3.5" class="anchored" data-anchor-id="run-the-blast-search"><span class="header-section-number">1.3.5</span> Run the <code>BLAST</code> search</h3>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-8-contents" aria-controls="callout-8" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Answer: Running the <code>BLAST</code> search
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-8" class="callout-8-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Click on the <code>BLAST</code> button.</p>
+<div id="fig-scenario-1-button-1" class="quarto-figure quarto-figure-center quarto-float anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-scenario-1-button-1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="assets/images/ncbi-blast-button.png" class="img-fluid figure-img" style="width:80.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-scenario-1-button-1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1.6: NCBI <code>BLAST</code> button
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="interpret-the-blast-report-myplace-questions" class="level3" data-number="1.3.6">
+<h3 data-number="1.3.6" class="anchored" data-anchor-id="interpret-the-blast-report-myplace-questions"><span class="header-section-number">1.3.6</span> Interpret the <code>BLAST</code> report (<strong>MyPlace Questions</strong>)</h3>
+<p>It is common for 16S rDNA sequences to match many other bacterial sequences in the database. However, by identifying those most closely-related to the query sequence, you should be able to establish a likely identity for this organism.</p>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Important
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Please answer the questions below in the formative quiz on MyPlace</strong></p>
+<ul>
+<li><a href="?var:myplace.quiz1">MyPlace formative quiz</a></li>
+</ul>
+<p>Clicking on the green box should give you a hint to the answer, or where to find it.</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-10-contents" aria-controls="callout-10" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+What is the accession number of the best match to your query?
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-10" class="callout-10-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Check the <code>Accession</code> column under “Sequences producing significant alignments” in the report’s <code>Descriptions</code> tab.</p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-11-contents" aria-controls="callout-11" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+What organism is the best match to your query?
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-11" class="callout-11-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Check the <code>Description</code> column under “Sequences producing significant alignments” in the report’s <code>Descriptions</code> tab.</p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-12-contents" aria-controls="callout-12" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+What is the total score for the best matching alignment?
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-12" class="callout-12-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Check the <code>Total Score</code> column under “Sequences producing significant alignments” in the report’s <code>Descriptions</code> tab.</p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-13-contents" aria-controls="callout-13" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+What is the query coverage against the best matching alignment?
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-13" class="callout-13-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Check the <code>Query Cover</code> column under “Sequences producing significant alignments” in the report’s <code>Descriptions</code> tab.</p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-14-contents" aria-controls="callout-14" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+What is the alignment percentage identity for the best matching alignment?
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-14" class="callout-14-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Check the <code>Per. Ident</code> column under “Sequences producing significant alignments” in the report’s <code>Descriptions</code> tab.</p>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="analysis-2-silva" class="level2" data-number="1.4">
+<h2 data-number="1.4" class="anchored" data-anchor-id="analysis-2-silva"><span class="header-section-number">1.4</span> Analysis 2: <code>silva</code></h2>
+<p><a href="https://www.arb-silva.de/"><code>silva</code></a> is a curated, quality-checked database of rRNA sequence data that has been run by the <a href="https://www.dsmz.de/">Liebniz Institute DSMZ German Collection of Microorganisms and Cell Cultures</a> for about two decades. The <code>silva</code> site provides a number of online tools and services, including the <a href="https://www.arb-silva.de/aligner">ACT</a> service that enables users to search the database with their own rRNA sequences to find the best matches and identify their organism.</p>
+<ul>
+<li><a href="https://www.arb-silva.de/"><code>silva</code> rRNA database project</a></li>
+<li><a href="https://www.arb-silva.de/aligner"><code>silva</code> Alignment, Classification, and Tree (ACT) webservice</a></li>
+<li><a href="https://www.arb-silva.de/documentation/act-tutorial/">ACT online tutorial</a></li>
+</ul>
+<section id="navigate-to-the-silva-webservice" class="level3" data-number="1.4.1">
+<h3 data-number="1.4.1" class="anchored" data-anchor-id="navigate-to-the-silva-webservice"><span class="header-section-number">1.4.1</span> Navigate to the <code>silva</code> webservice</h3>
+<ul>
+<li><a href="https://www.arb-silva.de/aligner"><code>silva</code> ACT</a> (Alignment, Classification, and Tree) service</li>
+</ul>
+<div id="fig-silva-01" class="quarto-figure quarto-figure-center quarto-float anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-silva-01-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="assets/images/01-silva.png" class="img-fluid figure-img" style="width:80.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-silva-01-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1.7: The <code>silva</code> ACT landing page
+</figcaption>
+</figure>
+</div>
+</section>
+<section id="enter-the-query-sequence-1" class="level3" data-number="1.4.2">
+<h3 data-number="1.4.2" class="anchored" data-anchor-id="enter-the-query-sequence-1"><span class="header-section-number">1.4.2</span> Enter the query sequence</h3>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-15-contents" aria-controls="callout-15" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Answer: Entering the query sequence
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-15" class="callout-15-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>You can enter the query sequence in either of two ways.</strong></p>
+<ol type="1">
+<li>Open your 16S sequence file in a text editor, copy the data, and paste the data into the <code>Input data</code> field (where it says “Paste your FASTA sequence here”).</li>
+</ol>
+<div id="fig-silva-02" class="quarto-figure quarto-figure-center quarto-float anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-silva-02-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="assets/images/02-silva.png" class="img-fluid figure-img" style="width:80.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-silva-02-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1.8: <code>silva</code> landing page with sequence pasted into the <code>Input data</code> field
+</figcaption>
+</figure>
+</div>
+<ol start="2" type="1">
+<li>Click on the <code>Select file</code> button to open a file selection dialogue box, then select your 16S sequence file. The uploaded file’s name will then be visible in the field next to the <code>Select file</code> button.</li>
+</ol>
+<div id="fig-silva-03" class="quarto-figure quarto-figure-center quarto-float anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-silva-03-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="assets/images/03-silva.png" class="img-fluid figure-img" style="width:80.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-silva-03-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1.9: <code>silva</code> landing page with sequence uploaded as a file
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="set-appropriate-parameter-choices-1" class="level3" data-number="1.4.3">
+<h3 data-number="1.4.3" class="anchored" data-anchor-id="set-appropriate-parameter-choices-1"><span class="header-section-number">1.4.3</span> Set appropriate parameter choices</h3>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-16-contents" aria-controls="callout-16" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Hint: What parameters are important?
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-16" class="callout-16-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><code>silva</code> is designed specifically to assign taxonomy from 16S sequence data, so you shouldn’t usually need to modify any parameters. However, you do need to tell <code>silva</code> what actions you want it to take.</p>
+<p>You want to <strong>search</strong> with your sequence <strong>and classify</strong> it.</p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-17-contents" aria-controls="callout-17" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Answer: What parameters to set
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-17" class="callout-17-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>You need to tell <code>silva</code> that you want to <strong>search</strong> with your sequence <strong>and classify</strong> it. So <strong>check the box marked <code>Search and classify</code>.</strong></p>
+<p>The default settings (95% minimum sequence identity, reporting ten neighbours) are a good starting point.</p>
+<p>Once you select <code>Search and classify</code>, a new set of options will appear in the window (<a href="#fig-silva-04" class="quarto-xref">Figure&nbsp;<span>1.10</span></a>) and these can also be left as they are.</p>
+<div id="fig-silva-04" class="quarto-figure quarto-figure-center quarto-float anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-silva-04-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="assets/images/04-silva.png" class="img-fluid figure-img" style="width:80.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-silva-04-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1.10: <code>silva</code>’s default <code>Search and classify</code> options.
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="run-the-silva-search" class="level3" data-number="1.4.4">
+<h3 data-number="1.4.4" class="anchored" data-anchor-id="run-the-silva-search"><span class="header-section-number">1.4.4</span> Run the <code>silva</code> search</h3>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-18-contents" aria-controls="callout-18" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Answer: Running the <code>silva</code> search
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-18" class="callout-18-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Click on the <code>Run Tool</code> button (lower right of <a href="#fig-silva-04" class="quarto-xref">Figure&nbsp;<span>1.10</span></a>).</p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-caution callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Caution
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong><code>silva</code> does not provide results as quickly as NCBI’s <code>BLAST</code> server. Keep your eye on the <code>Aligner Taskmanager</code> section of the page, to monitor progress.</strong></p>
+<p><code>silva</code>’s progress will run through several stages, from <code>initialising</code> to <code>finished</code>.</p>
+<div id="fig-silva-05" class="quarto-figure quarto-figure-center quarto-float anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-silva-05-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="assets/images/05-silva.png" class="img-fluid figure-img" style="width:80.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-silva-05-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1.11: <code>silva</code>’s <code>Aligner Taskmanager</code> table
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="interpret-the-silva-report-myplace-questions" class="level3" data-number="1.4.5">
+<h3 data-number="1.4.5" class="anchored" data-anchor-id="interpret-the-silva-report-myplace-questions"><span class="header-section-number">1.4.5</span> Interpret the <code>silva</code> report (MyPlace Questions)</h3>
+<p>Unlike <code>BLAST</code>, <code>silva</code> provides the identity of the <a href="https://evolution.berkeley.edu/glossary/most-recent-common-ancestor/"><em>last common ancestor</em> (LCA)</a>, rather than reporting a sequence search match. It displays results in the <code>Alignment Result Table</code> (<a href="#fig-silva-06" class="quarto-xref">Figure&nbsp;<span>1.12</span></a>). This table displays scores but, by clicking on the <code>Display Classification</code> button, you can see the taxonomic identification <code>silva</code> has made for your sequence (<a href="#fig-silva-07" class="quarto-xref">Figure&nbsp;<span>1.13</span></a>).</p>
+<div id="fig-silva-06" class="quarto-figure quarto-figure-center quarto-float anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-silva-06-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="assets/images/06-silva.png" class="img-fluid figure-img" style="width:80.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-silva-06-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1.12: <code>silva</code>’s <code>Alignment Result Table</code>
+</figcaption>
+</figure>
+</div>
+<div id="fig-silva-07" class="quarto-figure quarto-figure-center quarto-float anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-silva-07-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="assets/images/07-silva.png" class="img-fluid figure-img" style="width:80.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-silva-07-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1.13: <code>silva</code>’s <code>Alignment Result Table</code>, showing classification information
+</figcaption>
+</figure>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-20-contents" aria-controls="callout-20" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Help! I can’t see the full classification!
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-20" class="callout-20-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Use the “handles” to drag the size of the column headers to the left or right, until you can see the classification, as in <a href="#fig-silva-08" class="quarto-xref">Figure&nbsp;<span>1.14</span></a>.</p>
+<div id="fig-silva-08" class="quarto-figure quarto-figure-center quarto-float anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-silva-08-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="assets/images/08-silva.png" class="img-fluid figure-img" style="width:80.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-silva-08-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1.14: <code>silva</code>’s <code>Alignment Result Table</code>, showing classification information with wider columns
+</figcaption>
+</figure>
+</div>
+<p>Alternatively, use the <code>Export to CSV</code> option to download a plain-text <code>.csv</code> file containing <code>silva</code>’s results for your sequence. You can open this in a text editor, or in Excel.</p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Important
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Please answer the questions below in the formative quiz on MyPlace</strong></p>
+<ul>
+<li><a href="?var:myplace.quiz1">MyPlace formative quiz</a></li>
+</ul>
+<p>Clicking on the green box should give you a hint to the answer, or where to find it.</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-22-contents" aria-controls="callout-22" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+What is the the taxonomic identity of the last common ancestor (LCA) <code>silva</code> assigns to your organism?
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-22" class="callout-22-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>You can find this in the <code>LCA tax. SILVA</code> column of the <code>Alignment Result Table</code>, or in the <code>lca_tax_slv</code> column of the downloaded <code>.csv</code> file.</p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-23-contents" aria-controls="callout-23" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+What sequence identity does your isolate’s sequence share with the sequence of the reported last common ancestor?
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-23" class="callout-23-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>You can find this in the <code>Identity</code> column of the <code>Alignment Result Table</code>, or in the <code>identity</code> column of the downloaded <code>.csv</code> file.</p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-24-contents" aria-controls="callout-24" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Do the <code>BLAST</code> and <code>silva</code> searches give the same taxonomic identity for your 16S sequence?
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-24" class="callout-24-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Inspect the outputs of both methods, and compare the taxonomic assignments.</p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-25-contents" aria-controls="callout-25" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+What is your current opinion about the identity of your isolate? How confident are you in the identification made by each tool?
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-25" class="callout-25-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Among other things, you may want to consider:</p>
+<ul>
+<li>did both tools give the same identification?</li>
+<li>how much sequence identity was shared between your query sequence and the matches each tool found?</li>
+<li>is your organism common enough that there are many examples of its 16S sequence known?</li>
+</ul>
+</div>
+</div>
+</div>
 
 
+</section>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -648,7 +1308,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </div>   
     <div class="nav-footer-center">
       &nbsp;
-    <div class="toc-actions"><ul><li><a href="https://github.com/sipbs-compbiol/BM214-Workshop-3/edit/main/exercise-01_16s.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/sipbs-compbiol/BM214-Workshop-3/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/sipbs-compbiol/BM214-Workshop-3/edit/main/exercise-01_16s.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/sipbs-compbiol/BM214-Workshop-3/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
 <p>This book was built with <a href="https://quarto.org/">Quarto</a>.</p>
 </div>
