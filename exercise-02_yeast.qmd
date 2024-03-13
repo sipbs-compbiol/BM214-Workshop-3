@@ -1,1 +1,70 @@
+---
+webr:
+  packages: ["ggplot2", "tidyverse"]
+filters:
+  - webr
+---
+
 # Yeast Growth Experiment
+
+```{r}
+#| echo: false
+#| warning: false
+
+library(ggplot2)
+library(tidyverse)
+```
+
+## Introduction
+
+In this exercise you will use the absorbance data that you obtained in laboratory 3 to draw growth curves for your three _Saccharomyces cerevisiae_ strains, using the `R` language.
+
+::: { .callout-note collapse="true" }
+## Why use `R`?
+
+There are many great tools capable of plotting your data (Numbers, Excel, Prism, GNUplot, Minitab, SPSS, MatLab, Python, JavaScript, etc.) and the choice of tool should in general reflect your data presentation needs, and your level of comfort with the tool.
+
+Here, we use `R` because it is a very powerful means of carrying out many computational aspects of biology, including data visualisation, quickly and easily. Many of the topics you may meet later in your degree - phylogenetic, pharmacokinetics, microbial genomics, and so on - are supported by _packages_ in `R` designed specifically for those subjects, and can make your work much easier. Also, skills in `R` are highly sought-after by industrial and other employers. Having some experience of `R` is an advantage.
+
+`R` may be unfamiliar to you just now, but we provide step-by-step instructions for completing the exercise and, by the end of it, we hope you feel a bit more confident in how to use it.
+:::
+
+## Prepare your data
+
+### In Excel
+
+You can prepare your data using Excel or similar spreadsheet package, to make it ready for use in this exercise. To do so, please follow the steps below (**NOTE:** expand each step by clicking on it).
+
+::: { .callout-tip collapse="true"}
+## 1. Open new blank workbook in Excel
+
+![Open a blank Excel workbook](assets/images/yeast-blank-workbook.png){#fig-blank-workbook width=80%}
+:::
+
+::: { .callout-tip collapse="true"}
+## 2. Enter your header row
+
+![Enter header text in three columns: `time`, `OD600`, and `culture`](assets/images/yeast-header-row.png){#fig-header-row width=80%}
+:::
+
+::: { .callout-tip collapse="true"}
+## 3. Enter your data in columns
+
+![Add your data in three columns, as shown. The `time` column will contain time data for all three of your cultures - the corresponding culture is indicated in the `culture` column. The `OD600` column should contain the absorbance measurements you obtained.](assets/images/yeast-data-columns.png){#fig-data-columns width=80%}
+
+:::
+
+::: { .callout-tip collapse="true"}
+## 4. Save your data in `.csv` format
+
+![Use the `File -> Save As` menu option to bring up the dialogue box. Give your file a sensible name (e.g. `yeast_growth`) and select the `CSV UTF-8 (Comma-delimited) (.csv)` File Format, then click `Save`.](assets/images/yeast-save-csv.png){#fig-save-csv width=80%}
+
+:::
+
+### Enter your dataframe directly in `R`
+
+## Load your data
+
+```{webr-r}
+# Load your yeast growth data in this R cell
+```
