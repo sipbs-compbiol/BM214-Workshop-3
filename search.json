@@ -119,7 +119,7 @@
     "href": "exercise-02_yeast.html",
     "title": "2  Yeast Growth Experiment",
     "section": "",
-    "text": "2.1 Introduction\nIn this exercise you will use the absorbance data that you obtained in laboratory 3 to draw growth curves for your three Saccharomyces cerevisiae strains, using the R language.",
+    "text": "2.1 Introduction\nIn this exercise you will use the absorbance data obtained from your yeast growth experiment in Laboratory e to draw growth curves for your three Saccharomyces cerevisiae strains, using the R language.",
     "crumbs": [
       "Yeast Growth Experiment",
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Yeast Growth Experiment</span>"
@@ -137,22 +137,11 @@
     ]
   },
   {
-    "objectID": "exercise-02_yeast.html#prepare-your-data",
-    "href": "exercise-02_yeast.html#prepare-your-data",
-    "title": "2  Yeast Growth Experiment",
-    "section": "2.2 Prepare your data",
-    "text": "2.2 Prepare your data\n\n2.2.1 In Excel\nYou can prepare your data using Excel or similar spreadsheet package, to make it ready for use in this exercise. To do so, please follow the steps below (NOTE: expand each step by clicking on it).\n\n\n\n\n\n\n1. Open new blank workbook in Excel\n\n\n\n\n\n\n\n\n\n\n\nFigure 2.1: Open a blank Excel workbook\n\n\n\n\n\n\n\n\n\n\n\n\n2. Enter your header row\n\n\n\n\n\n\n\n\n\n\n\nFigure 2.2: Enter header text in three columns: time, OD600, and culture\n\n\n\n\n\n\n\n\n\n\n\n\n3. Enter your data in columns\n\n\n\n\n\n\n\n\n\n\n\nFigure 2.3: Add your data in three columns, as shown. The time column will contain time data for all three of your cultures - the corresponding culture is indicated in the culture column. The OD600 column should contain the absorbance measurements you obtained.\n\n\n\n\n\n\n\n\n\n\n\n\n4. Save your data in .csv format\n\n\n\n\n\n\n\n\n\n\n\nFigure 2.4: Use the File -&gt; Save As menu option to bring up the dialogue box. Give your file a sensible name (e.g. yeast_growth) and select the CSV UTF-8 (Comma-delimited) (.csv) File Format, then click Save.\n\n\n\n\n\n\n\n\n2.2.2 Enter your dataframe directly in R",
-    "crumbs": [
-      "Yeast Growth Experiment",
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Yeast Growth Experiment</span>"
-    ]
-  },
-  {
     "objectID": "exercise-02_yeast.html#load-your-data",
     "href": "exercise-02_yeast.html#load-your-data",
     "title": "2  Yeast Growth Experiment",
-    "section": "2.3 Load your data",
-    "text": "2.3 Load your data\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.",
+    "section": "2.2 Load your data",
+    "text": "2.2 Load your data\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.",
     "crumbs": [
       "Yeast Growth Experiment",
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Yeast Growth Experiment</span>"

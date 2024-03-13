@@ -236,7 +236,7 @@ globalThis.qwebrCustomizedWebROptions = {
 };
 
 // Store cell data
-globalThis.qwebrCellDetails = [{"id":1,"options":{"warning":"true","message":"true","comment":"","output":"true","label":"unnamed-chunk-1","dpi":72,"results":"markup","fig-cap":"","out-width":"700px","classes":"","read-only":"false","context":"interactive","out-height":"","autorun":"false","fig-height":5,"fig-width":7},"code":"# Load your yeast growth data in this R cell"}];
+globalThis.qwebrCellDetails = [{"id":1,"code":"# Load your yeast growth data in this R cell","options":{"label":"unnamed-chunk-1","message":"true","comment":"","dpi":72,"autorun":"false","context":"interactive","read-only":"false","warning":"true","output":"true","fig-width":7,"results":"markup","out-width":"700px","fig-cap":"","out-height":"","classes":"","fig-height":5}}];
 
 </script>
 <script type="module">
@@ -1078,12 +1078,7 @@ globalThis.qwebrExecuteCode = async function (
    
   <ul>
   <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction"><span class="header-section-number">2.1</span> Introduction</a></li>
-  <li><a href="#prepare-your-data" id="toc-prepare-your-data" class="nav-link" data-scroll-target="#prepare-your-data"><span class="header-section-number">2.2</span> Prepare your data</a>
-  <ul class="collapse">
-  <li><a href="#in-excel" id="toc-in-excel" class="nav-link" data-scroll-target="#in-excel"><span class="header-section-number">2.2.1</span> In Excel</a></li>
-  <li><a href="#enter-your-dataframe-directly-in-r" id="toc-enter-your-dataframe-directly-in-r" class="nav-link" data-scroll-target="#enter-your-dataframe-directly-in-r"><span class="header-section-number">2.2.2</span> Enter your dataframe directly in <code>R</code></a></li>
-  </ul></li>
-  <li><a href="#load-your-data" id="toc-load-your-data" class="nav-link" data-scroll-target="#load-your-data"><span class="header-section-number">2.3</span> Load your data</a></li>
+  <li><a href="#load-your-data" id="toc-load-your-data" class="nav-link" data-scroll-target="#load-your-data"><span class="header-section-number">2.2</span> Load your data</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/sipbs-compbiol/BM214-Workshop-3/edit/main/exercise-02_yeast.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/sipbs-compbiol/BM214-Workshop-3/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
@@ -1285,7 +1280,7 @@ globalThis.qwebrCreateMonacoEditorInstance = function (cellData) {
 
 <section id="introduction" class="level2" data-number="2.1">
 <h2 data-number="2.1" class="anchored" data-anchor-id="introduction"><span class="header-section-number">2.1</span> Introduction</h2>
-<p>In this exercise you will use the absorbance data that you obtained in laboratory 3 to draw growth curves for your three <em>Saccharomyces cerevisiae</em> strains, using the <code>R</code> language.</p>
+<p>In this exercise you will use the absorbance data obtained from your yeast growth experiment in Laboratory e to draw growth curves for your three <em>Saccharomyces cerevisiae</em> strains, using the <code>R</code> language.</p>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
@@ -1305,118 +1300,8 @@ Why use <code>R</code>?
 </div>
 </div>
 </section>
-<section id="prepare-your-data" class="level2" data-number="2.2">
-<h2 data-number="2.2" class="anchored" data-anchor-id="prepare-your-data"><span class="header-section-number">2.2</span> Prepare your data</h2>
-<section id="in-excel" class="level3" data-number="2.2.1">
-<h3 data-number="2.2.1" class="anchored" data-anchor-id="in-excel"><span class="header-section-number">2.2.1</span> In Excel</h3>
-<p>You can prepare your data using Excel or similar spreadsheet package, to make it ready for use in this exercise. To do so, please follow the steps below (<strong>NOTE:</strong> expand each step by clicking on it).</p>
-<div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-1. Open new blank workbook in Excel
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-2" class="callout-2-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
-<div id="fig-blank-workbook" class="quarto-figure quarto-figure-center quarto-float anchored">
-<figure class="quarto-float quarto-float-fig figure">
-<div aria-describedby="fig-blank-workbook-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="assets/images/yeast-blank-workbook.png" class="img-fluid figure-img" style="width:80.0%">
-</div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-blank-workbook-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;2.1: Open a blank Excel workbook
-</figcaption>
-</figure>
-</div>
-</div>
-</div>
-</div>
-<div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-2. Enter your header row
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-3" class="callout-3-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
-<div id="fig-header-row" class="quarto-figure quarto-figure-center quarto-float anchored">
-<figure class="quarto-float quarto-float-fig figure">
-<div aria-describedby="fig-header-row-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="assets/images/yeast-header-row.png" class="img-fluid figure-img" style="width:80.0%">
-</div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-header-row-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;2.2: Enter header text in three columns: <code>time</code>, <code>OD600</code>, and <code>culture</code>
-</figcaption>
-</figure>
-</div>
-</div>
-</div>
-</div>
-<div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-3. Enter your data in columns
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-4" class="callout-4-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
-<div id="fig-data-columns" class="quarto-figure quarto-figure-center quarto-float anchored">
-<figure class="quarto-float quarto-float-fig figure">
-<div aria-describedby="fig-data-columns-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="assets/images/yeast-data-columns.png" class="img-fluid figure-img" style="width:80.0%">
-</div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-data-columns-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;2.3: Add your data in three columns, as shown. The <code>time</code> column will contain time data for all three of your cultures - the corresponding culture is indicated in the <code>culture</code> column. The <code>OD600</code> column should contain the absorbance measurements you obtained.
-</figcaption>
-</figure>
-</div>
-</div>
-</div>
-</div>
-<div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-5-contents" aria-controls="callout-5" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-4. Save your data in <code>.csv</code> format
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-5" class="callout-5-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
-<div id="fig-save-csv" class="quarto-figure quarto-figure-center quarto-float anchored">
-<figure class="quarto-float quarto-float-fig figure">
-<div aria-describedby="fig-save-csv-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="assets/images/yeast-save-csv.png" class="img-fluid figure-img" style="width:80.0%">
-</div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-save-csv-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;2.4: Use the <code>File -&gt; Save As</code> menu option to bring up the dialogue box. Give your file a sensible name (e.g.&nbsp;<code>yeast_growth</code>) and select the <code>CSV UTF-8 (Comma-delimited) (.csv)</code> File Format, then click <code>Save</code>.
-</figcaption>
-</figure>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section id="enter-your-dataframe-directly-in-r" class="level3" data-number="2.2.2">
-<h3 data-number="2.2.2" class="anchored" data-anchor-id="enter-your-dataframe-directly-in-r"><span class="header-section-number">2.2.2</span> Enter your dataframe directly in <code>R</code></h3>
-</section>
-</section>
-<section id="load-your-data" class="level2" data-number="2.3">
-<h2 data-number="2.3" class="anchored" data-anchor-id="load-your-data"><span class="header-section-number">2.3</span> Load your data</h2>
+<section id="load-your-data" class="level2" data-number="2.2">
+<h2 data-number="2.2" class="anchored" data-anchor-id="load-your-data"><span class="header-section-number">2.2</span> Load your data</h2>
 <div id="qwebr-insertion-location-1"></div>
 <noscript>Please enable JavaScript to experience the dynamic code cell content on this page.</noscript>
 
