@@ -15,3 +15,7 @@ _freeze/
 
 # Office temp files
 ~*
+
+# Downloaded .csv files, when running locally
+AM*.csv
+PM*.csv
