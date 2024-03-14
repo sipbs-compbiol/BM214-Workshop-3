@@ -34,6 +34,7 @@ book:
     - part: part-03_reporter.qmd
       chapters:
         - exercise-03_reporter.qmd
+    - playground.qmd        
     - summary.qmd
 #    - glossary.qmd
     - resources.qmd

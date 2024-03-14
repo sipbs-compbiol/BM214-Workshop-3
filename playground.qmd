@@ -1,0 +1,18 @@
+---
+webr:
+  packages: ["ggplot2", "tidyverse"]
+filters:
+  - webr
+---
+
+# `R` Playground
+
+## Introduction
+
+This page provides a `WebR` cell for you to use as a playground to experiment with some example datasets. You can use this page to explore data management and visualisation in `R`.
+
+## Playground
+
+```{webr-r}
+# Use this WebR cell to experiment with some practice biological datasets
+```
