@@ -270,7 +270,7 @@ globalThis.qwebrCustomizedWebROptions = {
 };
 
 // Store cell data
-globalThis.qwebrCellDetails = [{"options":{"context":"setup","autorun":"true","fig-cap":"","out-width":"700px","warning":"true","read-only":"false","results":"markup","out-height":"","message":"true","dpi":72,"output":"true","classes":"","comment":"","fig-width":7,"fig-height":5,"label":"unnamed-chunk-1"},"code":"\n# Download reporter data\ndownload.file('https://raw.githubusercontent.com/sipbs-compbiol/BM214-Workshop-3/main/assets/data/reporter_curves.csv', 'reporter_curves.csv')\n\nlibrary(ggplot2)\nlibrary(tidyverse)","id":1},{"options":{"context":"interactive","autorun":"false","fig-cap":"","out-width":"700px","warning":"true","read-only":"false","results":"markup","out-height":"","message":"true","dpi":72,"output":"true","classes":"","comment":"","fig-width":7,"fig-height":5,"label":"unnamed-chunk-2"},"code":"# Use read.csv() to load your data in this cell\n# Use glimpse() or head() to inspect the format of your data","id":2},{"options":{"context":"interactive","autorun":"false","fig-cap":"","out-width":"700px","warning":"true","read-only":"false","results":"markup","out-height":"","message":"true","dpi":72,"output":"true","classes":"","comment":"","fig-width":7,"fig-height":5,"label":"unnamed-chunk-3"},"code":"# Make a basic plot of your reporter curve data in this cell\n# Use the ggplot(), aes(), and geom_point() functions to visualise your data.","id":3},{"options":{"context":"interactive","autorun":"false","fig-cap":"","out-width":"700px","warning":"true","read-only":"false","results":"markup","out-height":"","message":"true","dpi":72,"output":"true","classes":"","comment":"","fig-width":7,"fig-height":5,"label":"unnamed-chunk-4"},"code":"# Add a line plot to your figure in this cell\n# Use the geom_line() function to visualise your data.","id":4},{"options":{"context":"interactive","autorun":"false","fig-cap":"","out-width":"700px","warning":"true","read-only":"false","results":"markup","out-height":"","message":"true","dpi":72,"output":"true","classes":"","comment":"","fig-width":7,"fig-height":5,"label":"unnamed-chunk-5"},"code":"# Make a facet plot in this cell\n# Use the facet_wrap() function to visualise your data.","id":5},{"options":{"context":"interactive","autorun":"false","fig-cap":"","out-width":"700px","warning":"true","read-only":"false","results":"markup","out-height":"","message":"true","dpi":72,"output":"true","classes":"","comment":"","fig-width":7,"fig-height":5,"label":"unnamed-chunk-6"},"code":"# Change the x- and y-axis labels in this cell\n# Use the labs() function to change the labels","id":6},{"options":{"context":"interactive","autorun":"false","fig-cap":"","out-width":"700px","warning":"true","read-only":"false","results":"markup","out-height":"","message":"true","dpi":72,"output":"true","classes":"","comment":"","fig-width":7,"fig-height":5,"label":"unnamed-chunk-7"},"code":"# Make a monochrome version of your plot in this cell","id":7}];
+globalThis.qwebrCellDetails = [{"code":"\n# Download reporter data\ndownload.file('https://raw.githubusercontent.com/sipbs-compbiol/BM214-Workshop-3/main/assets/data/reporter_curves.csv', 'reporter_curves.csv')\n\nlibrary(ggplot2)\nlibrary(tidyverse)","options":{"fig-cap":"","dpi":72,"fig-width":7,"fig-height":5,"context":"setup","output":"true","out-height":"","autorun":"true","out-width":"700px","warning":"true","results":"markup","read-only":"false","comment":"","message":"true","classes":"","label":"unnamed-chunk-1"},"id":1},{"code":"# Use read.csv() to load your data in this cell\n# Use glimpse() or head() to inspect the format of your data","options":{"fig-cap":"","dpi":72,"fig-width":7,"fig-height":5,"context":"interactive","output":"true","out-height":"","autorun":"false","out-width":"700px","warning":"true","results":"markup","read-only":"false","comment":"","message":"true","classes":"","label":"unnamed-chunk-2"},"id":2},{"code":"# Make a basic plot of your reporter curve data in this cell\n# Use the ggplot(), aes(), and geom_point() functions to visualise your data.","options":{"fig-cap":"","dpi":72,"fig-width":7,"fig-height":5,"context":"interactive","output":"true","out-height":"","autorun":"false","out-width":"700px","warning":"true","results":"markup","read-only":"false","comment":"","message":"true","classes":"","label":"unnamed-chunk-3"},"id":3},{"code":"# Add a line plot to your figure in this cell\n# Use the geom_line() function to visualise your data.","options":{"fig-cap":"","dpi":72,"fig-width":7,"fig-height":5,"context":"interactive","output":"true","out-height":"","autorun":"false","out-width":"700px","warning":"true","results":"markup","read-only":"false","comment":"","message":"true","classes":"","label":"unnamed-chunk-4"},"id":4},{"code":"# Make a facet plot in this cell\n# Use the facet_wrap() function to visualise your data.","options":{"fig-cap":"","dpi":72,"fig-width":7,"fig-height":5,"context":"interactive","output":"true","out-height":"","autorun":"false","out-width":"700px","warning":"true","results":"markup","read-only":"false","comment":"","message":"true","classes":"","label":"unnamed-chunk-5"},"id":5},{"code":"# Change the x- and y-axis labels in this cell\n# Use the labs() function to change the labels","options":{"fig-cap":"","dpi":72,"fig-width":7,"fig-height":5,"context":"interactive","output":"true","out-height":"","autorun":"false","out-width":"700px","warning":"true","results":"markup","read-only":"false","comment":"","message":"true","classes":"","label":"unnamed-chunk-6"},"id":6},{"code":"# Make a monochrome version of your plot in this cell","options":{"fig-cap":"","dpi":72,"fig-width":7,"fig-height":5,"context":"interactive","output":"true","out-height":"","autorun":"false","out-width":"700px","warning":"true","results":"markup","read-only":"false","comment":"","message":"true","classes":"","label":"unnamed-chunk-7"},"id":7}];
 
 </script>
 <script type="module">
@@ -1365,7 +1365,26 @@ globalThis.qwebrCreateMonacoEditorInstance = function (cellData) {
 <noscript>Please enable JavaScript to experience the dynamic code cell content on this page.</noscript>
 <section id="introduction" class="level2" data-number="3.1">
 <h2 data-number="3.1" class="anchored" data-anchor-id="introduction"><span class="header-section-number">3.1</span> Introduction</h2>
-<p>[<strong>NEEDS TEXT HERE</strong>]</p>
+<p>In this exercise you will use absorbance ratio data obtained from cloning your reporter gene downstream of a set of nine candidate antibiotic-responsive promoter regions.</p>
+<p>Your reporter gene absorbs light at 700nm, so by using a spectrophotometer and measuring the attenuation of light at 700nm (OD700), you can estimate the amount of reporter gene that is produced.</p>
+<div class="callout callout-style-default callout-caution callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Caution
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>It is not enough to only measure the absorbance due to the reporter gene. We are interested in how much reporter gene is produced <em>by each cell</em>. So we must take into account how many cells are present in the medium.</p>
+<p>To see what we mean: if 500 cells each produced 10 units of reporter gene, we’d expect around 5000 units of absorbance. But if there are only 100 cells producing 50 units of reporter gene each, we’d still expect around 5000 units of absorbance. <strong>Measuring OD700 alone could not tell the difference between these results.</strong></p>
+<p>To take the number of cells into account, we also measure absorbance at 600nm (OD600), as a measure of cell density. Then, by taking the <em>ratio</em> of OD700 to OD600 we can <em>normalise</em> the measurement of reporter gene by the amount of the organism that is present.</p>
+<p>With our example above, assuming that one cell gives one unit of absorbance at 600nm, the situation with 500 cells producing 10 units of reporter gene each would have an OD700/OD600 ratio of <span class="math inline">\(5000/500 = 10\)</span>, but the case of 100 cells producing 50 units of reporter gene would have an OD700/OD600 ratio of <span class="math inline">\(5000/100 = 50\)</span>, for five times the expression.</p>
+</div>
+</div>
+<p>In this experiment, we are seeking a reporter system that responds to high concentrations of antibiotic by expressing, or <em>switching on</em>, the reporter gene. So we are looking for plasmids (here named <code>pABS1.01</code> to <code>pABS1.09</code>) that have a strong expression response at high concentrations of antibiotic, but a weaker expression response at lower concentrations.</p>
+<p>To find good candidate reporter systems, we plot the OD700/OD600 ratio against antibiotic concentration, to visualise which systems appear to have the characteristics we are looking for.</p>
 <div class="callout callout-style-default callout-important callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -1399,7 +1418,7 @@ Important
 <div id="qwebr-insertion-location-2"></div>
 <noscript>Please enable JavaScript to experience the dynamic code cell content on this page.</noscript>
 <div class="callout callout-style-default callout-warning callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
@@ -1408,7 +1427,7 @@ Help! I’m stuck!
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-3" class="callout-3-contents callout-collapse collapse">
+<div id="callout-4" class="callout-4-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <p>Use the <code>R</code> code below to load your data</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>data <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">"reporter_curves.csv"</span>)</span>
@@ -1420,7 +1439,7 @@ Help! I’m stuck!
 <h3 data-number="3.2.1" class="anchored" data-anchor-id="make-a-basic-ggplot2-figure-of-your-reporter-data"><span class="header-section-number">3.2.1</span> Make a basic <code>ggplot2</code> figure of your reporter data</h3>
 <p>You have loaded absorbance ratio data for nine candidate antibiotic reporters and a control sample. You’re going to plot these in the same way as you plotted the yeast growth data in <a href="exercise-02_yeast.html" class="quarto-xref"><span>Chapter 2</span></a>.</p>
 <div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-5-contents" aria-controls="callout-5" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
@@ -1429,7 +1448,7 @@ I need a hint!
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-4" class="callout-4-contents callout-collapse collapse">
+<div id="callout-5" class="callout-5-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <ul>
 <li>Use the <code>ggplot()</code> and <code>aes()</code> functions to create your base layer with the data, and how you want to group your data.</li>
@@ -1456,7 +1475,7 @@ Important
 <div id="qwebr-insertion-location-3"></div>
 <noscript>Please enable JavaScript to experience the dynamic code cell content on this page.</noscript>
 <div class="callout callout-style-default callout-warning callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-6-contents" aria-controls="callout-6" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-7-contents" aria-controls="callout-7" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
@@ -1465,7 +1484,7 @@ Help! I’m stuck!
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-6" class="callout-6-contents callout-collapse collapse">
+<div id="callout-7" class="callout-7-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <p>Use the <code>R</code> code below to load your data</p>
 <div class="sourceCode" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>fig <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(data, <span class="fu">aes</span>(<span class="at">x=</span>conc, <span class="at">y=</span>abs_ratio, <span class="at">color=</span>sample)) <span class="sc">+</span></span>
@@ -1475,7 +1494,7 @@ Help! I’m stuck!
 </div>
 </div>
 <div class="callout callout-style-default callout-caution callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-7-contents" aria-controls="callout-7" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-8-contents" aria-controls="callout-8" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
@@ -1484,7 +1503,7 @@ Result
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-7" class="callout-7-contents callout-collapse collapse">
+<div id="callout-8" class="callout-8-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <p>The figure output shows the datapoints, but there are a lot of reporters, so there are a lot of colours. It’s difficult to track any single reporter because of the overlap between points, and confusion of colours.</p>
 <div id="fig-reporter-01" class="quarto-figure quarto-figure-center quarto-float anchored">
@@ -1505,7 +1524,7 @@ Figure&nbsp;3.1: A <code>ggplot()</code> graph of reporter absorbance ratios aga
 <h3 data-number="3.2.2" class="anchored" data-anchor-id="make-a-lineplot-to-help-with-visualisation"><span class="header-section-number">3.2.2</span> Make a lineplot to help with visualisation</h3>
 <p>One of the advantages of <code>ggplot2</code> is that it is easy to add and swap <em>layers</em>. We don’t only have to make a scatterplot, we can add a lineplot to our figure as well. We do this by adding a <code>geom_line()</code> layer.</p>
 <div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-8-contents" aria-controls="callout-8" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-9-contents" aria-controls="callout-9" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
@@ -1514,7 +1533,7 @@ I need a hint!
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-8" class="callout-8-contents callout-collapse collapse">
+<div id="callout-9" class="callout-9-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <ul>
 <li>Use a <code>geom_line()</code> layer to visualise the datapoints</li>
@@ -1539,7 +1558,7 @@ Important
 <div id="qwebr-insertion-location-4"></div>
 <noscript>Please enable JavaScript to experience the dynamic code cell content on this page.</noscript>
 <div class="callout callout-style-default callout-warning callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-10-contents" aria-controls="callout-10" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-11-contents" aria-controls="callout-11" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
@@ -1548,7 +1567,7 @@ Help! I’m stuck!
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-10" class="callout-10-contents callout-collapse collapse">
+<div id="callout-11" class="callout-11-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <p>Use the <code>R</code> code below to load your data</p>
 <div class="sourceCode" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>fig <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(data, <span class="fu">aes</span>(<span class="at">x=</span>conc, <span class="at">y=</span>abs_ratio, <span class="at">color=</span>sample)) <span class="sc">+</span></span>
@@ -1559,7 +1578,7 @@ Help! I’m stuck!
 </div>
 </div>
 <div class="callout callout-style-default callout-caution callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-11-contents" aria-controls="callout-11" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-12-contents" aria-controls="callout-12" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
@@ -1568,7 +1587,7 @@ Result
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-11" class="callout-11-contents callout-collapse collapse">
+<div id="callout-12" class="callout-12-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <p>The lines help to follow individual candidate reporters, but the plot is still jumbled up in the middle, and the similarities between some of the colours make it difficult to follow.</p>
 <div id="fig-reporter-02" class="quarto-figure quarto-figure-center quarto-float anchored">
@@ -1590,7 +1609,7 @@ Figure&nbsp;3.2: A <code>ggplot()</code> graph of reporter absorbance ratios aga
 <p>Another advantage of <code>ggplot2</code> is that we can quickly make major changes to the layout of a plot, in order to improve visualisation. Here, you will use <em>facets</em> to plot each sample separately in its own smaller subplot (called a <em>facet</em>). This will avoid the visualisation problems caused by overlapping lines with similar colours.</p>
 <p>To do this, we use the <code>facet_wrap()</code> styling layer. We need to tell <code>facet_wrap()</code> what variable should be plotted in each separate <em>facet</em>. If we want to place each sample in its own facet, we would use <code>facet_wrap(~sample)</code> - <strong>NOTE: the variable <code>sample</code> is preceded by a <em>tilde</em> (<code>~</code>)</strong>.</p>
 <div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-12-contents" aria-controls="callout-12" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-13-contents" aria-controls="callout-13" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
@@ -1599,7 +1618,7 @@ I need a hint!
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-12" class="callout-12-contents callout-collapse collapse">
+<div id="callout-13" class="callout-13-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <ul>
 <li>Use <code>facet_wrap(~sample)</code> to make a separate subplot for each sample.</li>
@@ -1623,7 +1642,7 @@ Important
 <div id="qwebr-insertion-location-5"></div>
 <noscript>Please enable JavaScript to experience the dynamic code cell content on this page.</noscript>
 <div class="callout callout-style-default callout-warning callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-14-contents" aria-controls="callout-14" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-15-contents" aria-controls="callout-15" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
@@ -1632,7 +1651,7 @@ Help! I’m stuck!
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-14" class="callout-14-contents callout-collapse collapse">
+<div id="callout-15" class="callout-15-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <p>Use the <code>R</code> code below to plot your data</p>
 <div class="sourceCode" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>fig <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(data, <span class="fu">aes</span>(<span class="at">x=</span>conc, <span class="at">y=</span>abs_ratio, <span class="at">color=</span>sample)) <span class="sc">+</span></span>
@@ -1644,7 +1663,7 @@ Help! I’m stuck!
 </div>
 </div>
 <div class="callout callout-style-default callout-caution callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-15-contents" aria-controls="callout-15" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-16-contents" aria-controls="callout-16" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
@@ -1653,7 +1672,7 @@ Result
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-15" class="callout-15-contents callout-collapse collapse">
+<div id="callout-16" class="callout-16-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <p>Now that we have a separate plot for each sample, it is easy to see which candidate reporters look like they might be worth taking forward. Notice that the <span class="math inline">\(x\)</span>- and <span class="math inline">\(y\)</span> axis scales are the same in each <em>facet</em>.</p>
 <div id="fig-reporter-03" class="quarto-figure quarto-figure-center quarto-float anchored">
@@ -1687,7 +1706,7 @@ Important
 </div>
 </div>
 <div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-17-contents" aria-controls="callout-17" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-18-contents" aria-controls="callout-18" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
@@ -1696,7 +1715,7 @@ I need a hint!
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-17" class="callout-17-contents callout-collapse collapse">
+<div id="callout-18" class="callout-18-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <ul>
 <li>Use <code>labs()</code> with the <code>x=</code> and <code>y=</code> arguments to change the axis labels for your plot</li>
@@ -1707,7 +1726,7 @@ I need a hint!
 <div id="qwebr-insertion-location-6"></div>
 <noscript>Please enable JavaScript to experience the dynamic code cell content on this page.</noscript>
 <div class="callout callout-style-default callout-warning callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-18-contents" aria-controls="callout-18" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-19-contents" aria-controls="callout-19" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
@@ -1716,7 +1735,7 @@ Help! I’m stuck!
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-18" class="callout-18-contents callout-collapse collapse">
+<div id="callout-19" class="callout-19-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <p>Use the <code>R</code> code below to plot your data</p>
 <div class="sourceCode" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>fig <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(data, <span class="fu">aes</span>(<span class="at">x=</span>conc, <span class="at">y=</span>abs_ratio, <span class="at">color=</span>sample)) <span class="sc">+</span></span>
@@ -1729,7 +1748,7 @@ Help! I’m stuck!
 </div>
 </div>
 <div class="callout callout-style-default callout-caution callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-19-contents" aria-controls="callout-19" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-20-contents" aria-controls="callout-20" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
@@ -1738,7 +1757,7 @@ Result
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-19" class="callout-19-contents callout-collapse collapse">
+<div id="callout-20" class="callout-20-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <div id="fig-reporter-04" class="quarto-figure quarto-figure-center quarto-float anchored">
 <figure class="quarto-float quarto-float-fig figure">
@@ -1771,7 +1790,7 @@ Important
 </div>
 </div>
 <div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-21-contents" aria-controls="callout-21" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-22-contents" aria-controls="callout-22" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
@@ -1780,7 +1799,7 @@ I need a hint!
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-21" class="callout-21-contents callout-collapse collapse">
+<div id="callout-22" class="callout-22-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <ul>
 <li>use <code>scale_colour_grey()</code> to convert colours to greyscale</li>
@@ -1793,7 +1812,7 @@ I need a hint!
 <div id="qwebr-insertion-location-7"></div>
 <noscript>Please enable JavaScript to experience the dynamic code cell content on this page.</noscript>
 <div class="callout callout-style-default callout-warning callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-22-contents" aria-controls="callout-22" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-23-contents" aria-controls="callout-23" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
@@ -1802,7 +1821,7 @@ Help! I’m stuck!
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-22" class="callout-22-contents callout-collapse collapse">
+<div id="callout-23" class="callout-23-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <p>Use the <code>R</code> code below to plot your data</p>
 <div class="sourceCode" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>fig <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(data, <span class="fu">aes</span>(<span class="at">x=</span>conc, <span class="at">y=</span>abs_ratio, <span class="at">color=</span>sample)) <span class="sc">+</span></span>
@@ -1819,7 +1838,7 @@ Help! I’m stuck!
 </div>
 </div>
 <div class="callout callout-style-default callout-caution callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-23-contents" aria-controls="callout-23" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-24-contents" aria-controls="callout-24" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
@@ -1828,7 +1847,7 @@ Result
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-23" class="callout-23-contents callout-collapse collapse">
+<div id="callout-24" class="callout-24-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <div id="fig-reporter-05" class="quarto-figure quarto-figure-center quarto-float anchored">
 <figure class="quarto-float quarto-float-fig figure">

@@ -184,7 +184,7 @@
     "href": "exercise-03_reporter.html",
     "title": "3  Reporter Gene Expression",
     "section": "",
-    "text": "3.1 Introduction\n[NEEDS TEXT HERE]",
+    "text": "3.1 Introduction\nIn this exercise you will use absorbance ratio data obtained from cloning your reporter gene downstream of a set of nine candidate antibiotic-responsive promoter regions.\nYour reporter gene absorbs light at 700nm, so by using a spectrophotometer and measuring the attenuation of light at 700nm (OD700), you can estimate the amount of reporter gene that is produced.\nIn this experiment, we are seeking a reporter system that responds to high concentrations of antibiotic by expressing, or switching on, the reporter gene. So we are looking for plasmids (here named pABS1.01 to pABS1.09) that have a strong expression response at high concentrations of antibiotic, but a weaker expression response at lower concentrations.\nTo find good candidate reporter systems, we plot the OD700/OD600 ratio against antibiotic concentration, to visualise which systems appear to have the characteristics we are looking for.",
     "crumbs": [
       "Reporter Gene Expression",
       "<span class='chapter-number'>3</span>  <span class='chapter-title'>Reporter Gene Expression</span>"
@@ -195,7 +195,7 @@
     "href": "exercise-03_reporter.html#introduction",
     "title": "3  Reporter Gene Expression",
     "section": "",
-    "text": "Important\n\n\n\nIn this part of the workshop, you will plot the ratio of your reporter absorbance (OD700) to your organism growth (OD600) against the concentration of antibiotic applied, using R, in order to identify good candidate reporters.",
+    "text": "Caution\n\n\n\nIt is not enough to only measure the absorbance due to the reporter gene. We are interested in how much reporter gene is produced by each cell. So we must take into account how many cells are present in the medium.\nTo see what we mean: if 500 cells each produced 10 units of reporter gene, we’d expect around 5000 units of absorbance. But if there are only 100 cells producing 50 units of reporter gene each, we’d still expect around 5000 units of absorbance. Measuring OD700 alone could not tell the difference between these results.\nTo take the number of cells into account, we also measure absorbance at 600nm (OD600), as a measure of cell density. Then, by taking the ratio of OD700 to OD600 we can normalise the measurement of reporter gene by the amount of the organism that is present.\nWith our example above, assuming that one cell gives one unit of absorbance at 600nm, the situation with 500 cells producing 10 units of reporter gene each would have an OD700/OD600 ratio of \\(5000/500 = 10\\), but the case of 100 cells producing 50 units of reporter gene would have an OD700/OD600 ratio of \\(5000/100 = 50\\), for five times the expression.\n\n\n\n\n\n\n\n\n\n\nImportant\n\n\n\nIn this part of the workshop, you will plot the ratio of your reporter absorbance (OD700) to your organism growth (OD600) against the concentration of antibiotic applied, using R, in order to identify good candidate reporters.",
     "crumbs": [
       "Reporter Gene Expression",
       "<span class='chapter-number'>3</span>  <span class='chapter-title'>Reporter Gene Expression</span>"
