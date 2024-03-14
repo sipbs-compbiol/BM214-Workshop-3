@@ -14,7 +14,7 @@
     "href": "index.html#overview",
     "title": "BM214 Workshop 3: Enumeration of Bacteria and Bacteriophage",
     "section": "Overview",
-    "text": "Overview\n[FILL TEXT HERE]\n\n\n\n\n\n\nImportant Note\n\n\n\nThere is new material in this workshop that is not covered in lectures, and this material is examinable. Please take care to reach the text in the expandable callout boxes, as well as that for the workshop activities, to be sure you have understood the topic and obtain full value from the exercises.",
+    "text": "Overview\nThis workshop asks you to work through some computational exercises that use the sequence, growth, and expression data generated in BM241 laboratories 1-3.\n\nIn the first exercise, you will use a 16S sequence amplified by PCR from your unknown bacterium to query a public sequence database and identify your organism.\nIn exercise two, you will use R and ggplot2 to plot and interpret absorbance data from your yeast growth experiment.\nIn the third exercise, you will again use R and ggplot2 to plot and interpret absorbance ratio data from your candidate reporter experiment.\n\nWe are also providing an “R playground” if you would like to get further practice interacting with and plotting data in R.\n\n\n\n\n\n\nImportant Note\n\n\n\nThere is new material in this workshop that is not covered in lectures, and this material is examinable. Please take care to reach the text in the expandable callout boxes, as well as that for the workshop activities, to be sure you have understood the topic and obtain full value from the exercises.",
     "crumbs": [
       "Preface to {{< var ay >}} BM214 Workshop 3: Enumeration of Bacteria and Bacteriophage"
     ]
@@ -214,13 +214,43 @@
     ]
   },
   {
+    "objectID": "playground.html",
+    "href": "playground.html",
+    "title": "4  R Playground",
+    "section": "",
+    "text": "4.1 Introduction\nThis page provides a WebR cell for you to use as a playground to experiment with some example datasets. You can use this page to explore data management and visualisation in R.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>`R` Playground</span>"
+    ]
+  },
+  {
+    "objectID": "playground.html#playground",
+    "href": "playground.html#playground",
+    "title": "4  R Playground",
+    "section": "4.2 Playground",
+    "text": "4.2 Playground\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>`R` Playground</span>"
+    ]
+  },
+  {
+    "objectID": "playground.html#things-you-can-do",
+    "href": "playground.html#things-you-can-do",
+    "title": "4  R Playground",
+    "section": "4.3 Things you can do",
+    "text": "4.3 Things you can do\n\n\n\n\n\n\nInvestigate Palmer’s Penguins\n\n\n\n\n\nThe penguins dataset contains data about three different species of penguins. Take a look at the format of the dataset:\nglimpse(penguins)\nYou’ll see there are eight variables, including species, weight, sex, etc. - some of these variables are categorical (i.e. a category, like species), and others are continuous (i.e. numerical). You can see a visual overview of how the data is related using the plot() function:\nplot(penguins)\nWe can visualise the number of penguins of each species in a bar chart:\nfig &lt;- ggplot(penguins, aes(species, fill=species)) +\n         geom_bar()\nfig\nAnd break this down in a facet plot, by sex:\nfig &lt;- ggplot(penguins, aes(species, fill=species)) +\n         geom_bar() +\n         facet_wrap(~sex)\nfig\nWe can make a box and whisker plot of penguin body mass by species:\nfig &lt;- ggplot(penguins, aes(x=species, y=body_mass_g, fill=species)) +\n         geom_boxplot()\nfig\nAnd plot the body mass for each sex side-by-side\nfig &lt;- ggplot(penguins, aes(x=species, y=body_mass_g, fill=sex)) +\n         geom_boxplot()\nfig\nWe can investigate correlations, such as between body mass and flipper length:\nfig &lt;- ggplot(penguins, aes(x=body_mass_g, y=flipper_length_mm)) +\n         geom_point()\nfig\nWe can colour datapoints by species:\nfig &lt;- ggplot(penguins, aes(x=body_mass_g, y=flipper_length_mm, colour=species)) +\n         geom_point()\nfig\nAnd fit a linear regression to each species separately:\nfig &lt;- ggplot(penguins, aes(x=body_mass_g, y=flipper_length_mm, colour=species)) +\n         geom_point() +\n         geom_smooth(method=\"lm\")\nfig",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>`R` Playground</span>"
+    ]
+  },
+  {
     "objectID": "summary.html",
     "href": "summary.html",
-    "title": "4  Summary",
+    "title": "5  Summary",
     "section": "",
     "text": "In summary, this book has no content whatsoever.\n\n1 + 1\n\n[1] 2",
     "crumbs": [
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Summary</span>"
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Summary</span>"
     ]
   },
   {

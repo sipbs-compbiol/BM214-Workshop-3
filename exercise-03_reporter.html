@@ -65,7 +65,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./summary.html" rel="next">
+<link href="./playground.html" rel="next">
 <link href="./part-03_reporter.html" rel="prev">
 <link href="./icon_32.png" rel="icon" type="image/png">
 <script src="site_libs/quarto-html/quarto.js"></script>
@@ -270,7 +270,7 @@ globalThis.qwebrCustomizedWebROptions = {
 };
 
 // Store cell data
-globalThis.qwebrCellDetails = [{"options":{"label":"unnamed-chunk-1","out-height":"","message":"true","read-only":"false","output":"true","comment":"","fig-height":5,"warning":"true","autorun":"true","dpi":72,"results":"markup","fig-width":7,"classes":"","out-width":"700px","context":"setup","fig-cap":""},"code":"\n# Download reporter data\ndownload.file('https://raw.githubusercontent.com/sipbs-compbiol/BM214-Workshop-3/main/assets/data/reporter_curves.csv', 'reporter_curves.csv')\n\nlibrary(ggplot2)\nlibrary(tidyverse)","id":1},{"options":{"label":"unnamed-chunk-2","out-height":"","message":"true","read-only":"false","output":"true","comment":"","fig-height":5,"warning":"true","autorun":"false","dpi":72,"results":"markup","fig-width":7,"classes":"","out-width":"700px","context":"interactive","fig-cap":""},"code":"# Use read.csv() to load your data in this cell\n# Use glimpse() or head() to inspect the format of your data","id":2},{"options":{"label":"unnamed-chunk-3","out-height":"","message":"true","read-only":"false","output":"true","comment":"","fig-height":5,"warning":"true","autorun":"false","dpi":72,"results":"markup","fig-width":7,"classes":"","out-width":"700px","context":"interactive","fig-cap":""},"code":"# Make a basic plot of your reporter curve data in this cell\n# Use the ggplot(), aes(), and geom_point() functions to visualise your data.","id":3},{"options":{"label":"unnamed-chunk-4","out-height":"","message":"true","read-only":"false","output":"true","comment":"","fig-height":5,"warning":"true","autorun":"false","dpi":72,"results":"markup","fig-width":7,"classes":"","out-width":"700px","context":"interactive","fig-cap":""},"code":"# Add a line plot to your figure in this cell\n# Use the geom_line() function to visualise your data.","id":4},{"options":{"label":"unnamed-chunk-5","out-height":"","message":"true","read-only":"false","output":"true","comment":"","fig-height":5,"warning":"true","autorun":"false","dpi":72,"results":"markup","fig-width":7,"classes":"","out-width":"700px","context":"interactive","fig-cap":""},"code":"# Make a facet plot in this cell\n# Use the facet_wrap() function to visualise your data.","id":5},{"options":{"label":"unnamed-chunk-6","out-height":"","message":"true","read-only":"false","output":"true","comment":"","fig-height":5,"warning":"true","autorun":"false","dpi":72,"results":"markup","fig-width":7,"classes":"","out-width":"700px","context":"interactive","fig-cap":""},"code":"# Change the x- and y-axis labels in this cell\n# Use the labs() function to change the labels","id":6},{"options":{"label":"unnamed-chunk-7","out-height":"","message":"true","read-only":"false","output":"true","comment":"","fig-height":5,"warning":"true","autorun":"false","dpi":72,"results":"markup","fig-width":7,"classes":"","out-width":"700px","context":"interactive","fig-cap":""},"code":"# Make a monochrome version of your plot in this cell","id":7}];
+globalThis.qwebrCellDetails = [{"code":"\n# Download reporter data\ndownload.file('https://raw.githubusercontent.com/sipbs-compbiol/BM214-Workshop-3/main/assets/data/reporter_curves.csv', 'reporter_curves.csv')\n\nlibrary(ggplot2)\nlibrary(tidyverse)","options":{"dpi":72,"autorun":"true","comment":"","classes":"","warning":"true","output":"true","results":"markup","message":"true","read-only":"false","label":"unnamed-chunk-1","fig-cap":"","context":"setup","fig-width":7,"fig-height":5,"out-width":"700px","out-height":""},"id":1},{"code":"# Use read.csv() to load your data in this cell\n# Use glimpse() or head() to inspect the format of your data","options":{"dpi":72,"autorun":"false","comment":"","classes":"","warning":"true","output":"true","results":"markup","message":"true","read-only":"false","label":"unnamed-chunk-2","fig-cap":"","context":"interactive","fig-width":7,"fig-height":5,"out-width":"700px","out-height":""},"id":2},{"code":"# Make a basic plot of your reporter curve data in this cell\n# Use the ggplot(), aes(), and geom_point() functions to visualise your data.","options":{"dpi":72,"autorun":"false","comment":"","classes":"","warning":"true","output":"true","results":"markup","message":"true","read-only":"false","label":"unnamed-chunk-3","fig-cap":"","context":"interactive","fig-width":7,"fig-height":5,"out-width":"700px","out-height":""},"id":3},{"code":"# Add a line plot to your figure in this cell\n# Use the geom_line() function to visualise your data.","options":{"dpi":72,"autorun":"false","comment":"","classes":"","warning":"true","output":"true","results":"markup","message":"true","read-only":"false","label":"unnamed-chunk-4","fig-cap":"","context":"interactive","fig-width":7,"fig-height":5,"out-width":"700px","out-height":""},"id":4},{"code":"# Make a facet plot in this cell\n# Use the facet_wrap() function to visualise your data.","options":{"dpi":72,"autorun":"false","comment":"","classes":"","warning":"true","output":"true","results":"markup","message":"true","read-only":"false","label":"unnamed-chunk-5","fig-cap":"","context":"interactive","fig-width":7,"fig-height":5,"out-width":"700px","out-height":""},"id":5},{"code":"# Change the x- and y-axis labels in this cell\n# Use the labs() function to change the labels","options":{"dpi":72,"autorun":"false","comment":"","classes":"","warning":"true","output":"true","results":"markup","message":"true","read-only":"false","label":"unnamed-chunk-6","fig-cap":"","context":"interactive","fig-width":7,"fig-height":5,"out-width":"700px","out-height":""},"id":6},{"code":"# Make a monochrome version of your plot in this cell","options":{"dpi":72,"autorun":"false","comment":"","classes":"","warning":"true","output":"true","results":"markup","message":"true","read-only":"false","label":"unnamed-chunk-7","fig-cap":"","context":"interactive","fig-width":7,"fig-height":5,"out-width":"700px","out-height":""},"id":7}];
 
 </script>
 <script type="module">
@@ -1120,8 +1120,14 @@ window.Quarto = {
   </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="./playground.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title"><code>R</code> Playground</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="./summary.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Summary</span></span></a>
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Summary</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -2263,8 +2269,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./summary.html" class="pagination-link" aria-label="Summary">
-        <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Summary</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./playground.html" class="pagination-link" aria-label="`R` Playground">
+        <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title"><code>R</code> Playground</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
