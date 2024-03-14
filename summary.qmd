@@ -1,7 +1,34 @@
 # Summary
 
-In summary, this book has no content whatsoever.
+In this workshop, you have learned about 16S sequence-based taxonomic classification using online bioinforamtics tools, and how to plot and interpret experimental data using `R`.
 
-```{r}
-1 + 1
-```
+These tools - `BLAST`, `silva`, and `R`, are the same research-level tools that biologists and bioinformaticians use on a daily basis.
+
+::: { .callout-tip title="Things you have learned" }
+By working through this material, you should now
+
+- know how to use NCBI `BLAST` to obtain a taxonomic classification from a 16S sequence
+- know how to use `silva` to obtain a taxonomic classification from a 16S sequence
+- be able to load experimental data in `.csv` format into `R`
+- be able to inspect the contents of a loaded dataset using `glimpse()` and `head()`
+- know how to use `ggplot2` to generate a number of data visualisations, including
+  - scatterplots
+  - line plots
+  - facet plots
+- be able to use `ggplot2` styling layers to modify the appearance of your graphs by
+  - changing the colours used in the plot
+  - modifying axis type
+  - changing axis labels
+:::
+
+::: { .callout-important }
+If you haven't already, please don't forget to complete the formative assessments. There is one for each exercise in the workshop, and they can be found on the workshop [MyPlace page](https://classes.myplace.strath.ac.uk/course/view.php?id=21632).
+:::
+
+## That's All, Folks!
+
+Thank you for taking part in this workshop. We hope you enjoyed it, and found it interesting.
+
+::: { .callout-caution title="Tell us about problems with the workshop, what you liked, or how you think it can be improved!"}
+We would be very grateful to head feedback [by email](mailto:{{< var admin.email >}}) or through the [GitHub repository issues page]({{< var github.issues >}}).
+:::
