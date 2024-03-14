@@ -5,7 +5,7 @@ filters:
   - webr
 ---
 
-# Yeast Growth Experiment
+# Yeast Growth Experiment {#sec-yeast-expt}
 
 ```{webr-r}
 #| context: setup
@@ -179,7 +179,7 @@ In your experiment you saw that as the yeast grew in your liquid culture, the cu
 ![Yeast cell growth causes turbidity in liquid medium, proportional to cell density.](assets/images/turbidity.png){#fig-turbidity width=80%}
 
 ::: { .callout-important }
-In this part of the workshop, you will plot the absorbance of your control no carbon), lactose, and glucose medium samples over time, using `R`.
+In this part of the workshop, you will plot the absorbance of your control (no carbon), lactose, and glucose medium samples over time, using `R`.
 :::
 
 

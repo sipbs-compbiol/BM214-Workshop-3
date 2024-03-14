@@ -1,1 +1,47 @@
+---
+webr:
+  packages: ["ggplot2", "tidyverse"]
+filters:
+  - webr
+---
+
 # Reporter Gene Expression
+
+```{webr-r}
+#| context: setup
+
+# Download reporter data
+download.file('https://raw.githubusercontent.com/sipbs-compbiol/BM214-Workshop-3/main/assets/data/reporter_curves.csv', 'reporter_curves.csv')
+
+library(ggplot2)
+library(tidyverse)
+```
+
+## Introduction
+
+[**NEEDS TEXT HERE**]
+
+::: { .callout-important }
+In this part of the workshop, you will plot the ratio of your reporter absorbance (OD700) to your organism growth (OD600) against the concentration of antibiotic applied, using `R`, in order to identify good candidate reporters.
+:::
+
+## Load and inspect your data
+
+Your data is in the file `reporter_curves.csv`, so load it into `R` using the `read.csv()` function, and inspect the format of your data, just as you did for the yeast growth data in @sec-yeast-expt.
+
+```{webr-r}
+# Use read.csv() to load your data
+# Use glimpse() or head() to inspect the format of your data
+
+```
+
+::: { .callout-warning collapse="true" }
+## Help! I'm stuck!
+
+Use the `R` code below to load your data
+
+```r
+data <- read.csv("reporter_curves.csv")
+glimpse(data)
+```
+:::
