@@ -8,7 +8,7 @@
 
 <meta name="author" content="Leighton Pritchard">
 
-<title>BM214 Workshop 3: Enumeration of Bacteria and Bacteriophage - 16S Sequence Identification</title>
+<title>BM214 Workshop 3: Enumeration of Bacteria and Bacteriophage - Additional Resources</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -31,8 +31,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./exercise-01_16s.html" rel="next">
-<link href="./index.html" rel="prev">
+<link href="./references.html" rel="next">
+<link href="./summary.html" rel="prev">
 <link href="./icon_32.png" rel="icon" type="image/png">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -83,7 +83,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./part-01_16s.html">16S Sequence Identification</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./resources.html">Additional Resources</a></li></ol></nav>
         <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -124,7 +124,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="./part-01_16s.html" class="sidebar-item-text sidebar-link active">
+            <a href="./part-01_16s.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">16S Sequence Identification</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
@@ -181,7 +181,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./resources.html" class="sidebar-item-text sidebar-link">
+  <a href="./resources.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Additional Resources</span></a>
   </div>
 </li>
@@ -197,14 +197,22 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#blast" id="toc-blast" class="nav-link active" data-scroll-target="#blast"><code>BLAST</code></a></li>
+  <li><a href="#data-visualisation" id="toc-data-visualisation" class="nav-link" data-scroll-target="#data-visualisation">Data Visualisation</a></li>
+  <li><a href="#r" id="toc-r" class="nav-link" data-scroll-target="#r"><code>R</code></a></li>
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://github.com/sipbs-compbiol/BM214-Workshop-3/edit/main/resources.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/sipbs-compbiol/BM214-Workshop-3/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">16S Sequence Identification</h1>
+<h1 class="title">Additional Resources</h1>
 </div>
 
 
@@ -221,64 +229,37 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>As part of BM214 Laboratories 1 and 2 (<a href="#fig-expt-2" class="quarto-xref">Figure&nbsp;<span>1</span></a>), you:</p>
+<p>This page lists some additional resources relating to the workshop that you might find useful.</p>
+<section id="blast" class="level2">
+<h2 class="anchored" data-anchor-id="blast"><code>BLAST</code></h2>
 <ul>
-<li>isolated your unknown bacterium in <a href="glossary.qmd#axenic-culture">axenic culture</a></li>
-<li>made decimal <a href="https://microbenotes.com/serial-dilution/">serial dilutions</a> and plated these on selective and differential media</li>
-<li>streaked a single colony from the selective plate onto nutrient agar</li>
+<li><code>BLAST</code> Results: Expect Values Part 1 <a href="https://www.youtube.com/watch?v=ZN3RrXAe0uM">video</a></li>
+<li><code>BLAST</code> Results: Expect Values Part 2 <a href="https://www.youtube.com/watch?v=dzRq-5BrGD4">video</a></li>
+<li>MIT OpenCourseWare - Local Alignment (<code>BLAST</code>) and Statistics <a href="https://www.youtube.com/watch?v=6Udqou3vmng">video</a></li>
+<li>NCBI’s Introduction to BLAST <a href="https://www.ncbi.nlm.nih.gov/books/NBK52639/">link</a></li>
+<li>NCBI Minute: Using <code>BLAST</code> Well <a href="https://www.youtube.com/watch?v=2FW1dk5YQ3I">video</a></li>
+<li>UC Berkeley introduction to <code>NCBI-BLAST</code> <a href="https://guides.lib.berkeley.edu/ncbi/blast">link</a></li>
 </ul>
-<div id="fig-expt-2" class="quarto-figure quarto-figure-center quarto-float anchored">
-<figure class="quarto-float quarto-float-fig figure">
-<div aria-describedby="fig-expt-2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="assets/images/experiment-2.png" class="img-fluid figure-img" style="width:80.0%">
-</div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-expt-2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;1: Overview of BM214 Laboratory 3, experiment 2.
-</figcaption>
-</figure>
-</div>
-<p>In Laboratory 3, you set up a PCR reaction with primers that annealed specifically to the 16S rRNA gene (<a href="#fig-pcr" class="quarto-xref">Figure&nbsp;<span>2</span></a>), so that you could specifically amplify and sequence that gene in order to identify your unknown organism.</p>
-<div id="fig-pcr" class="quarto-figure quarto-figure-center quarto-float anchored">
-<figure class="quarto-float quarto-float-fig figure">
-<div aria-describedby="fig-pcr-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="assets/images/16s-amplification.png" class="img-fluid figure-img">
-</div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-pcr-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;2: Schematic of 16S PCR amplification
-</figcaption>
-</figure>
-</div>
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Note
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>In this workshop you will use online bioinformatics tools to find a match to the 16S sequence of the bacterium you isolated, and in doing so identify your unknown organism.</p>
-</div>
-</div>
-<div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Use what you know from BM214 Workshop 2
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-2" class="callout-2-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
-<p>In <a href="https://sipbs-compbiol.github.io/BM214-Workshop-2/scenario-1.html">Workshop 2</a> you used NCBI’s <code>BLAST</code> service to identify an unknown isolate from a contaminated industrial site, using its 16S sequence. You can use what you have already learned from that exercise to help you. here.</p>
-</div>
-</div>
-</div>
+</section>
+<section id="data-visualisation" class="level2">
+<h2 class="anchored" data-anchor-id="data-visualisation">Data Visualisation</h2>
+<ul>
+<li>Fundamentals of Data Visualization (Claus Wilke) <a href="https://clauswilke.com/dataviz/">online book</a></li>
+<li>Points of View: Visualising biological data <a href="https://communities.springernature.com/posts/data-visualization-a-view-of-every-points-of-view-column">link</a></li>
+</ul>
+</section>
+<section id="r" class="level2">
+<h2 class="anchored" data-anchor-id="r"><code>R</code></h2>
+<ul>
+<li>An Introduction to <code>R</code> <a href="https://intro2r.com/">online book</a></li>
+<li><code>R</code> Manuals :: An Introduction to <code>R</code> <a href="https://rstudio.github.io/r-manuals/r-intro/">link</a></li>
+<li><code>R</code> for Reproducible Scientific Analysis (Software Carpentry) <a href="https://swcarpentry.github.io/r-novice-gapminder/">link</a></li>
+<li><code>ggplot2</code> guide <a href="https://ggplot2.tidyverse.org/">link</a></li>
+<li><code>ggplot2</code> cheatsheet <a href="https://rstudio.github.io/cheatsheets/html/data-visualization.html">link</a></li>
+</ul>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -692,13 +673,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./index.html" class="pagination-link" aria-label="Preface to {{< var ay >}} BM214 Workshop 3: Enumeration of Bacteria and Bacteriophage">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Preface to 2023-24 BM214 Workshop 3: Enumeration of Bacteria and Bacteriophage</span>
+      <a href="./summary.html" class="pagination-link" aria-label="Summary">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Summary</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./exercise-01_16s.html" class="pagination-link" aria-label="16S Sequence Taxonomic Identification">
-        <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">16S Sequence Taxonomic Identification</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./references.html" class="pagination-link" aria-label="References">
+        <span class="nav-page-text">References</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
@@ -710,7 +691,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </div>   
     <div class="nav-footer-center">
       &nbsp;
-    <div class="toc-actions"><ul><li><a href="https://github.com/sipbs-compbiol/BM214-Workshop-3/edit/main/part-01_16s.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/sipbs-compbiol/BM214-Workshop-3/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/sipbs-compbiol/BM214-Workshop-3/edit/main/resources.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/sipbs-compbiol/BM214-Workshop-3/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
 <p>This book was built with <a href="https://quarto.org/">Quarto</a>.</p>
 </div>

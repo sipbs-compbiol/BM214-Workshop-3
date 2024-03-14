@@ -167,5 +167,45 @@
     "crumbs": [
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>Summary</span>"
     ]
+  },
+  {
+    "objectID": "resources.html",
+    "href": "resources.html",
+    "title": "Additional Resources",
+    "section": "",
+    "text": "BLAST",
+    "crumbs": [
+      "Additional Resources"
+    ]
+  },
+  {
+    "objectID": "resources.html#blast",
+    "href": "resources.html#blast",
+    "title": "Additional Resources",
+    "section": "",
+    "text": "BLAST Results: Expect Values Part 1 video\nBLAST Results: Expect Values Part 2 video\nMIT OpenCourseWare - Local Alignment (BLAST) and Statistics video\nNCBI’s Introduction to BLAST link\nNCBI Minute: Using BLAST Well video\nUC Berkeley introduction to NCBI-BLAST link",
+    "crumbs": [
+      "Additional Resources"
+    ]
+  },
+  {
+    "objectID": "resources.html#data-visualisation",
+    "href": "resources.html#data-visualisation",
+    "title": "Additional Resources",
+    "section": "Data Visualisation",
+    "text": "Data Visualisation\n\nFundamentals of Data Visualization (Claus Wilke) online book\nPoints of View: Visualising biological data link",
+    "crumbs": [
+      "Additional Resources"
+    ]
+  },
+  {
+    "objectID": "resources.html#r",
+    "href": "resources.html#r",
+    "title": "Additional Resources",
+    "section": "R",
+    "text": "R\n\nAn Introduction to R online book\nR Manuals :: An Introduction to R link\nR for Reproducible Scientific Analysis (Software Carpentry) link\nggplot2 guide link\nggplot2 cheatsheet link",
+    "crumbs": [
+      "Additional Resources"
+    ]
   }
 ]
