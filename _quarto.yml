@@ -36,7 +36,7 @@ book:
         - exercise-03_reporter.qmd
     - summary.qmd
 #    - glossary.qmd
-#    - resources.qmd
+    - resources.qmd
     - references.qmd
 
 bibliography: references.bib

@@ -1,0 +1,25 @@
+# Additional Resources { .unnumbered }
+
+This page lists some additional resources relating to the workshop that you might find useful.
+
+## `BLAST`
+
+- `BLAST` Results: Expect Values Part 1 [video](https://www.youtube.com/watch?v=ZN3RrXAe0uM)
+- `BLAST` Results: Expect Values Part 2 [video](https://www.youtube.com/watch?v=dzRq-5BrGD4)
+- MIT OpenCourseWare - Local Alignment (`BLAST`) and Statistics [video](https://www.youtube.com/watch?v=6Udqou3vmng)
+- NCBI's Introduction to BLAST [link](https://www.ncbi.nlm.nih.gov/books/NBK52639/)
+- NCBI Minute: Using `BLAST` Well [video](https://www.youtube.com/watch?v=2FW1dk5YQ3I)
+- UC Berkeley introduction to `NCBI-BLAST` [link](https://guides.lib.berkeley.edu/ncbi/blast)
+
+## Data Visualisation
+
+- Fundamentals of Data Visualization (Claus Wilke) [online book](https://clauswilke.com/dataviz/)
+- Points of View: Visualising biological data [link](https://communities.springernature.com/posts/data-visualization-a-view-of-every-points-of-view-column)
+
+## `R`
+
+- An Introduction to `R` [online book](https://intro2r.com/)
+- `R` Manuals :: An Introduction to `R` [link](https://rstudio.github.io/r-manuals/r-intro/)
+- `R` for Reproducible Scientific Analysis (Software Carpentry) [link](https://swcarpentry.github.io/r-novice-gapminder/)
+- `ggplot2` guide [link](https://ggplot2.tidyverse.org/)
+- `ggplot2` cheatsheet [link](https://rstudio.github.io/cheatsheets/html/data-visualization.html)
