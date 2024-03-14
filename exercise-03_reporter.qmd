@@ -29,8 +29,12 @@ In this part of the workshop, you will plot the ratio of your reporter absorbanc
 
 Your data is in the file `reporter_curves.csv`, so load it into `R` using the `read.csv()` function, and inspect the format of your data, just as you did for the yeast growth data in @sec-yeast-expt.
 
+::: { .callout-important }
+Use the `WebR` cell below to load your data.
+:::
+
 ```{webr-r}
-# Use read.csv() to load your data
+# Use read.csv() to load your data in this cell
 # Use glimpse() or head() to inspect the format of your data
 
 ```
@@ -45,3 +49,236 @@ data <- read.csv("reporter_curves.csv")
 glimpse(data)
 ```
 :::
+
+### Make a basic `ggplot2` figure of your reporter data
+
+You have loaded absorbance ratio data for nine candidate antibiotic reporters and a control sample. You're going to plot these in the same way as you plotted the yeast growth data in @sec-yeast-expt.
+
+::: { .callout-tip collapse="true" }
+## I need a hint!
+
+- Use the `ggplot()` and `aes()` functions to create your base layer with the data, and how you want to group your data.
+- Use a `geom_point()` layer to visualise the datapoints
+- You're plotting the `abs_ratio` column against `conc`, and grouping data by `sample`
+- Don't forget to include a line that shows your figure!
+:::
+
+::: { .callout-important }
+Use the `WebR` cell below to make a scatterplot of your data.
+:::
+
+
+```{webr-r}
+# Make a basic plot of your reporter curve data in this cell
+# Use the ggplot(), aes(), and geom_point() functions to visualise your data.
+
+```
+
+::: { .callout-warning collapse="true" }
+## Help! I'm stuck!
+
+Use the `R` code below to load your data
+
+```r
+fig <- ggplot(data, aes(x=conc, y=abs_ratio, color=sample)) +
+         geom_point()
+fig
+```
+
+:::
+
+::: { .callout-caution collapse="true" }
+## Result
+
+The figure output shows the datapoints, but there are a lot of reporters, so there are a lot of colours. It's difficult to track any single reporter because of the overlap between points, and confusion of colours.
+
+![A `ggplot()` graph of reporter absorbance ratios against antibiotic concentration.](assets/images/reporter-01.png){#fig-reporter-01 width=80%}
+
+:::
+
+### Make a lineplot to help with visualisation
+
+One of the advantages of `ggplot2` is that it is easy to add and swap _layers_. We don't only have to make a scatterplot, we can add a lineplot to our figure as well. We do this by adding a `geom_line()` layer.
+
+::: { .callout-tip collapse="true" }
+## I need a hint!
+
+- Use a `geom_line()` layer to visualise the datapoints
+- Don't forget to use `+` to add the layer!
+:::
+
+::: { .callout-important }
+Use the `WebR` cell below to add a lineplot to your data.
+:::
+
+```{webr-r}
+# Add a line plot to your figure in this cell
+# Use the geom_line() function to visualise your data.
+
+```
+
+::: { .callout-warning collapse="true" }
+## Help! I'm stuck!
+
+Use the `R` code below to load your data
+
+```r
+fig <- ggplot(data, aes(x=conc, y=abs_ratio, color=sample)) +
+         geom_point() +
+         geom_line()
+fig
+```
+
+:::
+
+::: { .callout-caution collapse="true" }
+## Result
+
+The lines help to follow individual candidate reporters, but the plot is still jumbled up in the middle, and the similarities between some of the colours make it difficult to follow.
+
+![A `ggplot()` graph of reporter absorbance ratios against antibiotic concentration, with lines to aid tracking data.](assets/images/reporter-02.png){#fig-reporter-02 width=80%}
+
+:::
+
+### Use **facets** to make the visualisation clearer
+
+Another advantage of `ggplot2` is that we can quickly make major changes to the layout of a plot, in order to improve visualisation. Here, you will use _facets_ to plot each sample separately in its own smaller subplot (called a _facet_). This will avoid the visualisation problems caused by overlapping lines with similar colours.
+
+To do this, we use the `facet_wrap()` styling layer. We need to tell `facet_wrap()` what variable should be plotted in each separate _facet_. If we want to place each sample in its own facet, we would use `facet_wrap(~sample)` - **NOTE: the variable `sample` is preceded by a _tilde_ (`~`)**.
+
+::: { .callout-tip collapse="true" }
+## I need a hint!
+
+- Use `facet_wrap(~sample)` to make a separate subplot for each sample.
+:::
+
+::: { .callout-important }
+Use the `WebR` cell below to plot your figure with a separate facet for each sample.
+:::
+
+```{webr-r}
+# Make a facet plot in this cell
+# Use the facet_wrap() function to visualise your data.
+
+```
+
+::: { .callout-warning collapse="true" }
+## Help! I'm stuck!
+
+Use the `R` code below to plot your data
+
+```r
+fig <- ggplot(data, aes(x=conc, y=abs_ratio, color=sample)) +
+         geom_point() +
+         geom_line() +
+         facet_wrap(~sample)
+fig
+```
+
+:::
+
+::: { .callout-caution collapse="true" }
+## Result
+
+Now that we have a separate plot for each sample, it is easy to see which candidate reporters look like they might be worth taking forward. Notice that the $x$- and $y$ axis scales are the same in each _facet_.
+
+![A `ggplot2` facet plot of reporter absorbance ratios against antibiotic concentration](assets/images/reporter-03.png){#fig-reporter-03 width=80%}
+
+:::
+
+### Tidying up your figure
+
+The current axis labelling of the figure could be improved. You can change the axis labels to something more meaningful by using the `labs()` styling layer. To change the $x$- and $y$-axis labels you might use a layer like `labs(x="X-axis title", y="Y-axis title")`.
+
+::: { .callout-important }
+Use the `WebR` cell below to change the $x$-axis label to "[antibiotic]" and the $y$-axis label to "OD700/OD600".
+:::
+
+
+::: { .callout-tip collapse="true" }
+## I need a hint!
+
+- Use `labs()` with the `x=` and `y=` arguments to change the axis labels for your plot
+:::
+
+```{webr-r}
+# Change the x- and y-axis labels in this cell
+# Use the labs() function to change the labels
+
+```
+
+::: { .callout-warning collapse="true" }
+## Help! I'm stuck!
+
+Use the `R` code below to plot your data
+
+```r
+fig <- ggplot(data, aes(x=conc, y=abs_ratio, color=sample)) +
+         geom_point() +
+         geom_line() +
+         facet_wrap(~sample) +
+         labs(x="[antibiotic]", y="OD700/OD600")
+fig
+```
+
+:::
+
+::: { .callout-caution collapse="true" }
+## Result
+
+![A `ggplot2` facet plot of reporter absorbance ratios against antibiotic concentration](assets/images/reporter-04.png){#fig-reporter-04 width=80%}
+
+:::
+
+### Make a monochrome plot
+
+You can change the presentation of your plot using the functions you learned in @sec-yeast-expt, to generate a monochrome plot ready for publication.
+
+::: { .callout-important }
+Use the `WebR` cell below to convert your plot to monochrome.
+:::
+
+
+::: { .callout-tip collapse="true" }
+## I need a hint!
+
+- use `scale_colour_grey()` to convert colours to greyscale
+- use `theme_bw()` to make the theme black and white
+- use `theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank())` to remove grid lines
+:::
+
+```{webr-r}
+# Make a monochrome version of your plot in this cell
+
+```
+
+::: { .callout-warning collapse="true" }
+## Help! I'm stuck!
+
+Use the `R` code below to plot your data
+
+```r
+fig <- ggplot(data, aes(x=conc, y=abs_ratio, color=sample)) +
+         geom_point() +
+         geom_line() +
+         facet_wrap(~sample) +
+         labs(x="[antibiotic]", y="OD700/OD600") +
+         scale_colour_grey() +
+         theme_bw() +
+         theme(panel.grid.major = element_blank(),
+               panel.grid.minor = element_blank())
+fig
+```
+
+:::
+
+::: { .callout-caution collapse="true" }
+## Result
+
+![A monochrome `ggplot2` facet plot of reporter absorbance ratios against antibiotic concentration](assets/images/reporter-05.png){#fig-reporter-05 width=80%}
+
+:::
+
+## Summary
+
+[**NEEDS TEXT HERE**]

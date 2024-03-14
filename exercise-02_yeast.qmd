@@ -244,7 +244,7 @@ library(ggplot2)
 but it has been pre-imported for you, for this workshop.
 :::
 
-### Basic `ggplot2` growth curve
+### Plot a basic `ggplot2` growth curve
 
 `ggplot2` plots are composed of a sequence of _layers_. The _base layer_ is a declaration of the dataset, and which variables in the dataset will be used to draw the figure.
 
@@ -492,3 +492,7 @@ The resulting figure (@fig-ggplot-05) has replaced the colour scheme with greysc
 ![A `ggplot()` graph of three growth curves, with growth medium indicated by grey level and a best-fit `loess` curve, plotted with a logarithmic $y$-axis.](assets/images/ggplot-05.png){#fig-ggplot-05 width=80%}
 
 :::
+
+## Summary
+
+[**NEEDS TEXT HERE**]
