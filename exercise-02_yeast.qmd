@@ -217,7 +217,7 @@ or the `head()` function to view the first few lines of the dataset:
 head(data, n=10)
 ```
 
-::: { .callout-important }
+::: { .callout-important title="Task" }
 Use the `WebR` cell below to load your dataset and inspect its contents.
 :::
 
@@ -301,7 +301,7 @@ fig <- ggplot(data, aes(x=time, y=OD600)) +  # Declare the dataset/base layer
 fig
 ```
 
-::: { .callout-important }
+::: { .callout-important title="Task" }
 Use the `WebR` cell below to visualise your data with a basic plot.
 :::
 
@@ -348,7 +348,7 @@ fig <- ggplot(data, aes(x=time, y=OD600, color=medium)) +  # Declare the dataset
 fig
 ```
 
-::: { .callout-important }
+::: { .callout-important title="Task" }
 Use the `WebR` cell below to visualise your data using colour to separate data points by growth medium.
 :::
 
@@ -388,7 +388,7 @@ fig <- ggplot(data, aes(x=time, y=OD600, color=medium)) +  # Declare the dataset
 fig
 ```
 
-::: { .callout-important }
+::: { .callout-important title="Task" }
 Use the `WebR` cell below to fit a curve to your data, using `geom_smooth()`.
 :::
 
@@ -437,7 +437,7 @@ fig <- ggplot(data, aes(x=time, y=OD600, color=medium)) +  # Declare the dataset
          annotation_logticks(sides="l")  # Add logarithmic y-axis ticks
 ```
 
-::: { .callout-important }
+::: { .callout-important title="Task" }
 Use the `WebR` cell below to make the y-axis logarithmic and add logarithmic axis ticks.
 :::
 
@@ -475,7 +475,7 @@ fig <- ggplot(data, aes(x=time, y=OD600, color=medium)) +  # Declare the dataset
                panel.grid.minor = element_blank())  # Remove grid lines
 ```
 
-::: { .callout-important }
+::: { .callout-important title="Task" }
 Use the `WebR` cell below to generate a black and white publication-ready plot.
 :::
 
