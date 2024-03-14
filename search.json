@@ -24,7 +24,7 @@
     "href": "index.html#learning-objectives",
     "title": "BM214 Workshop 3: Enumeration of Bacteria and Bacteriophage",
     "section": "Learning Objectives",
-    "text": "Learning Objectives\nBy the end of this workshop, students will be able to:\n\n[FILL TEXT HERE]",
+    "text": "Learning Objectives\nBy the end of this workshop, students will be able to:\n\nexplain that 16S sequences are commonly used for bacterial identification and taxonomic assignment\ndescribe and use two online tools for 16S sequence analysis: BLAST and silva\ninterpret the output of BLAST and silva and positively identify an organism, or rule out an identification\nplot data from a microbial growth curve using R and ggplot2\nfit a curve to microbial growth data using R and ggplot2\nplot data from a reporter assay using R and ggplot2\nadjust and customise a figure using R and ggplot2",
     "crumbs": [
       "Preface to {{< var ay >}} BM214 Workshop 3: Enumeration of Bacteria and Bacteriophage"
     ]
@@ -130,7 +130,7 @@
     "href": "exercise-02_yeast.html#introduction",
     "title": "2  Yeast Growth Experiment",
     "section": "",
-    "text": "Why use R?\n\n\n\n\n\nThere are many great tools capable of plotting your data (Numbers, Excel, Prism, GNUplot, Minitab, SPSS, MatLab, Python, JavaScript, etc.) and the choice of tool should in general reflect your data presentation needs, and your level of comfort with the tool.\nHere, we use R because it is a very powerful means of carrying out many computational aspects of biology, including data visualisation, quickly and easily. Many of the topics you may meet later in your degree - phylogenetic, pharmacokinetics, microbial genomics, and so on - are supported by packages in R designed specifically for those subjects, and can make your work much easier. Also, skills in R are highly sought-after by industrial and other employers. Having some experience of R is an advantage.\nR may be unfamiliar to you just now, but we provide step-by-step instructions for completing the exercise and, by the end of it, we hope you feel a bit more confident in how to use it.\n\n\n\n\n\n\n\n\n\n\nFigure 2.1: Yeast cell growth causes turbidity in liquid medium, proportional to cell density.\n\n\n\n\n\n\n\n\n\nImportant\n\n\n\nIn this part of the workshop, you will plot the absorbance of your control no carbon), lactose, and glucose medium samples over time, using R.",
+    "text": "Why use R?\n\n\n\n\n\nThere are many great tools capable of plotting your data (Numbers, Excel, Prism, GNUplot, Minitab, SPSS, MatLab, Python, JavaScript, etc.) and the choice of tool should in general reflect your data presentation needs, and your level of comfort with the tool.\nHere, we use R because it is a very powerful means of carrying out many computational aspects of biology, including data visualisation, quickly and easily. Many of the topics you may meet later in your degree - phylogenetic, pharmacokinetics, microbial genomics, and so on - are supported by packages in R designed specifically for those subjects, and can make your work much easier. Also, skills in R are highly sought-after by industrial and other employers. Having some experience of R is an advantage.\nR may be unfamiliar to you just now, but we provide step-by-step instructions for completing the exercise and, by the end of it, we hope you feel a bit more confident in how to use it.\n\n\n\n\n\n\n\n\n\n\nFigure 2.1: Yeast cell growth causes turbidity in liquid medium, proportional to cell density.\n\n\n\n\n\n\n\n\n\nImportant\n\n\n\nIn this part of the workshop, you will plot the absorbance of your control (no carbon), lactose, and glucose medium samples over time, using R.",
     "crumbs": [
       "Yeast Growth Experiment",
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Yeast Growth Experiment</span>"
@@ -156,6 +156,39 @@
     "crumbs": [
       "Yeast Growth Experiment",
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Yeast Growth Experiment</span>"
+    ]
+  },
+  {
+    "objectID": "exercise-03_reporter.html",
+    "href": "exercise-03_reporter.html",
+    "title": "3  Reporter Gene Expression",
+    "section": "",
+    "text": "3.1 Introduction\n[NEEDS TEXT HERE]",
+    "crumbs": [
+      "Reporter Gene Expression",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Reporter Gene Expression</span>"
+    ]
+  },
+  {
+    "objectID": "exercise-03_reporter.html#introduction",
+    "href": "exercise-03_reporter.html#introduction",
+    "title": "3  Reporter Gene Expression",
+    "section": "",
+    "text": "Important\n\n\n\nIn this part of the workshop, you will plot the ratio of your reporter absorbance (OD700) to your organism growth (OD600) against the concentration of antibiotic applied, using R, in order to identify good candidate reporters.",
+    "crumbs": [
+      "Reporter Gene Expression",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Reporter Gene Expression</span>"
+    ]
+  },
+  {
+    "objectID": "exercise-03_reporter.html#load-and-inspect-your-data",
+    "href": "exercise-03_reporter.html#load-and-inspect-your-data",
+    "title": "3  Reporter Gene Expression",
+    "section": "3.2 Load and inspect your data",
+    "text": "3.2 Load and inspect your data\nYour data is in the file reporter_curves.csv, so load it into R using the read.csv() function, and inspect the format of your data, just as you did for the yeast growth data in Chapter 2.\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\n\n\n\n\n\nHelp! I’m stuck!\n\n\n\n\n\nUse the R code below to load your data\ndata &lt;- read.csv(\"reporter_curves.csv\")\nglimpse(data)",
+    "crumbs": [
+      "Reporter Gene Expression",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Reporter Gene Expression</span>"
     ]
   },
   {
