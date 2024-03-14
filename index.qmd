@@ -12,7 +12,9 @@ This workshop asks you to work through some computational exercises that use the
 - In exercise two, you will use `R` and `ggplot2` to plot and interpret absorbance data from your yeast growth experiment.
 - In the third exercise, you will again use `R` and `ggplot2` to plot and interpret absorbance ratio data from your candidate reporter experiment.
 
-We are also providing an "`R` playground" if you would like to get further practice interacting with and plotting data in `R`.
+::: { .callout-tip }
+We also provide an ["`R` playground"](playground.qmd) if you would like to get further practice interacting with and plotting data in `R`.
+:::
 
 ::: { .callout-warning title="Important Note" }
 There is new material in this workshop that is not covered in lectures, and this material is examinable. Please take care to reach the text in the expandable callout boxes, as well as that for the workshop activities, to be sure you have understood the topic and obtain full value from the exercises.
@@ -32,5 +34,9 @@ By the end of this workshop, students will be able to:
 
 ## Assessment
 
-The workshop is not formally assessed although, as noted, all the material contained in the workshop is examinable. [**FILL TEXT HERE**]
+The workshop is not formally assessed although, as noted above, all the material contained in the workshop is examinable. There are three exercises for you to work thorough: one using online bioinformatics web services to identify an organism from its 16S sequence; and two using `R` to visualise and interpret experimental data.
+
+::: { .callout-important }
+There are three formative exercises, one for each exercise in the workshop, and they can be found on the workshop [MyPlace page](https://classes.myplace.strath.ac.uk/course/view.php?id=21632). You should complete these as part of the workshop.
+:::
 
