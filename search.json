@@ -14,7 +14,7 @@
     "href": "index.html#overview",
     "title": "BM214 Workshop 3: Enumeration of Bacteria and Bacteriophage",
     "section": "Overview",
-    "text": "Overview\nThis workshop asks you to work through some computational exercises that use the sequence, growth, and expression data generated in BM241 laboratories 1-3.\n\nIn the first exercise, you will use a 16S sequence amplified by PCR from your unknown bacterium to query a public sequence database and identify your organism.\nIn exercise two, you will use R and ggplot2 to plot and interpret absorbance data from your yeast growth experiment.\nIn the third exercise, you will again use R and ggplot2 to plot and interpret absorbance ratio data from your candidate reporter experiment.\n\nWe are also providing an “R playground” if you would like to get further practice interacting with and plotting data in R.\n\n\n\n\n\n\nImportant Note\n\n\n\nThere is new material in this workshop that is not covered in lectures, and this material is examinable. Please take care to reach the text in the expandable callout boxes, as well as that for the workshop activities, to be sure you have understood the topic and obtain full value from the exercises.",
+    "text": "Overview\nThis workshop asks you to work through some computational exercises that use the sequence, growth, and expression data generated in BM241 laboratories 1-3.\n\nIn the first exercise, you will use a 16S sequence amplified by PCR from your unknown bacterium to query a public sequence database and identify your organism.\nIn exercise two, you will use R and ggplot2 to plot and interpret absorbance data from your yeast growth experiment.\nIn the third exercise, you will again use R and ggplot2 to plot and interpret absorbance ratio data from your candidate reporter experiment.\n\n\n\n\n\n\n\nTip\n\n\n\nWe also provide an “R playground” if you would like to get further practice interacting with and plotting data in R.\n\n\n\n\n\n\n\n\nImportant Note\n\n\n\nThere is new material in this workshop that is not covered in lectures, and this material is examinable. Please take care to reach the text in the expandable callout boxes, as well as that for the workshop activities, to be sure you have understood the topic and obtain full value from the exercises.",
     "crumbs": [
       "Preface to {{< var ay >}} BM214 Workshop 3: Enumeration of Bacteria and Bacteriophage"
     ]
@@ -34,7 +34,7 @@
     "href": "index.html#assessment",
     "title": "BM214 Workshop 3: Enumeration of Bacteria and Bacteriophage",
     "section": "Assessment",
-    "text": "Assessment\nThe workshop is not formally assessed although, as noted, all the material contained in the workshop is examinable. [FILL TEXT HERE]",
+    "text": "Assessment\nThe workshop is not formally assessed although, as noted above, all the material contained in the workshop is examinable. There are three exercises for you to work thorough: one using online bioinformatics web services to identify an organism from its 16S sequence; and two using R to visualise and interpret experimental data.\n\n\n\n\n\n\nImportant\n\n\n\nThere are three formative exercises, one for each exercise in the workshop, and they can be found on the workshop MyPlace page. You should complete these as part of the workshop.",
     "crumbs": [
       "Preface to {{< var ay >}} BM214 Workshop 3: Enumeration of Bacteria and Bacteriophage"
     ]
