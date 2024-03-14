@@ -6,7 +6,13 @@ This year is the first presentation of the workshop material in this format, and
 
 ## Overview
 
-[**FILL TEXT HERE**]
+This workshop asks you to work through some computational exercises that use the sequence, growth, and expression data generated in BM241 laboratories 1-3.
+
+- In the first exercise, you will use a 16S sequence amplified by PCR from your unknown bacterium to query a public sequence database and identify your organism.
+- In exercise two, you will use `R` and `ggplot2` to plot and interpret absorbance data from your yeast growth experiment.
+- In the third exercise, you will again use `R` and `ggplot2` to plot and interpret absorbance ratio data from your candidate reporter experiment.
+
+We are also providing an "`R` playground" if you would like to get further practice interacting with and plotting data in `R`.
 
 ::: { .callout-warning title="Important Note" }
 There is new material in this workshop that is not covered in lectures, and this material is examinable. Please take care to reach the text in the expandable callout boxes, as well as that for the workshop activities, to be sure you have understood the topic and obtain full value from the exercises.
