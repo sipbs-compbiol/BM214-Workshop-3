@@ -270,7 +270,7 @@ globalThis.qwebrCustomizedWebROptions = {
 };
 
 // Store cell data
-globalThis.qwebrCellDetails = [{"id":1,"options":{"message":"true","context":"setup","fig-height":5,"fig-cap":"","read-only":"false","warning":"true","comment":"","autorun":"true","output":"true","results":"markup","fig-width":7,"out-height":"","dpi":72,"out-width":"700px","label":"unnamed-chunk-1","classes":""},"code":"\n# Download reporter data\ndownload.file('https://raw.githubusercontent.com/sipbs-compbiol/BM214-Workshop-3/main/assets/data/reporter_curves.csv', 'reporter_curves.csv')\n\nlibrary(ggplot2)\nlibrary(tidyverse)"},{"id":2,"options":{"message":"true","context":"interactive","fig-height":5,"fig-cap":"","read-only":"false","warning":"true","comment":"","autorun":"false","output":"true","results":"markup","fig-width":7,"out-height":"","dpi":72,"out-width":"700px","label":"unnamed-chunk-2","classes":""},"code":"# Use read.csv() to load your data in this cell\n# Use glimpse() or head() to inspect the format of your data"},{"id":3,"options":{"message":"true","context":"interactive","fig-height":5,"fig-cap":"","read-only":"false","warning":"true","comment":"","autorun":"false","output":"true","results":"markup","fig-width":7,"out-height":"","dpi":72,"out-width":"700px","label":"unnamed-chunk-3","classes":""},"code":"# Make a basic plot of your reporter curve data in this cell\n# Use the ggplot(), aes(), and geom_point() functions to visualise your data."},{"id":4,"options":{"message":"true","context":"interactive","fig-height":5,"fig-cap":"","read-only":"false","warning":"true","comment":"","autorun":"false","output":"true","results":"markup","fig-width":7,"out-height":"","dpi":72,"out-width":"700px","label":"unnamed-chunk-4","classes":""},"code":"# Add a line plot to your figure in this cell\n# Use the geom_line() function to visualise your data."},{"id":5,"options":{"message":"true","context":"interactive","fig-height":5,"fig-cap":"","read-only":"false","warning":"true","comment":"","autorun":"false","output":"true","results":"markup","fig-width":7,"out-height":"","dpi":72,"out-width":"700px","label":"unnamed-chunk-5","classes":""},"code":"# Make a facet plot in this cell\n# Use the facet_wrap() function to visualise your data."},{"id":6,"options":{"message":"true","context":"interactive","fig-height":5,"fig-cap":"","read-only":"false","warning":"true","comment":"","autorun":"false","output":"true","results":"markup","fig-width":7,"out-height":"","dpi":72,"out-width":"700px","label":"unnamed-chunk-6","classes":""},"code":"# Change the x- and y-axis labels in this cell\n# Use the labs() function to change the labels"},{"id":7,"options":{"message":"true","context":"interactive","fig-height":5,"fig-cap":"","read-only":"false","warning":"true","comment":"","autorun":"false","output":"true","results":"markup","fig-width":7,"out-height":"","dpi":72,"out-width":"700px","label":"unnamed-chunk-7","classes":""},"code":"# Make a monochrome version of your plot in this cell"}];
+globalThis.qwebrCellDetails = [{"code":"\n# Download reporter data\ndownload.file('https://raw.githubusercontent.com/sipbs-compbiol/BM214-Workshop-3/main/assets/data/reporter_curves.csv', 'reporter_curves.csv')\n\nlibrary(ggplot2)\nlibrary(tidyverse)","options":{"fig-cap":"","results":"markup","read-only":"false","autorun":"true","classes":"","warning":"true","label":"unnamed-chunk-1","fig-height":5,"output":"true","out-height":"","out-width":"700px","context":"setup","message":"true","comment":"","fig-width":7,"dpi":72},"id":1},{"code":"# Use read.csv() to load your data in this cell\n# Use glimpse() or head() to inspect the format of your data","options":{"fig-cap":"","results":"markup","read-only":"false","autorun":"false","classes":"","warning":"true","label":"unnamed-chunk-2","fig-height":5,"output":"true","out-height":"","out-width":"700px","context":"interactive","message":"true","comment":"","fig-width":7,"dpi":72},"id":2},{"code":"# Make a basic plot of your reporter curve data in this cell\n# Use the ggplot(), aes(), and geom_point() functions to visualise your data.","options":{"fig-cap":"","results":"markup","read-only":"false","autorun":"false","classes":"","warning":"true","label":"unnamed-chunk-3","fig-height":5,"output":"true","out-height":"","out-width":"700px","context":"interactive","message":"true","comment":"","fig-width":7,"dpi":72},"id":3},{"code":"# Add a line plot to your figure in this cell\n# Use the geom_line() function to visualise your data.","options":{"fig-cap":"","results":"markup","read-only":"false","autorun":"false","classes":"","warning":"true","label":"unnamed-chunk-4","fig-height":5,"output":"true","out-height":"","out-width":"700px","context":"interactive","message":"true","comment":"","fig-width":7,"dpi":72},"id":4},{"code":"# Make a facet plot in this cell\n# Use the facet_wrap() function to visualise your data.","options":{"fig-cap":"","results":"markup","read-only":"false","autorun":"false","classes":"","warning":"true","label":"unnamed-chunk-5","fig-height":5,"output":"true","out-height":"","out-width":"700px","context":"interactive","message":"true","comment":"","fig-width":7,"dpi":72},"id":5},{"code":"# Change the x- and y-axis labels in this cell\n# Use the labs() function to change the labels","options":{"fig-cap":"","results":"markup","read-only":"false","autorun":"false","classes":"","warning":"true","label":"unnamed-chunk-6","fig-height":5,"output":"true","out-height":"","out-width":"700px","context":"interactive","message":"true","comment":"","fig-width":7,"dpi":72},"id":6},{"code":"# Make a monochrome version of your plot in this cell","options":{"fig-cap":"","results":"markup","read-only":"false","autorun":"false","classes":"","warning":"true","label":"unnamed-chunk-7","fig-height":5,"output":"true","out-height":"","out-width":"700px","context":"interactive","message":"true","comment":"","fig-width":7,"dpi":72},"id":7}];
 
 </script>
 <script type="module">
@@ -1402,13 +1402,13 @@ Important
 <section id="load-and-inspect-your-data" class="level2" data-number="3.2">
 <h2 data-number="3.2" class="anchored" data-anchor-id="load-and-inspect-your-data"><span class="header-section-number">3.2</span> Load and inspect your data</h2>
 <p>Your data is in the file <code>reporter_curves.csv</code>, so load it into <code>R</code> using the <code>read.csv()</code> function, and inspect the format of your data, just as you did for the yeast growth data in <a href="exercise-02_yeast.html" class="quarto-xref"><span>Chapter 2</span></a>.</p>
-<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout callout-style-default callout-important callout-titled" title="Task">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Important
+Task
 </div>
 </div>
 <div class="callout-body-container callout-body">
@@ -1438,8 +1438,21 @@ Help! I’m stuck!
 <section id="make-a-basic-ggplot2-figure-of-your-reporter-data" class="level3" data-number="3.2.1">
 <h3 data-number="3.2.1" class="anchored" data-anchor-id="make-a-basic-ggplot2-figure-of-your-reporter-data"><span class="header-section-number">3.2.1</span> Make a basic <code>ggplot2</code> figure of your reporter data</h3>
 <p>You have loaded absorbance ratio data for nine candidate antibiotic reporters and a control sample. You’re going to plot these in the same way as you plotted the yeast growth data in <a href="exercise-02_yeast.html" class="quarto-xref"><span>Chapter 2</span></a>.</p>
+<div class="callout callout-style-default callout-important callout-titled" title="Task">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Task
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Use the <code>WebR</code> cell below to make a scatterplot of your data.</p>
+</div>
+</div>
 <div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-5-contents" aria-controls="callout-5" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-6-contents" aria-controls="callout-6" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
@@ -1448,7 +1461,7 @@ I need a hint!
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-5" class="callout-5-contents callout-collapse collapse">
+<div id="callout-6" class="callout-6-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <ul>
 <li>Use the <code>ggplot()</code> and <code>aes()</code> functions to create your base layer with the data, and how you want to group your data.</li>
@@ -1457,19 +1470,6 @@ I need a hint!
 <li>Don’t forget to include a line that shows your figure!</li>
 </ul>
 </div>
-</div>
-</div>
-<div class="callout callout-style-default callout-important callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Important
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Use the <code>WebR</code> cell below to make a scatterplot of your data.</p>
 </div>
 </div>
 <div id="qwebr-insertion-location-3"></div>
@@ -1523,8 +1523,21 @@ Figure&nbsp;3.1: A <code>ggplot()</code> graph of reporter absorbance ratios aga
 <section id="make-a-lineplot-to-help-with-visualisation" class="level3" data-number="3.2.2">
 <h3 data-number="3.2.2" class="anchored" data-anchor-id="make-a-lineplot-to-help-with-visualisation"><span class="header-section-number">3.2.2</span> Make a lineplot to help with visualisation</h3>
 <p>One of the advantages of <code>ggplot2</code> is that it is easy to add and swap <em>layers</em>. We don’t only have to make a scatterplot, we can add a lineplot to our figure as well. We do this by adding a <code>geom_line()</code> layer.</p>
+<div class="callout callout-style-default callout-important callout-titled" title="Task">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Task
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Use the <code>WebR</code> cell below to add a lineplot to your data.</p>
+</div>
+</div>
 <div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-9-contents" aria-controls="callout-9" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-10-contents" aria-controls="callout-10" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
@@ -1533,26 +1546,13 @@ I need a hint!
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-9" class="callout-9-contents callout-collapse collapse">
+<div id="callout-10" class="callout-10-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <ul>
 <li>Use a <code>geom_line()</code> layer to visualise the datapoints</li>
 <li>Don’t forget to use <code>+</code> to add the layer!</li>
 </ul>
 </div>
-</div>
-</div>
-<div class="callout callout-style-default callout-important callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Important
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Use the <code>WebR</code> cell below to add a lineplot to your data.</p>
 </div>
 </div>
 <div id="qwebr-insertion-location-4"></div>
@@ -1608,8 +1608,21 @@ Figure&nbsp;3.2: A <code>ggplot()</code> graph of reporter absorbance ratios aga
 <h3 data-number="3.2.3" class="anchored" data-anchor-id="use-facets-to-make-the-visualisation-clearer"><span class="header-section-number">3.2.3</span> Use <strong>facets</strong> to make the visualisation clearer</h3>
 <p>Another advantage of <code>ggplot2</code> is that we can quickly make major changes to the layout of a plot, in order to improve visualisation. Here, you will use <em>facets</em> to plot each sample separately in its own smaller subplot (called a <em>facet</em>). This will avoid the visualisation problems caused by overlapping lines with similar colours.</p>
 <p>To do this, we use the <code>facet_wrap()</code> styling layer. We need to tell <code>facet_wrap()</code> what variable should be plotted in each separate <em>facet</em>. If we want to place each sample in its own facet, we would use <code>facet_wrap(~sample)</code> - <strong>NOTE: the variable <code>sample</code> is preceded by a <em>tilde</em> (<code>~</code>)</strong>.</p>
+<div class="callout callout-style-default callout-important callout-titled" title="Task">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Task
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Use the <code>WebR</code> cell below to plot your figure with a separate facet for each sample.</p>
+</div>
+</div>
 <div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-13-contents" aria-controls="callout-13" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-14-contents" aria-controls="callout-14" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
@@ -1618,25 +1631,12 @@ I need a hint!
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-13" class="callout-13-contents callout-collapse collapse">
+<div id="callout-14" class="callout-14-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <ul>
 <li>Use <code>facet_wrap(~sample)</code> to make a separate subplot for each sample.</li>
 </ul>
 </div>
-</div>
-</div>
-<div class="callout callout-style-default callout-important callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Important
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Use the <code>WebR</code> cell below to plot your figure with a separate facet for each sample.</p>
 </div>
 </div>
 <div id="qwebr-insertion-location-5"></div>
@@ -1692,13 +1692,13 @@ Figure&nbsp;3.3: A <code>ggplot2</code> facet plot of reporter absorbance ratios
 <section id="tidying-up-your-figure" class="level3" data-number="3.2.4">
 <h3 data-number="3.2.4" class="anchored" data-anchor-id="tidying-up-your-figure"><span class="header-section-number">3.2.4</span> Tidying up your figure</h3>
 <p>The current axis labelling of the figure could be improved. You can change the axis labels to something more meaningful by using the <code>labs()</code> styling layer. To change the <span class="math inline">\(x\)</span>- and <span class="math inline">\(y\)</span>-axis labels you might use a layer like <code>labs(x="X-axis title", y="Y-axis title")</code>.</p>
-<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout callout-style-default callout-important callout-titled" title="Task">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Important
+Task
 </div>
 </div>
 <div class="callout-body-container callout-body">
@@ -1776,13 +1776,13 @@ Figure&nbsp;3.4: A <code>ggplot2</code> facet plot of reporter absorbance ratios
 <section id="make-a-monochrome-plot" class="level3" data-number="3.2.5">
 <h3 data-number="3.2.5" class="anchored" data-anchor-id="make-a-monochrome-plot"><span class="header-section-number">3.2.5</span> Make a monochrome plot</h3>
 <p>You can change the presentation of your plot using the functions you learned in <a href="exercise-02_yeast.html" class="quarto-xref"><span>Chapter 2</span></a>, to generate a monochrome plot ready for publication.</p>
-<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout callout-style-default callout-important callout-titled" title="Task">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Important
+Task
 </div>
 </div>
 <div class="callout-body-container callout-body">
