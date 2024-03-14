@@ -45,7 +45,7 @@ In this part of the workshop, you will plot the ratio of your reporter absorbanc
 
 Your data is in the file `reporter_curves.csv`, so load it into `R` using the `read.csv()` function, and inspect the format of your data, just as you did for the yeast growth data in @sec-yeast-expt.
 
-::: { .callout-important }
+::: { .callout-important title="Task" }
 Use the `WebR` cell below to load your data.
 :::
 
@@ -70,6 +70,10 @@ glimpse(data)
 
 You have loaded absorbance ratio data for nine candidate antibiotic reporters and a control sample. You're going to plot these in the same way as you plotted the yeast growth data in @sec-yeast-expt.
 
+::: { .callout-important title="Task" }
+Use the `WebR` cell below to make a scatterplot of your data.
+:::
+
 ::: { .callout-tip collapse="true" }
 ## I need a hint!
 
@@ -78,11 +82,6 @@ You have loaded absorbance ratio data for nine candidate antibiotic reporters an
 - You're plotting the `abs_ratio` column against `conc`, and grouping data by `sample`
 - Don't forget to include a line that shows your figure!
 :::
-
-::: { .callout-important }
-Use the `WebR` cell below to make a scatterplot of your data.
-:::
-
 
 ```{webr-r}
 # Make a basic plot of your reporter curve data in this cell
@@ -116,15 +115,15 @@ The figure output shows the datapoints, but there are a lot of reporters, so the
 
 One of the advantages of `ggplot2` is that it is easy to add and swap _layers_. We don't only have to make a scatterplot, we can add a lineplot to our figure as well. We do this by adding a `geom_line()` layer.
 
+::: { .callout-important title="Task" }
+Use the `WebR` cell below to add a lineplot to your data.
+:::
+
 ::: { .callout-tip collapse="true" }
 ## I need a hint!
 
 - Use a `geom_line()` layer to visualise the datapoints
 - Don't forget to use `+` to add the layer!
-:::
-
-::: { .callout-important }
-Use the `WebR` cell below to add a lineplot to your data.
 :::
 
 ```{webr-r}
@@ -162,14 +161,14 @@ Another advantage of `ggplot2` is that we can quickly make major changes to the 
 
 To do this, we use the `facet_wrap()` styling layer. We need to tell `facet_wrap()` what variable should be plotted in each separate _facet_. If we want to place each sample in its own facet, we would use `facet_wrap(~sample)` - **NOTE: the variable `sample` is preceded by a _tilde_ (`~`)**.
 
+::: { .callout-important title="Task" }
+Use the `WebR` cell below to plot your figure with a separate facet for each sample.
+:::
+
 ::: { .callout-tip collapse="true" }
 ## I need a hint!
 
 - Use `facet_wrap(~sample)` to make a separate subplot for each sample.
-:::
-
-::: { .callout-important }
-Use the `WebR` cell below to plot your figure with a separate facet for each sample.
 :::
 
 ```{webr-r}
@@ -206,10 +205,9 @@ Now that we have a separate plot for each sample, it is easy to see which candid
 
 The current axis labelling of the figure could be improved. You can change the axis labels to something more meaningful by using the `labs()` styling layer. To change the $x$- and $y$-axis labels you might use a layer like `labs(x="X-axis title", y="Y-axis title")`.
 
-::: { .callout-important }
+::: { .callout-important title="Task" }
 Use the `WebR` cell below to change the $x$-axis label to "[antibiotic]" and the $y$-axis label to "OD700/OD600".
 :::
-
 
 ::: { .callout-tip collapse="true" }
 ## I need a hint!
@@ -250,7 +248,7 @@ fig
 
 You can change the presentation of your plot using the functions you learned in @sec-yeast-expt, to generate a monochrome plot ready for publication.
 
-::: { .callout-important }
+::: { .callout-important title="Task" }
 Use the `WebR` cell below to convert your plot to monochrome.
 :::
 
