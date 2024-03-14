@@ -258,7 +258,17 @@
     "href": "summary.html",
     "title": "5  Summary",
     "section": "",
-    "text": "In summary, this book has no content whatsoever.\n\n1 + 1\n\n[1] 2",
+    "text": "5.1 That’s All, Folks!\nThank you for taking part in this workshop. We hope you enjoyed it, and found it interesting.",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Summary</span>"
+    ]
+  },
+  {
+    "objectID": "summary.html#thats-all-folks",
+    "href": "summary.html#thats-all-folks",
+    "title": "5  Summary",
+    "section": "",
+    "text": "Tell us about problems with the workshop, what you liked, or how you think it can be improved!\n\n\n\nWe would be very grateful to head feedback by email or through the GitHub repository issues page.",
     "crumbs": [
       "<span class='chapter-number'>5</span>  <span class='chapter-title'>Summary</span>"
     ]
