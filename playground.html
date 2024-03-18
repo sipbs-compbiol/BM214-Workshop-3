@@ -248,7 +248,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 // Document level settings ----
 
 // Determine if we need to install R packages
-globalThis.qwebrInstallRPackagesList = ['ggplot2', 'tidyverse', 'palmerpenguins'];
+globalThis.qwebrInstallRPackagesList = ['ggplot2', 'tidyverse', 'palmerpenguins', 'GGally'];
 
 // Specify possible locations to search for the repository
 globalThis.qwebrPackageRepoURLS = ['https://repo.r-wasm.org/'];
@@ -270,7 +270,7 @@ globalThis.qwebrCustomizedWebROptions = {
 };
 
 // Store cell data
-globalThis.qwebrCellDetails = [{"code":"\nlibrary(ggplot2)\nlibrary(palmerpenguins)\nlibrary(tidyverse)","options":{"output":"true","results":"markup","warning":"true","read-only":"false","autorun":"true","classes":"","fig-width":7,"context":"setup","dpi":72,"label":"unnamed-chunk-1","out-height":"","fig-cap":"","message":"true","fig-height":5,"comment":"","out-width":"700px"},"id":1},{"code":"# Use this WebR cell to experiment with some practice biological datasets","options":{"output":"true","results":"markup","warning":"true","read-only":"false","autorun":"false","classes":"","fig-width":7,"context":"interactive","dpi":72,"label":"unnamed-chunk-2","out-height":"","fig-cap":"","message":"true","fig-height":5,"comment":"","out-width":"700px"},"id":2}];
+globalThis.qwebrCellDetails = [{"code":"\nlibrary(ggplot2)\nlibrary(palmerpenguins)\nlibrary(tidyverse)","options":{"out-width":"700px","read-only":"false","out-height":"","fig-height":5,"context":"setup","results":"markup","message":"true","comment":"","label":"unnamed-chunk-1","classes":"","warning":"true","dpi":72,"fig-cap":"","fig-width":7,"output":"true","autorun":"true"},"id":1},{"code":"# Use this WebR cell to experiment with some practice biological datasets","options":{"out-width":"700px","read-only":"false","out-height":"","fig-height":5,"context":"interactive","results":"markup","message":"true","comment":"","label":"unnamed-chunk-2","classes":"","warning":"true","dpi":72,"fig-cap":"","fig-width":7,"output":"true","autorun":"false"},"id":2}];
 
 </script>
 <script type="module">
@@ -1341,6 +1341,7 @@ globalThis.qwebrCreateMonacoEditorInstance = function (cellData) {
 <p>This <code>WebR</code> instance has three packages installed:</p>
 <ul>
 <li><code>ggplot2</code></li>
+<li><code>GGally</code></li>
 <li><code>tidyverse</code></li>
 <li><code>palmerpenguins</code></li>
 </ul>
