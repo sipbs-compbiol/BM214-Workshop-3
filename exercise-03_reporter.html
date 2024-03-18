@@ -270,7 +270,7 @@ globalThis.qwebrCustomizedWebROptions = {
 };
 
 // Store cell data
-globalThis.qwebrCellDetails = [{"code":"\n# Download reporter data\ndownload.file('https://raw.githubusercontent.com/sipbs-compbiol/BM214-Workshop-3/main/assets/data/reporter_curves.csv', 'reporter_curves.csv')\n\nlibrary(ggplot2)\nlibrary(tidyverse)","options":{"out-height":"","autorun":"true","read-only":"false","context":"setup","results":"markup","comment":"","classes":"","output":"true","fig-cap":"","fig-width":7,"label":"unnamed-chunk-1","fig-height":5,"dpi":72,"warning":"true","out-width":"700px","message":"true"},"id":1},{"code":"# Use read.csv() to load your data in this cell\n# Use glimpse() or head() to inspect the format of your data","options":{"out-height":"","autorun":"false","read-only":"false","context":"interactive","results":"markup","comment":"","classes":"","output":"true","fig-cap":"","fig-width":7,"label":"unnamed-chunk-2","fig-height":5,"dpi":72,"warning":"true","out-width":"700px","message":"true"},"id":2},{"code":"# Make a basic plot of your reporter curve data in this cell\n# Use the ggplot(), aes(), and geom_point() functions to visualise your data.","options":{"out-height":"","autorun":"false","read-only":"false","context":"interactive","results":"markup","comment":"","classes":"","output":"true","fig-cap":"","fig-width":7,"label":"unnamed-chunk-3","fig-height":5,"dpi":72,"warning":"true","out-width":"700px","message":"true"},"id":3},{"code":"# Add a line plot to your figure in this cell\n# Use the geom_line() function to visualise your data.","options":{"out-height":"","autorun":"false","read-only":"false","context":"interactive","results":"markup","comment":"","classes":"","output":"true","fig-cap":"","fig-width":7,"label":"unnamed-chunk-4","fig-height":5,"dpi":72,"warning":"true","out-width":"700px","message":"true"},"id":4},{"code":"# Make a facet plot in this cell\n# Use the facet_wrap() function to visualise your data.","options":{"out-height":"","autorun":"false","read-only":"false","context":"interactive","results":"markup","comment":"","classes":"","output":"true","fig-cap":"","fig-width":7,"label":"unnamed-chunk-5","fig-height":5,"dpi":72,"warning":"true","out-width":"700px","message":"true"},"id":5},{"code":"# Change the x- and y-axis labels in this cell\n# Use the labs() function to change the labels","options":{"out-height":"","autorun":"false","read-only":"false","context":"interactive","results":"markup","comment":"","classes":"","output":"true","fig-cap":"","fig-width":7,"label":"unnamed-chunk-6","fig-height":5,"dpi":72,"warning":"true","out-width":"700px","message":"true"},"id":6},{"code":"# Make a monochrome version of your plot in this cell","options":{"out-height":"","autorun":"false","read-only":"false","context":"interactive","results":"markup","comment":"","classes":"","output":"true","fig-cap":"","fig-width":7,"label":"unnamed-chunk-7","fig-height":5,"dpi":72,"warning":"true","out-width":"700px","message":"true"},"id":7}];
+globalThis.qwebrCellDetails = [{"id":1,"code":"\n# Download reporter data\ndownload.file('https://raw.githubusercontent.com/sipbs-compbiol/BM214-Workshop-3/main/assets/data/reporter_curves.csv', 'reporter_curves.csv')\n\nlibrary(ggplot2)\nlibrary(tidyverse)","options":{"warning":"true","context":"setup","fig-height":5,"message":"true","fig-cap":"","comment":"","dpi":72,"label":"unnamed-chunk-1","fig-width":7,"read-only":"false","out-width":"700px","output":"true","results":"markup","out-height":"","classes":"","autorun":"true"}},{"id":2,"code":"# Use read.csv() to load your data in this cell\n# Use glimpse() or head() to inspect the format of your data","options":{"warning":"true","context":"interactive","fig-height":5,"message":"true","fig-cap":"","comment":"","dpi":72,"label":"unnamed-chunk-2","fig-width":7,"read-only":"false","out-width":"700px","output":"true","results":"markup","out-height":"","classes":"","autorun":"false"}},{"id":3,"code":"# Make a basic plot of your reporter curve data in this cell\n# Use the ggplot(), aes(), and geom_point() functions to visualise your data.","options":{"warning":"true","context":"interactive","fig-height":5,"message":"true","fig-cap":"","comment":"","dpi":72,"label":"unnamed-chunk-3","fig-width":7,"read-only":"false","out-width":"700px","output":"true","results":"markup","out-height":"","classes":"","autorun":"false"}},{"id":4,"code":"# Add a line plot to your figure in this cell\n# Use the geom_line() function to visualise your data.","options":{"warning":"true","context":"interactive","fig-height":5,"message":"true","fig-cap":"","comment":"","dpi":72,"label":"unnamed-chunk-4","fig-width":7,"read-only":"false","out-width":"700px","output":"true","results":"markup","out-height":"","classes":"","autorun":"false"}},{"id":5,"code":"# Make a facet plot in this cell\n# Use the facet_wrap() function to visualise your data.","options":{"warning":"true","context":"interactive","fig-height":5,"message":"true","fig-cap":"","comment":"","dpi":72,"label":"unnamed-chunk-5","fig-width":7,"read-only":"false","out-width":"700px","output":"true","results":"markup","out-height":"","classes":"","autorun":"false"}},{"id":6,"code":"# Change the x- and y-axis labels in this cell\n# Use the labs() function to change the labels","options":{"warning":"true","context":"interactive","fig-height":5,"message":"true","fig-cap":"","comment":"","dpi":72,"label":"unnamed-chunk-6","fig-width":7,"read-only":"false","out-width":"700px","output":"true","results":"markup","out-height":"","classes":"","autorun":"false"}},{"id":7,"code":"# Make a monochrome version of your plot in this cell","options":{"warning":"true","context":"interactive","fig-height":5,"message":"true","fig-cap":"","comment":"","dpi":72,"label":"unnamed-chunk-7","fig-width":7,"read-only":"false","out-width":"700px","output":"true","results":"markup","out-height":"","classes":"","autorun":"false"}}];
 
 </script>
 <script type="module">
@@ -1365,7 +1365,7 @@ globalThis.qwebrCreateMonacoEditorInstance = function (cellData) {
 <noscript>Please enable JavaScript to experience the dynamic code cell content on this page.</noscript>
 <section id="introduction" class="level2" data-number="3.1">
 <h2 data-number="3.1" class="anchored" data-anchor-id="introduction"><span class="header-section-number">3.1</span> Introduction</h2>
-<p>In this exercise you will use absorbance ratio data obtained from cloning your reporter gene downstream of a set of nine candidate antibiotic-responsive promoter regions.</p>
+<p>In this exercise you will use absorbance ratio data obtained from cloning your reporter gene downstream of a set of nine candidate kanamycin-responsive promoter regions.</p>
 <p>Your reporter gene absorbs light at 700nm, so by using a spectrophotometer and measuring the attenuation of light at 700nm (OD700), you can estimate the amount of reporter gene that is produced.</p>
 <div class="callout callout-style-default callout-caution callout-titled">
 <div class="callout-header d-flex align-content-center">
@@ -1383,8 +1383,8 @@ Caution
 <p>With our example above, assuming that one cell gives one unit of absorbance at 600nm, the situation with 500 cells producing 10 units of reporter gene each would have an OD700/OD600 ratio of <span class="math inline">\(5000/500 = 10\)</span>, but the case of 100 cells producing 50 units of reporter gene would have an OD700/OD600 ratio of <span class="math inline">\(5000/100 = 50\)</span>, for five times the expression.</p>
 </div>
 </div>
-<p>In this experiment, we are seeking a reporter system that responds to high concentrations of antibiotic by expressing, or <em>switching on</em>, the reporter gene. So we are looking for plasmids (here named <code>pABS1.01</code> to <code>pABS1.09</code>) that have a strong expression response at high concentrations of antibiotic, but a weaker expression response at lower concentrations.</p>
-<p>To find good candidate reporter systems, we plot the OD700/OD600 ratio against antibiotic concentration, to visualise which systems appear to have the characteristics we are looking for.</p>
+<p>In this experiment, we are seeking a reporter system that responds to high concentrations of kanamycin by expressing, or <em>switching on</em>, the reporter gene. So we are looking for plasmids (here named <code>pABS1.01</code> to <code>pABS1.09</code>) that have a strong expression response at high concentrations of kanamycin, but a weaker expression response at lower concentrations.</p>
+<p>To find good candidate reporter systems, we plot the OD700/OD600 ratio against kanamycin concentration, to visualise which systems appear to have the characteristics we are looking for.</p>
 <div class="callout callout-style-default callout-important callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -1395,7 +1395,7 @@ Important
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>In this part of the workshop, you will plot the ratio of your reporter absorbance (OD700) to your organism growth (OD600) against the concentration of antibiotic applied, using <code>R</code>, in order to identify good candidate reporters.</p>
+<p>In this part of the workshop, you will plot the ratio of your reporter absorbance (OD700) to your organism growth (OD600) against the concentration of kanamycin applied, using <code>R</code>, in order to identify good candidate reporters.</p>
 </div>
 </div>
 </section>
@@ -1440,7 +1440,7 @@ Help! I’m stuck!
 </div>
 <section id="make-a-basic-ggplot2-figure-of-your-reporter-data" class="level3" data-number="3.2.1">
 <h3 data-number="3.2.1" class="anchored" data-anchor-id="make-a-basic-ggplot2-figure-of-your-reporter-data"><span class="header-section-number">3.2.1</span> Make a basic <code>ggplot2</code> figure of your reporter data</h3>
-<p>You have loaded absorbance ratio data for nine candidate antibiotic reporters and a control sample. You’re going to plot these in the same way as you plotted the yeast growth data in <a href="exercise-02_yeast.html" class="quarto-xref"><span>Chapter 2</span></a>.</p>
+<p>You have loaded absorbance ratio data for nine candidate kanamycin reporters and a control sample. You’re going to plot these in the same way as you plotted the yeast growth data in <a href="exercise-02_yeast.html" class="quarto-xref"><span>Chapter 2</span></a>.</p>
 <div class="callout callout-style-default callout-important callout-titled" title="Task">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -1518,7 +1518,7 @@ Result
 <img src="assets/images/reporter-01.png" class="img-fluid figure-img" style="width:80.0%">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-reporter-01-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;3.1: A <code>ggplot()</code> graph of reporter absorbance ratios against antibiotic concentration.
+Figure&nbsp;3.1: A <code>ggplot()</code> graph of reporter absorbance ratios against kanamycin concentration.
 </figcaption>
 </figure>
 </div>
@@ -1605,7 +1605,7 @@ Result
 <img src="assets/images/reporter-02.png" class="img-fluid figure-img" style="width:80.0%">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-reporter-02-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;3.2: A <code>ggplot()</code> graph of reporter absorbance ratios against antibiotic concentration, with lines to aid tracking data.
+Figure&nbsp;3.2: A <code>ggplot()</code> graph of reporter absorbance ratios against kanamycin concentration, with lines to aid tracking data.
 </figcaption>
 </figure>
 </div>
@@ -1693,7 +1693,7 @@ Result
 <img src="assets/images/reporter-03.png" class="img-fluid figure-img" style="width:80.0%">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-reporter-03-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;3.3: A <code>ggplot2</code> facet plot of reporter absorbance ratios against antibiotic concentration
+Figure&nbsp;3.3: A <code>ggplot2</code> facet plot of reporter absorbance ratios against kanamycin concentration
 </figcaption>
 </figure>
 </div>
@@ -1714,7 +1714,7 @@ Task
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Use the <code>WebR</code> cell below to change the <span class="math inline">\(x\)</span>-axis label to “[antibiotic]” and the <span class="math inline">\(y\)</span>-axis label to “OD700/OD600”.</p>
+<p>Use the <code>WebR</code> cell below to change the <span class="math inline">\(x\)</span>-axis label to “[kanamycin]” and the <span class="math inline">\(y\)</span>-axis label to “OD700/OD600”.</p>
 </div>
 </div>
 <div class="callout callout-style-default callout-tip callout-titled">
@@ -1757,7 +1757,7 @@ Help! I’m stuck!
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>         <span class="fu">geom_point</span>() <span class="sc">+</span></span>
 <span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>         <span class="fu">geom_line</span>() <span class="sc">+</span></span>
 <span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>         <span class="fu">facet_wrap</span>(<span class="sc">~</span>sample) <span class="sc">+</span></span>
-<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>         <span class="fu">labs</span>(<span class="at">x=</span><span class="st">"[antibiotic]"</span>, <span class="at">y=</span><span class="st">"OD700/OD600"</span>)</span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>         <span class="fu">labs</span>(<span class="at">x=</span><span class="st">"[kanamycin]"</span>, <span class="at">y=</span><span class="st">"OD700/OD600"</span>)</span>
 <span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>fig</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div>
@@ -1780,7 +1780,7 @@ Result
 <img src="assets/images/reporter-04.png" class="img-fluid figure-img" style="width:80.0%">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-reporter-04-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;3.4: A <code>ggplot2</code> facet plot of reporter absorbance ratios against antibiotic concentration
+Figure&nbsp;3.4: A <code>ggplot2</code> facet plot of reporter absorbance ratios against kanamycin concentration
 </figcaption>
 </figure>
 </div>
@@ -1846,7 +1846,7 @@ Help! I’m stuck!
 <span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>         <span class="fu">geom_point</span>() <span class="sc">+</span></span>
 <span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>         <span class="fu">geom_line</span>() <span class="sc">+</span></span>
 <span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>         <span class="fu">facet_wrap</span>(<span class="sc">~</span>sample) <span class="sc">+</span></span>
-<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>         <span class="fu">labs</span>(<span class="at">x=</span><span class="st">"[antibiotic]"</span>, <span class="at">y=</span><span class="st">"OD700/OD600"</span>) <span class="sc">+</span></span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>         <span class="fu">labs</span>(<span class="at">x=</span><span class="st">"[kanamycin]"</span>, <span class="at">y=</span><span class="st">"OD700/OD600"</span>) <span class="sc">+</span></span>
 <span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a>         <span class="fu">scale_colour_grey</span>() <span class="sc">+</span></span>
 <span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a>         <span class="fu">theme_bw</span>() <span class="sc">+</span></span>
 <span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a>         <span class="fu">theme</span>(<span class="at">panel.grid.major =</span> <span class="fu">element_blank</span>(),</span>
@@ -1873,7 +1873,7 @@ Result
 <img src="assets/images/reporter-05.png" class="img-fluid figure-img" style="width:80.0%">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-reporter-05-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;3.5: A monochrome <code>ggplot2</code> facet plot of reporter absorbance ratios against antibiotic concentration
+Figure&nbsp;3.5: A monochrome <code>ggplot2</code> facet plot of reporter absorbance ratios against kanamycin concentration
 </figcaption>
 </figure>
 </div>
