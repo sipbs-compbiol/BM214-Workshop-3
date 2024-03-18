@@ -224,7 +224,7 @@ If you put a `#` at the start of a line in the WebR cell, that line will not run
 :::
 
 ::: { .callout-important title="Task" }
-Use the `WebR` cell below to load your dataset and inspect its contents.
+**Use the `WebR` cell below to load your dataset and inspect its contents.**
 :::
 
 ```{webr-r}
@@ -323,7 +323,7 @@ fig
 ```
 
 ::: { .callout-important title="Task" }
-Use the `WebR` cell below to visualise your data with a basic plot.
+**Use the `WebR` cell below to visualise your data with a basic plot.**
 :::
 
 ```{webr-r}
@@ -370,7 +370,7 @@ fig
 ```
 
 ::: { .callout-important title="Task" }
-Use the `WebR` cell below to visualise your data using colour to separate data points by growth medium.
+**Use the `WebR` cell below to visualise your data using colour to separate data points by growth medium.**
 :::
 
 ```{webr-r}
@@ -410,7 +410,7 @@ fig
 ```
 
 ::: { .callout-important title="Task" }
-Use the `WebR` cell below to fit a curve to your data, using `geom_smooth()`.
+**Use the `WebR` cell below to fit a curve to your data, using `geom_smooth()`.**
 :::
 
 ```{webr-r}
@@ -469,7 +469,7 @@ fig <- ggplot(data, aes(x=time, y=OD600, color=medium)) +  # Declare the dataset
 ```
 
 ::: { .callout-important title="Task" }
-Use the `WebR` cell below to make the y-axis logarithmic and add logarithmic axis ticks.
+**Use the `WebR` cell below to make the y-axis logarithmic and add logarithmic axis ticks.**
 :::
 
 ```{webr-r}
@@ -507,7 +507,7 @@ fig <- ggplot(data, aes(x=time, y=OD600, color=medium)) +  # Declare the dataset
 ```
 
 ::: { .callout-important title="Task" }
-Use the `WebR` cell below to generate a black and white publication-ready plot.
+**Use the `WebR` cell below to generate a black and white publication-ready plot.**
 :::
 
 ```{webr-r}
