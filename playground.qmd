@@ -1,6 +1,6 @@
 ---
 webr:
-  packages: ["ggplot2", "tidyverse", "palmerpenguins"]
+  packages: ["ggplot2", "tidyverse", "palmerpenguins", "GGally"]
 filters:
   - webr
 ---
@@ -30,6 +30,7 @@ This page provides a `WebR` cell for you to use as a playground to experiment wi
 This `WebR` instance has three packages installed:
 
 - `ggplot2`
+- `GGally`
 - `tidyverse`
 - `palmerpenguins`
 
