@@ -228,6 +228,17 @@ Use the `WebR` cell below to load your dataset and inspect its contents.
 
 ```
 
+::: { .callout-tip collapse="true" }
+## I need a hint!
+
+- If you can't see what your data looks like, don't forget to load your data and `glimpse()` it in the same cell
+
+```r
+data = read.csv("PM_Bay_40_03.csv")
+glimpse(data)
+```
+:::
+
 ## Plot your growth curves
 
 ::: { .callout-warning }
