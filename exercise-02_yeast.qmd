@@ -228,8 +228,6 @@ Use the `WebR` cell below to load your dataset and inspect its contents.
 
 ```
 
-[**COLLAPSIBLE TEXT HERE ABOUT LONG FORM DATA**]
-
 ## Plot your growth curves
 
 ::: { .callout-warning }

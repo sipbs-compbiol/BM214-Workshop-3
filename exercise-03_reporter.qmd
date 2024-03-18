@@ -19,7 +19,7 @@ library(tidyverse)
 
 ## Introduction
 
-In this exercise you will use absorbance ratio data obtained from cloning your reporter gene downstream of a set of nine candidate antibiotic-responsive promoter regions.
+In this exercise you will use absorbance ratio data obtained from cloning your reporter gene downstream of a set of nine candidate kanamycin-responsive promoter regions.
 
 Your reporter gene absorbs light at 700nm, so by using a spectrophotometer and measuring the attenuation of light at 700nm (OD700), you can estimate the amount of reporter gene that is produced.
 
@@ -33,12 +33,12 @@ To take the number of cells into account, we also measure absorbance at 600nm (O
 With our example above, assuming that one cell gives one unit of absorbance at 600nm, the situation with 500 cells producing 10 units of reporter gene each would have an OD700/OD600 ratio of $5000/500 = 10$, but the case of 100 cells producing 50 units of reporter gene would have an OD700/OD600 ratio of $5000/100 = 50$, for five times the expression.
 :::
 
-In this experiment, we are seeking a reporter system that responds to high concentrations of antibiotic by expressing, or _switching on_, the reporter gene. So we are looking for plasmids (here named `pABS1.01` to `pABS1.09`) that have a strong expression response at high concentrations of antibiotic, but a weaker expression response at lower concentrations.
+In this experiment, we are seeking a reporter system that responds to high concentrations of kanamycin by expressing, or _switching on_, the reporter gene. So we are looking for plasmids (here named `pABS1.01` to `pABS1.09`) that have a strong expression response at high concentrations of kanamycin, but a weaker expression response at lower concentrations.
 
-To find good candidate reporter systems, we plot the OD700/OD600 ratio against antibiotic concentration, to visualise which systems appear to have the characteristics we are looking for.
+To find good candidate reporter systems, we plot the OD700/OD600 ratio against kanamycin concentration, to visualise which systems appear to have the characteristics we are looking for.
 
 ::: { .callout-important }
-In this part of the workshop, you will plot the ratio of your reporter absorbance (OD700) to your organism growth (OD600) against the concentration of antibiotic applied, using `R`, in order to identify good candidate reporters.
+In this part of the workshop, you will plot the ratio of your reporter absorbance (OD700) to your organism growth (OD600) against the concentration of kanamycin applied, using `R`, in order to identify good candidate reporters.
 :::
 
 ## Load and inspect your data
@@ -70,7 +70,7 @@ glimpse(data)
 
 ### Make a basic `ggplot2` figure of your reporter data
 
-You have loaded absorbance ratio data for nine candidate antibiotic reporters and a control sample. You're going to plot these in the same way as you plotted the yeast growth data in @sec-yeast-expt.
+You have loaded absorbance ratio data for nine candidate kanamycin reporters and a control sample. You're going to plot these in the same way as you plotted the yeast growth data in @sec-yeast-expt.
 
 ::: { .callout-important title="Task" }
 Use the `WebR` cell below to make a scatterplot of your data.
@@ -111,7 +111,7 @@ fig
 
 The figure output shows the datapoints, but there are a lot of reporters, so there are a lot of colours. It's difficult to track any single reporter because of the overlap between points, and confusion of colours.
 
-![A `ggplot()` graph of reporter absorbance ratios against antibiotic concentration.](assets/images/reporter-01.png){#fig-reporter-01 width=80%}
+![A `ggplot()` graph of reporter absorbance ratios against kanamycin concentration.](assets/images/reporter-01.png){#fig-reporter-01 width=80%}
 
 :::
 
@@ -157,7 +157,7 @@ fig
 
 The lines help to follow individual candidate reporters, but the plot is still jumbled up in the middle, and the similarities between some of the colours make it difficult to follow.
 
-![A `ggplot()` graph of reporter absorbance ratios against antibiotic concentration, with lines to aid tracking data.](assets/images/reporter-02.png){#fig-reporter-02 width=80%}
+![A `ggplot()` graph of reporter absorbance ratios against kanamycin concentration, with lines to aid tracking data.](assets/images/reporter-02.png){#fig-reporter-02 width=80%}
 
 :::
 
@@ -205,7 +205,7 @@ fig
 
 Now that we have a separate plot for each sample, it is easy to see which candidate reporters look like they might be worth taking forward. Notice that the $x$- and $y$ axis scales are the same in each _facet_.
 
-![A `ggplot2` facet plot of reporter absorbance ratios against antibiotic concentration](assets/images/reporter-03.png){#fig-reporter-03 width=80%}
+![A `ggplot2` facet plot of reporter absorbance ratios against kanamycin concentration](assets/images/reporter-03.png){#fig-reporter-03 width=80%}
 
 :::
 
@@ -214,7 +214,7 @@ Now that we have a separate plot for each sample, it is easy to see which candid
 The current axis labelling of the figure could be improved. You can change the axis labels to something more meaningful by using the `labs()` styling layer. To change the $x$- and $y$-axis labels you might use a layer like `labs(x="X-axis title", y="Y-axis title")`.
 
 ::: { .callout-important title="Task" }
-Use the `WebR` cell below to change the $x$-axis label to "[antibiotic]" and the $y$-axis label to "OD700/OD600".
+Use the `WebR` cell below to change the $x$-axis label to "[kanamycin]" and the $y$-axis label to "OD700/OD600".
 :::
 
 ::: { .callout-tip collapse="true" }
@@ -241,7 +241,7 @@ fig <- ggplot(data, aes(x=conc, y=abs_ratio, color=sample)) +
          geom_point() +
          geom_line() +
          facet_wrap(~sample) +
-         labs(x="[antibiotic]", y="OD700/OD600")
+         labs(x="[kanamycin]", y="OD700/OD600")
 fig
 ```
 
@@ -250,7 +250,7 @@ fig
 ::: { .callout-caution collapse="true" }
 ## Result
 
-![A `ggplot2` facet plot of reporter absorbance ratios against antibiotic concentration](assets/images/reporter-04.png){#fig-reporter-04 width=80%}
+![A `ggplot2` facet plot of reporter absorbance ratios against kanamycin concentration](assets/images/reporter-04.png){#fig-reporter-04 width=80%}
 
 :::
 
@@ -288,7 +288,7 @@ fig <- ggplot(data, aes(x=conc, y=abs_ratio, color=sample)) +
          geom_point() +
          geom_line() +
          facet_wrap(~sample) +
-         labs(x="[antibiotic]", y="OD700/OD600") +
+         labs(x="[kanamycin]", y="OD700/OD600") +
          scale_colour_grey() +
          theme_bw() +
          theme(panel.grid.major = element_blank(),
@@ -301,7 +301,7 @@ fig
 ::: { .callout-caution collapse="true" }
 ## Result
 
-![A monochrome `ggplot2` facet plot of reporter absorbance ratios against antibiotic concentration](assets/images/reporter-05.png){#fig-reporter-05 width=80%}
+![A monochrome `ggplot2` facet plot of reporter absorbance ratios against kanamycin concentration](assets/images/reporter-05.png){#fig-reporter-05 width=80%}
 
 :::
 
