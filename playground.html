@@ -270,7 +270,7 @@ globalThis.qwebrCustomizedWebROptions = {
 };
 
 // Store cell data
-globalThis.qwebrCellDetails = [{"id":1,"options":{"out-height":"","comment":"","autorun":"true","output":"true","results":"markup","context":"setup","label":"unnamed-chunk-1","out-width":"700px","read-only":"false","fig-cap":"","warning":"true","dpi":72,"message":"true","fig-width":7,"fig-height":5,"classes":""},"code":"\nlibrary(ggplot2)\nlibrary(palmerpenguins)\nlibrary(tidyverse)"},{"id":2,"options":{"out-height":"","comment":"","autorun":"false","output":"true","results":"markup","context":"interactive","label":"unnamed-chunk-2","out-width":"700px","read-only":"false","fig-cap":"","warning":"true","dpi":72,"message":"true","fig-width":7,"fig-height":5,"classes":""},"code":"# Use this WebR cell to experiment with some practice biological datasets"}];
+globalThis.qwebrCellDetails = [{"code":"\nlibrary(ggplot2)\nlibrary(palmerpenguins)\nlibrary(tidyverse)","options":{"results":"markup","context":"setup","fig-cap":"","classes":"","fig-width":7,"warning":"true","output":"true","comment":"","message":"true","fig-height":5,"dpi":72,"read-only":"false","out-height":"","label":"unnamed-chunk-1","out-width":"700px","autorun":"true"},"id":1},{"code":"# Use this WebR cell to experiment with some practice biological datasets","options":{"results":"markup","context":"interactive","fig-cap":"","classes":"","fig-width":7,"warning":"true","output":"true","comment":"","message":"true","fig-height":5,"dpi":72,"read-only":"false","out-height":"","label":"unnamed-chunk-2","out-width":"700px","autorun":"false"},"id":2}];
 
 </script>
 <script type="module">
@@ -1338,6 +1338,13 @@ globalThis.qwebrCreateMonacoEditorInstance = function (cellData) {
 </section>
 <section id="things-you-can-do" class="level2" data-number="4.3">
 <h2 data-number="4.3" class="anchored" data-anchor-id="things-you-can-do"><span class="header-section-number">4.3</span> Things you can do</h2>
+<p>This <code>WebR</code> instance has three packages installed:</p>
+<ul>
+<li><code>ggplot2</code></li>
+<li><code>tidyverse</code></li>
+<li><code>palmerpenguins</code></li>
+</ul>
+<p>Open the callout boxes below to see some examples you can try in the code cell above.</p>
 <div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
@@ -1385,6 +1392,25 @@ Investigate Palmer’s Penguins
 <span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>         <span class="fu">geom_smooth</span>(<span class="at">method=</span><span class="st">"lm"</span>)</span>
 <span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>fig</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><code>R</code> comes with a number of example datasets you can practice with, including:</p>
+<ul>
+<li><code>mtcars</code>: fuel consumption and other statistic for 32 automobiles</li>
+<li><code>Titanic</code>: information on the fate of passengers on the fatal maiden voyage of the ocean liner <em>Titanic</em></li>
+</ul>
+<p>You can see a full list by running the command</p>
+<div class="sourceCode" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(<span class="at">help =</span> <span class="st">"datasets"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div>
 

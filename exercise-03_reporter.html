@@ -270,7 +270,7 @@ globalThis.qwebrCustomizedWebROptions = {
 };
 
 // Store cell data
-globalThis.qwebrCellDetails = [{"options":{"warning":"true","fig-height":5,"output":"true","dpi":72,"fig-width":7,"read-only":"false","comment":"","out-height":"","message":"true","results":"markup","classes":"","context":"setup","out-width":"700px","label":"unnamed-chunk-1","fig-cap":"","autorun":"true"},"id":1,"code":"\n# Download reporter data\ndownload.file('https://raw.githubusercontent.com/sipbs-compbiol/BM214-Workshop-3/main/assets/data/reporter_curves.csv', 'reporter_curves.csv')\n\nlibrary(ggplot2)\nlibrary(tidyverse)"},{"options":{"warning":"true","fig-height":5,"output":"true","dpi":72,"fig-width":7,"read-only":"false","comment":"","out-height":"","message":"true","results":"markup","classes":"","context":"interactive","out-width":"700px","label":"unnamed-chunk-2","fig-cap":"","autorun":"false"},"id":2,"code":"# Use read.csv() to load your data in this cell\n# Use glimpse() or head() to inspect the format of your data"},{"options":{"warning":"true","fig-height":5,"output":"true","dpi":72,"fig-width":7,"read-only":"false","comment":"","out-height":"","message":"true","results":"markup","classes":"","context":"interactive","out-width":"700px","label":"unnamed-chunk-3","fig-cap":"","autorun":"false"},"id":3,"code":"# Make a basic plot of your reporter curve data in this cell\n# Use the ggplot(), aes(), and geom_point() functions to visualise your data."},{"options":{"warning":"true","fig-height":5,"output":"true","dpi":72,"fig-width":7,"read-only":"false","comment":"","out-height":"","message":"true","results":"markup","classes":"","context":"interactive","out-width":"700px","label":"unnamed-chunk-4","fig-cap":"","autorun":"false"},"id":4,"code":"# Add a line plot to your figure in this cell\n# Use the geom_line() function to visualise your data."},{"options":{"warning":"true","fig-height":5,"output":"true","dpi":72,"fig-width":7,"read-only":"false","comment":"","out-height":"","message":"true","results":"markup","classes":"","context":"interactive","out-width":"700px","label":"unnamed-chunk-5","fig-cap":"","autorun":"false"},"id":5,"code":"# Make a facet plot in this cell\n# Use the facet_wrap() function to visualise your data."},{"options":{"warning":"true","fig-height":5,"output":"true","dpi":72,"fig-width":7,"read-only":"false","comment":"","out-height":"","message":"true","results":"markup","classes":"","context":"interactive","out-width":"700px","label":"unnamed-chunk-6","fig-cap":"","autorun":"false"},"id":6,"code":"# Change the x- and y-axis labels in this cell\n# Use the labs() function to change the labels"},{"options":{"warning":"true","fig-height":5,"output":"true","dpi":72,"fig-width":7,"read-only":"false","comment":"","out-height":"","message":"true","results":"markup","classes":"","context":"interactive","out-width":"700px","label":"unnamed-chunk-7","fig-cap":"","autorun":"false"},"id":7,"code":"# Make a monochrome version of your plot in this cell"}];
+globalThis.qwebrCellDetails = [{"code":"\n# Download reporter data\ndownload.file('https://raw.githubusercontent.com/sipbs-compbiol/BM214-Workshop-3/main/assets/data/reporter_curves.csv', 'reporter_curves.csv')\n\nlibrary(ggplot2)\nlibrary(tidyverse)","options":{"out-height":"","autorun":"true","read-only":"false","context":"setup","results":"markup","comment":"","classes":"","output":"true","fig-cap":"","fig-width":7,"label":"unnamed-chunk-1","fig-height":5,"dpi":72,"warning":"true","out-width":"700px","message":"true"},"id":1},{"code":"# Use read.csv() to load your data in this cell\n# Use glimpse() or head() to inspect the format of your data","options":{"out-height":"","autorun":"false","read-only":"false","context":"interactive","results":"markup","comment":"","classes":"","output":"true","fig-cap":"","fig-width":7,"label":"unnamed-chunk-2","fig-height":5,"dpi":72,"warning":"true","out-width":"700px","message":"true"},"id":2},{"code":"# Make a basic plot of your reporter curve data in this cell\n# Use the ggplot(), aes(), and geom_point() functions to visualise your data.","options":{"out-height":"","autorun":"false","read-only":"false","context":"interactive","results":"markup","comment":"","classes":"","output":"true","fig-cap":"","fig-width":7,"label":"unnamed-chunk-3","fig-height":5,"dpi":72,"warning":"true","out-width":"700px","message":"true"},"id":3},{"code":"# Add a line plot to your figure in this cell\n# Use the geom_line() function to visualise your data.","options":{"out-height":"","autorun":"false","read-only":"false","context":"interactive","results":"markup","comment":"","classes":"","output":"true","fig-cap":"","fig-width":7,"label":"unnamed-chunk-4","fig-height":5,"dpi":72,"warning":"true","out-width":"700px","message":"true"},"id":4},{"code":"# Make a facet plot in this cell\n# Use the facet_wrap() function to visualise your data.","options":{"out-height":"","autorun":"false","read-only":"false","context":"interactive","results":"markup","comment":"","classes":"","output":"true","fig-cap":"","fig-width":7,"label":"unnamed-chunk-5","fig-height":5,"dpi":72,"warning":"true","out-width":"700px","message":"true"},"id":5},{"code":"# Change the x- and y-axis labels in this cell\n# Use the labs() function to change the labels","options":{"out-height":"","autorun":"false","read-only":"false","context":"interactive","results":"markup","comment":"","classes":"","output":"true","fig-cap":"","fig-width":7,"label":"unnamed-chunk-6","fig-height":5,"dpi":72,"warning":"true","out-width":"700px","message":"true"},"id":6},{"code":"# Make a monochrome version of your plot in this cell","options":{"out-height":"","autorun":"false","read-only":"false","context":"interactive","results":"markup","comment":"","classes":"","output":"true","fig-cap":"","fig-width":7,"label":"unnamed-chunk-7","fig-height":5,"dpi":72,"warning":"true","out-width":"700px","message":"true"},"id":7}];
 
 </script>
 <script type="module">
@@ -1429,6 +1429,9 @@ Help! I’m stuck!
 </div>
 <div id="callout-4" class="callout-4-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
+<ul>
+<li>Check back with <a href="exercise-02_yeast.html" class="quarto-xref"><span>Chapter 2</span></a> to see if you can use anything you’ve already learned</li>
+</ul>
 <p>Use the <code>R</code> code below to load your data</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>data <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">"reporter_curves.csv"</span>)</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">glimpse</span>(data)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -1486,6 +1489,9 @@ Help! I’m stuck!
 </div>
 <div id="callout-7" class="callout-7-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
+<ul>
+<li>Check back with <a href="exercise-02_yeast.html" class="quarto-xref"><span>Chapter 2</span></a> to see if you can use anything you’ve already learned</li>
+</ul>
 <p>Use the <code>R</code> code below to load your data</p>
 <div class="sourceCode" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>fig <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(data, <span class="fu">aes</span>(<span class="at">x=</span>conc, <span class="at">y=</span>abs_ratio, <span class="at">color=</span>sample)) <span class="sc">+</span></span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>         <span class="fu">geom_point</span>()</span>
@@ -1569,6 +1575,9 @@ Help! I’m stuck!
 </div>
 <div id="callout-11" class="callout-11-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
+<ul>
+<li>Check back with <a href="exercise-02_yeast.html" class="quarto-xref"><span>Chapter 2</span></a> to see if you can use anything you’ve already learned</li>
+</ul>
 <p>Use the <code>R</code> code below to load your data</p>
 <div class="sourceCode" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>fig <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(data, <span class="fu">aes</span>(<span class="at">x=</span>conc, <span class="at">y=</span>abs_ratio, <span class="at">color=</span>sample)) <span class="sc">+</span></span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>         <span class="fu">geom_point</span>() <span class="sc">+</span></span>
@@ -1653,6 +1662,9 @@ Help! I’m stuck!
 </div>
 <div id="callout-15" class="callout-15-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
+<ul>
+<li>Check back with <a href="exercise-02_yeast.html" class="quarto-xref"><span>Chapter 2</span></a> to see if you can use anything you’ve already learned</li>
+</ul>
 <p>Use the <code>R</code> code below to plot your data</p>
 <div class="sourceCode" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>fig <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(data, <span class="fu">aes</span>(<span class="at">x=</span>conc, <span class="at">y=</span>abs_ratio, <span class="at">color=</span>sample)) <span class="sc">+</span></span>
 <span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>         <span class="fu">geom_point</span>() <span class="sc">+</span></span>
@@ -1737,6 +1749,9 @@ Help! I’m stuck!
 </div>
 <div id="callout-19" class="callout-19-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
+<ul>
+<li>Check back with <a href="exercise-02_yeast.html" class="quarto-xref"><span>Chapter 2</span></a> to see if you can use anything you’ve already learned</li>
+</ul>
 <p>Use the <code>R</code> code below to plot your data</p>
 <div class="sourceCode" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>fig <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(data, <span class="fu">aes</span>(<span class="at">x=</span>conc, <span class="at">y=</span>abs_ratio, <span class="at">color=</span>sample)) <span class="sc">+</span></span>
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>         <span class="fu">geom_point</span>() <span class="sc">+</span></span>
@@ -1823,6 +1838,9 @@ Help! I’m stuck!
 </div>
 <div id="callout-23" class="callout-23-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
+<ul>
+<li>Check back with <a href="exercise-02_yeast.html" class="quarto-xref"><span>Chapter 2</span></a> to see if you can use anything you’ve already learned</li>
+</ul>
 <p>Use the <code>R</code> code below to plot your data</p>
 <div class="sourceCode" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>fig <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(data, <span class="fu">aes</span>(<span class="at">x=</span>conc, <span class="at">y=</span>abs_ratio, <span class="at">color=</span>sample)) <span class="sc">+</span></span>
 <span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>         <span class="fu">geom_point</span>() <span class="sc">+</span></span>
@@ -1866,7 +1884,40 @@ Figure&nbsp;3.5: A monochrome <code>ggplot2</code> facet plot of reporter absorb
 </section>
 <section id="summary" class="level2" data-number="3.3">
 <h2 data-number="3.3" class="anchored" data-anchor-id="summary"><span class="header-section-number">3.3</span> Summary</h2>
-<p>[<strong>NEEDS TEXT HERE</strong>]</p>
+<div class="callout callout-style-default callout-note callout-titled" title="Well Done!">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Well Done!
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>After successfully working through this section you should be able to:</p>
+<ul>
+<li>import reporter gene expression/absorbance data into <code>R</code></li>
+<li>use <code>R</code> and <code>ggplot2</code> to visualise expression/absorbance data</li>
+<li>interpret the meaning of expression/abundance data</li>
+</ul>
+</div>
+</div>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Important
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Please answer the questions below in the formative quiz on MyPlace</strong></p>
+<ul>
+<li><a href="https://classes.myplace.strath.ac.uk/mod/quiz/view.php?id=1962421">MyPlace formative quiz</a></li>
+</ul>
+</div>
+</div>
 
 
 </section>
