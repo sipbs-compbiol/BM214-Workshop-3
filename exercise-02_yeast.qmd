@@ -292,6 +292,12 @@ fig <- ggplot(data, aes(x=time, y=OD600)) +  # Declare the dataset/base layer
          geom_point()  # Add a marker for each datapoint
 ```
 
+::: { .callout-note }
+In `ggplot2` we **add** layers together to filter the data into an image, like lenses in a telescope.
+
+**We have to use the `+` character to join layers together.**
+:::
+
 `geom_point()` will add a visualisation layer to the plot, but we won't be able to see it until we tell `R` to show us the figure. We can do this in a number of ways, such as with a `print()` statement:
 
 ```{r}
