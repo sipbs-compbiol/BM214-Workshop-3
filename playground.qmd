@@ -27,6 +27,14 @@ This page provides a `WebR` cell for you to use as a playground to experiment wi
 
 ## Things you can do
 
+This `WebR` instance has three packages installed:
+
+- `ggplot2`
+- `tidyverse`
+- `palmerpenguins`
+
+Open the callout boxes below to see some examples you can try in the code cell above.
+
 ::: { .callout-tip collapse="true" }
 ## Investigate Palmer's Penguins
 
@@ -99,5 +107,20 @@ fig <- ggplot(penguins, aes(x=body_mass_g, y=flipper_length_mm, colour=species))
          geom_smooth(method="lm")
 fig
 ```
+
+:::
+
+::: { .callout-note }
+`R` comes with a number of example datasets you can practice with, including:
+
+- `mtcars`: fuel consumption and other statistic for 32 automobiles
+- `Titanic`: information on the fate of passengers on the fatal maiden voyage of the ocean liner _Titanic_
+ 
+You can see a full list by running the command
+
+```r
+library(help = "datasets")
+```
+
 
 :::

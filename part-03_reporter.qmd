@@ -15,3 +15,9 @@ You have met `R` before in the statistics component of BM110, in an interactive 
 
 Full instructions for how to generate your figures are provided as part of the workshop.
 :::
+
+::: { .callout-important }
+**When you have completed the exercise, please answer the questions below in the formative quiz on MyPlace**
+
+- [MyPlace formative quiz]({{< var myplace.quiz1 >}})
+:::

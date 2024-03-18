@@ -22,7 +22,10 @@ By working through this material, you should now
 :::
 
 ::: { .callout-important }
-If you haven't already, please don't forget to complete the formative assessments. There is one for each exercise in the workshop, and they can be found on the workshop [MyPlace page](https://classes.myplace.strath.ac.uk/course/view.php?id=21632).
+If you haven't already, please don't forget to complete the formative assessments. These can be found on the workshop [MyPlace page](https://classes.myplace.strath.ac.uk/course/view.php?id=21632). You should complete them as part of the workshop.
+
+- [MyPlace formative quiz 1]({{< var myplace.quiz1 >}}) - parts 2 and 3
+- [MyPlace formative quiz 2]({{< var myplace.quiz2 >}}) - for the whole workshop
 :::
 
 ## That's All, Folks!

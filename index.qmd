@@ -37,6 +37,9 @@ By the end of this workshop, students will be able to:
 The workshop is not formally assessed although, as noted above, all the material contained in the workshop is examinable. There are three exercises for you to work thorough: one using online bioinformatics web services to identify an organism from its 16S sequence; and two using `R` to visualise and interpret experimental data.
 
 ::: { .callout-important }
-There are three formative exercises, one for each exercise in the workshop, and they can be found on the workshop [MyPlace page](https://classes.myplace.strath.ac.uk/course/view.php?id=21632). You should complete these as part of the workshop.
+There are two formative quizzes covering the exercises in the workshop, and these can be found on the workshop [MyPlace page](https://classes.myplace.strath.ac.uk/course/view.php?id=21632). You should complete these as part of the workshop.
+
+- [MyPlace formative quiz 1]({{< var myplace.quiz1 >}}) - parts 2 and 3
+- [MyPlace formative quiz 2]({{< var myplace.quiz2 >}}) - for the whole workshop
 :::
 

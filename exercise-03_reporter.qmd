@@ -58,6 +58,8 @@ Use the `WebR` cell below to load your data.
 ::: { .callout-warning collapse="true" }
 ## Help! I'm stuck!
 
+- Check back with @sec-yeast-expt to see if you can use anything you've already learned
+
 Use the `R` code below to load your data
 
 ```r
@@ -91,6 +93,8 @@ Use the `WebR` cell below to make a scatterplot of your data.
 
 ::: { .callout-warning collapse="true" }
 ## Help! I'm stuck!
+
+- Check back with @sec-yeast-expt to see if you can use anything you've already learned
 
 Use the `R` code below to load your data
 
@@ -134,6 +138,8 @@ Use the `WebR` cell below to add a lineplot to your data.
 
 ::: { .callout-warning collapse="true" }
 ## Help! I'm stuck!
+
+- Check back with @sec-yeast-expt to see if you can use anything you've already learned
 
 Use the `R` code below to load your data
 
@@ -180,6 +186,8 @@ Use the `WebR` cell below to plot your figure with a separate facet for each sam
 ::: { .callout-warning collapse="true" }
 ## Help! I'm stuck!
 
+- Check back with @sec-yeast-expt to see if you can use anything you've already learned
+
 Use the `R` code below to plot your data
 
 ```r
@@ -223,6 +231,8 @@ Use the `WebR` cell below to change the $x$-axis label to "[antibiotic]" and the
 
 ::: { .callout-warning collapse="true" }
 ## Help! I'm stuck!
+
+- Check back with @sec-yeast-expt to see if you can use anything you've already learned
 
 Use the `R` code below to plot your data
 
@@ -269,6 +279,8 @@ Use the `WebR` cell below to convert your plot to monochrome.
 ::: { .callout-warning collapse="true" }
 ## Help! I'm stuck!
 
+- Check back with @sec-yeast-expt to see if you can use anything you've already learned
+
 Use the `R` code below to plot your data
 
 ```r
@@ -295,4 +307,16 @@ fig
 
 ## Summary
 
-[**NEEDS TEXT HERE**]
+::: { .callout-note title="Well Done!"}
+After successfully working through this section you should be able to:
+
+- import reporter gene expression/absorbance data into `R`
+- use `R` and `ggplot2` to visualise expression/absorbance data
+- interpret the meaning of expression/abundance data
+:::
+
+::: { .callout-important }
+**Please answer the questions below in the formative quiz on MyPlace**
+
+- [MyPlace formative quiz]({{< var myplace.quiz1 >}})
+:::

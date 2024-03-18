@@ -495,4 +495,16 @@ The resulting figure (@fig-ggplot-05) has replaced the colour scheme with greysc
 
 ## Summary
 
-[**NEEDS TEXT HERE**]
+::: { .callout-note title="Well Done!"}
+After successfully working through this section you should be able to:
+
+- import microbial growth data into `R`
+- use `R` and `ggplot2` to visualise microbial growth data
+- interpret the meaning of microbial growth data
+:::
+
+::: { .callout-important }
+**Please answer the questions below in the formative quiz on MyPlace**
+
+- [MyPlace formative quiz]({{< var myplace.quiz1 >}})
+:::

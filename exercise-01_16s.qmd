@@ -111,13 +111,14 @@ Click on the `BLAST` button.
 
 It is common for 16S rDNA sequences to match many other bacterial sequences in the database. However, by identifying those most closely-related to the query sequence, you should be able to establish a likely identity for this organism.
 
-::: { .callout-important }
-**Please answer the questions below in the formative quiz on MyPlace**
+::: { .callout-important title="Discussion Questions"}
+**As you all have different sequences there is no MyPlace quiz, please answer these questions for yourself.**
 
-- [MyPlace formative quiz]({{< var myplace.quiz1 >}})
+_If you would like guidance about your answer, please ask one of the tutors in the workshop._
 
 Clicking on the green box should give you a hint to the answer, or where to find it.
 :::
+
 
 ::: { .callout-tip collapse="true"}
 ## What is the accession number of the best match to your query?
@@ -238,10 +239,10 @@ Alternatively, use the `Export to CSV` option to download a plain-text `.csv` fi
 
 :::
 
-::: { .callout-important }
-**Please answer the questions below in the formative quiz on MyPlace**
+::: { .callout-important title="Discussion Questions"}
+**As you all have different sequences there is no MyPlace quiz, please answer these questions for yourself.**
 
-- [MyPlace formative quiz]({{< var myplace.quiz1 >}})
+_If you would like guidance about your answer, please ask one of the tutors in the workshop._
 
 Clicking on the green box should give you a hint to the answer, or where to find it.
 :::
@@ -272,4 +273,14 @@ Among other things, you may want to consider:
 - did both tools give the same identification?
 - how much sequence identity was shared between your query sequence and the matches each tool found?
 - is your organism common enough that there are many examples of its 16S sequence known?
+:::
+
+## Summary 
+
+::: { .callout-note title="Well Done!"}
+After successfully working through this section you should be able to:
+
+- use `BLAST` and `silva` to obtain taxonomic identity from 16S sequence data
+- interpret `BLAST` and `SILVA` output
+- explain the difference in results between `BLAST` and `silva` taxonomy assignment
 :::
