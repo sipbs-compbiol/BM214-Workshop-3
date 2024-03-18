@@ -217,6 +217,12 @@ or the `head()` function to view the first few lines of the dataset:
 head(data, n=10)
 ```
 
+::: { .callout-note }
+In the code cell above, the `#` symbol at the start of the line means it is a **comment** and not executed by `R` when the cell runs.
+
+If you put a `#` at the start of a line in the WebR cell, that line will not run - watch out for that!
+:::
+
 ::: { .callout-important title="Task" }
 Use the `WebR` cell below to load your dataset and inspect its contents.
 :::
@@ -415,6 +421,16 @@ The resulting figure has added a model curve, estimated using `loess` to the dat
 
 This kind of curve tends to _overfit_ the dataset, as might be seen by the tendency of the curve to "kick" up or down at the end of the graph. Generally-speaking, we should always try to fit a suitable model to our data, and `loess` is not necessarily the most suitable model.
 
+:::
+
+::: { .callout-note collapse="true"}
+## What does that ribbom mean?
+
+You will see that `geom_smoot()` has fitted a _line_ (the model fit), and a semitransparent _ribbon_ that looks like it might be describing error in your data.
+
+However, the ribbon isn't describing error in your data - it's describing error in the model fit. Many models fit your data more-or-less well, and the ribbon shows the extent of what models might fit well.
+
+More technically, the ribbon shows the **standard error** of the model fit.
 :::
 
 ### Use a logarithmic $y$-axis
