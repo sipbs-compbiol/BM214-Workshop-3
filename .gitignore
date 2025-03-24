@@ -17,8 +17,8 @@ _freeze/
 ~*
 
 # Downloaded .csv files, when running locally
-AM*.csv
-PM*.csv
+#AM*.csv
+#PM*.csv
 
 # Jupyter/iPython checkpoints
-scripts/.ipynb_checkpoints
+.ipynb_checkpoints
