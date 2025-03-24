@@ -21,4 +21,4 @@ AM*.csv
 PM*.csv
 
 # Jupyter/iPython checkpoints
-.ipynb_checkpoints
+scripts/.ipynb_checkpoints
