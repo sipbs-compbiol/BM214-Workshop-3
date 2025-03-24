@@ -2,11 +2,11 @@
 
 Welcome to the BM214 (Being a Biomolecular Scientist 2) workshop on enumeration of bacteria and bacteriophage, for {{< var ay >}}.
 
-This year is the first presentation of the workshop material in this format, and we would be very grateful to hear feedback [by email](mailto:{{< var admin.email >}}) or through the [GitHub repository Issues page]({{< var github.issues >}}).
+We would be very grateful to hear feedback [by email](mailto:{{< var admin.email >}}) or through the [GitHub repository Issues page]({{< var github.issues >}}).
 
 ## Overview
 
-This workshop asks you to work through some computational exercises that use the sequence, growth, and expression data generated in BM241 laboratories 1-3.
+This workshop asks you to work through some computational exercises that use the sequence, growth, and expression data generated in BM214 laboratories 1-3.
 
 - In the first exercise, you will use a 16S sequence amplified by PCR from your unknown bacterium to query a public sequence database and identify your organism.
 - In exercise two, you will use `R` and `ggplot2` to plot and interpret absorbance data from your yeast growth experiment.
