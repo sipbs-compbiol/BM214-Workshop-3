@@ -2,13 +2,13 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.4.554">
+<meta name="generator" content="quarto-1.6.42">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Leighton Pritchard">
 
-<title>BM214 Workshop 3: Enumeration of Bacteria and Bacteriophage - 3&nbsp; Reporter Gene Expression</title>
+<title>3&nbsp; Reporter Gene Expression – BM214 Workshop 3: Enumeration of Bacteria and Bacteriophage</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -34,7 +34,7 @@ div.sourceCode { overflow: auto; }
 }
 @media print {
 pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
 }
 pre.numberSource code
   { counter-reset: source-line 0; }
@@ -73,10 +73,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-2f5df379a58b258e96c21c0638c20c03.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-a34d670291f06f286357e447776a572a.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -270,7 +270,7 @@ globalThis.qwebrCustomizedWebROptions = {
 };
 
 // Store cell data
-globalThis.qwebrCellDetails = [{"id":1,"code":"\n# Download reporter data\ndownload.file('https://raw.githubusercontent.com/sipbs-compbiol/BM214-Workshop-3/main/assets/data/reporter_curves.csv', 'reporter_curves.csv')\n\nlibrary(ggplot2)\nlibrary(tidyverse)","options":{"comment":"","warning":"true","autorun":"true","out-width":"700px","classes":"","message":"true","out-height":"","read-only":"false","label":"unnamed-chunk-1","fig-cap":"","dpi":72,"context":"setup","results":"markup","output":"true","fig-width":7,"fig-height":5}},{"id":2,"code":"# Use read.csv() to load your data in this cell\n# Use glimpse() or head() to inspect the format of your data","options":{"comment":"","warning":"true","autorun":"false","out-width":"700px","classes":"","message":"true","out-height":"","read-only":"false","label":"unnamed-chunk-2","fig-cap":"","dpi":72,"context":"interactive","results":"markup","output":"true","fig-width":7,"fig-height":5}},{"id":3,"code":"# Make a basic plot of your reporter curve data in this cell\n# Use the ggplot(), aes(), and geom_point() functions to visualise your data.","options":{"comment":"","warning":"true","autorun":"false","out-width":"700px","classes":"","message":"true","out-height":"","read-only":"false","label":"unnamed-chunk-3","fig-cap":"","dpi":72,"context":"interactive","results":"markup","output":"true","fig-width":7,"fig-height":5}},{"id":4,"code":"# Add a line plot to your figure in this cell\n# Use the geom_line() function to visualise your data.","options":{"comment":"","warning":"true","autorun":"false","out-width":"700px","classes":"","message":"true","out-height":"","read-only":"false","label":"unnamed-chunk-4","fig-cap":"","dpi":72,"context":"interactive","results":"markup","output":"true","fig-width":7,"fig-height":5}},{"id":5,"code":"# Make a facet plot in this cell\n# Use the facet_wrap() function to visualise your data.","options":{"comment":"","warning":"true","autorun":"false","out-width":"700px","classes":"","message":"true","out-height":"","read-only":"false","label":"unnamed-chunk-5","fig-cap":"","dpi":72,"context":"interactive","results":"markup","output":"true","fig-width":7,"fig-height":5}},{"id":6,"code":"# Change the x- and y-axis labels in this cell\n# Use the labs() function to change the labels","options":{"comment":"","warning":"true","autorun":"false","out-width":"700px","classes":"","message":"true","out-height":"","read-only":"false","label":"unnamed-chunk-6","fig-cap":"","dpi":72,"context":"interactive","results":"markup","output":"true","fig-width":7,"fig-height":5}},{"id":7,"code":"# Make a monochrome version of your plot in this cell","options":{"comment":"","warning":"true","autorun":"false","out-width":"700px","classes":"","message":"true","out-height":"","read-only":"false","label":"unnamed-chunk-7","fig-cap":"","dpi":72,"context":"interactive","results":"markup","output":"true","fig-width":7,"fig-height":5}}];
+globalThis.qwebrCellDetails = [{"code":"\n# Download reporter data\ndownload.file('https://raw.githubusercontent.com/sipbs-compbiol/BM214-Workshop-3/main/assets/data/reporter_curves.csv', 'reporter_curves.csv')\n\nlibrary(ggplot2)\nlibrary(tidyverse)","id":1,"options":{"autorun":"true","classes":"","comment":"","context":"setup","dpi":72,"fig-cap":"","fig-height":5,"fig-width":7,"label":"unnamed-chunk-1","message":"true","out-height":"","out-width":"700px","output":"true","read-only":"false","results":"markup","warning":"true"}},{"code":"# Use read.csv() to load your data in this cell\n# Use glimpse() or head() to inspect the format of your data","id":2,"options":{"autorun":"false","classes":"","comment":"","context":"interactive","dpi":72,"fig-cap":"","fig-height":5,"fig-width":7,"label":"unnamed-chunk-2","message":"true","out-height":"","out-width":"700px","output":"true","read-only":"false","results":"markup","warning":"true"}},{"code":"# Make a basic plot of your reporter curve data in this cell\n# Use the ggplot(), aes(), and geom_point() functions to visualise your data.","id":3,"options":{"autorun":"false","classes":"","comment":"","context":"interactive","dpi":72,"fig-cap":"","fig-height":5,"fig-width":7,"label":"unnamed-chunk-3","message":"true","out-height":"","out-width":"700px","output":"true","read-only":"false","results":"markup","warning":"true"}},{"code":"# Add a line plot to your figure in this cell\n# Use the geom_line() function to visualise your data.","id":4,"options":{"autorun":"false","classes":"","comment":"","context":"interactive","dpi":72,"fig-cap":"","fig-height":5,"fig-width":7,"label":"unnamed-chunk-4","message":"true","out-height":"","out-width":"700px","output":"true","read-only":"false","results":"markup","warning":"true"}},{"code":"# Make a facet plot in this cell\n# Use the facet_wrap() function to visualise your data.","id":5,"options":{"autorun":"false","classes":"","comment":"","context":"interactive","dpi":72,"fig-cap":"","fig-height":5,"fig-width":7,"label":"unnamed-chunk-5","message":"true","out-height":"","out-width":"700px","output":"true","read-only":"false","results":"markup","warning":"true"}},{"code":"# Change the x- and y-axis labels in this cell\n# Use the labs() function to change the labels","id":6,"options":{"autorun":"false","classes":"","comment":"","context":"interactive","dpi":72,"fig-cap":"","fig-height":5,"fig-width":7,"label":"unnamed-chunk-6","message":"true","out-height":"","out-width":"700px","output":"true","read-only":"false","results":"markup","warning":"true"}},{"code":"# Make a monochrome version of your plot in this cell","id":7,"options":{"autorun":"false","classes":"","comment":"","context":"interactive","dpi":72,"fig-cap":"","fig-height":5,"fig-width":7,"label":"unnamed-chunk-7","message":"true","out-height":"","out-width":"700px","output":"true","read-only":"false","results":"markup","warning":"true"}}];
 
 </script>
 <script type="module">
@@ -987,7 +987,7 @@ globalThis.qwebrExecuteCode = async function (
 
 </script>
 
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 <script type="text/javascript">
@@ -1025,13 +1025,13 @@ window.Quarto = {
   <header id="quarto-header" class="headroom fixed-top">
   <nav class="quarto-secondary-nav">
     <div class="container-fluid d-flex">
-      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
         <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./part-03_reporter.html">Reporter Gene Expression</a></li><li class="breadcrumb-item"><a href="./exercise-03_reporter.html"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Reporter Gene Expression</span></a></li></ol></nav>
-        <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
-      <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
         <i class="bi bi-search"></i>
       </button>
     </div>
@@ -1064,14 +1064,14 @@ window.Quarto = {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Preface to 2023-24 BM214 Workshop 3: Enumeration of Bacteria and Bacteriophage</span></a>
+ <span class="menu-text">Preface to 2024-25 BM214 Workshop 3: Enumeration of Bacteria and Bacteriophage</span></a>
   </div>
 </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a href="./part-01_16s.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">16S Sequence Identification</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
@@ -1088,7 +1088,7 @@ window.Quarto = {
       <div class="sidebar-item-container"> 
             <a href="./part-02_yeast.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Yeast Growth Experiment</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
@@ -1105,7 +1105,7 @@ window.Quarto = {
       <div class="sidebar-item-container"> 
             <a href="./part-03_reporter.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Reporter Gene Expression</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
@@ -1512,7 +1512,7 @@ Result
 <div id="callout-8" class="callout-8-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <p>The figure output shows the datapoints, but there are a lot of reporters, so there are a lot of colours. It’s difficult to track any single reporter because of the overlap between points, and confusion of colours.</p>
-<div id="fig-reporter-01" class="quarto-figure quarto-figure-center quarto-float anchored">
+<div id="fig-reporter-01" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-reporter-01-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="assets/images/reporter-01.png" class="img-fluid figure-img" style="width:80.0%">
@@ -1599,7 +1599,7 @@ Result
 <div id="callout-12" class="callout-12-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <p>The lines help to follow individual candidate reporters, but the plot is still jumbled up in the middle, and the similarities between some of the colours make it difficult to follow.</p>
-<div id="fig-reporter-02" class="quarto-figure quarto-figure-center quarto-float anchored">
+<div id="fig-reporter-02" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-reporter-02-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="assets/images/reporter-02.png" class="img-fluid figure-img" style="width:80.0%">
@@ -1687,7 +1687,7 @@ Result
 <div id="callout-16" class="callout-16-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <p>Now that we have a separate plot for each sample, it is easy to see which candidate reporters look like they might be worth taking forward. Notice that the <span class="math inline">\(x\)</span>- and <span class="math inline">\(y\)</span> axis scales are the same in each <em>facet</em>.</p>
-<div id="fig-reporter-03" class="quarto-figure quarto-figure-center quarto-float anchored">
+<div id="fig-reporter-03" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-reporter-03-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="assets/images/reporter-03.png" class="img-fluid figure-img" style="width:80.0%">
@@ -1774,7 +1774,7 @@ Result
 </div>
 <div id="callout-20" class="callout-20-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
-<div id="fig-reporter-04" class="quarto-figure quarto-figure-center quarto-float anchored">
+<div id="fig-reporter-04" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-reporter-04-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="assets/images/reporter-04.png" class="img-fluid figure-img" style="width:80.0%">
@@ -1867,7 +1867,7 @@ Result
 </div>
 <div id="callout-24" class="callout-24-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
-<div id="fig-reporter-05" class="quarto-figure quarto-figure-center quarto-float anchored">
+<div id="fig-reporter-05" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-reporter-05-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="assets/images/reporter-05.png" class="img-fluid figure-img" style="width:80.0%">
@@ -1958,18 +1958,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
     return false;
   }
-  const clipboard = new window.ClipboardJS('.code-copy-button', {
-    text: function(trigger) {
-      const codeEl = trigger.previousElementSibling.cloneNode(true);
-      for (const childEl of codeEl.children) {
-        if (isCodeAnnotation(childEl)) {
-          childEl.remove();
-        }
-      }
-      return codeEl.innerText;
-    }
-  });
-  clipboard.on('success', function(e) {
+  const onCopySuccess = function(e) {
     // button target
     const button = e.trigger;
     // don't keep focus
@@ -2001,7 +1990,27 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }, 1000);
     // clear code selection
     e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
   });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
       var filterRegex = new RegExp('/' + window.location.host + '/');
@@ -2009,7 +2018,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }
     // Inspect non-navigation links and adorn them if external
- 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
     for (var i=0; i<links.length; i++) {
       const link = links[i];
       if (!isInternal(link.href)) {
@@ -2106,7 +2115,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       if (window.Quarto?.typesetMath) {
         window.Quarto.typesetMath(note);
       }
-      // TODO in 1.5, we should make sure this works without a callout special case
       if (note.classList.contains("callout")) {
         return note.outerHTML;
       } else {

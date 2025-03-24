@@ -2,13 +2,13 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.4.554">
+<meta name="generator" content="quarto-1.6.42">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Leighton Pritchard">
 
-<title>BM214 Workshop 3: Enumeration of Bacteria and Bacteriophage - 1&nbsp; 16S Sequence Taxonomic Identification</title>
+<title>1&nbsp; 16S Sequence Taxonomic Identification – BM214 Workshop 3: Enumeration of Bacteria and Bacteriophage</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -39,10 +39,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-2f5df379a58b258e96c21c0638c20c03.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-a34d670291f06f286357e447776a572a.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -80,13 +80,13 @@ ul.task-list li input[type="checkbox"] {
   <header id="quarto-header" class="headroom fixed-top">
   <nav class="quarto-secondary-nav">
     <div class="container-fluid d-flex">
-      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
         <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./part-01_16s.html">16S Sequence Identification</a></li><li class="breadcrumb-item"><a href="./exercise-01_16s.html"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">16S Sequence Taxonomic Identification</span></a></li></ol></nav>
-        <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
-      <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
         <i class="bi bi-search"></i>
       </button>
     </div>
@@ -119,14 +119,14 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Preface to 2023-24 BM214 Workshop 3: Enumeration of Bacteria and Bacteriophage</span></a>
+ <span class="menu-text">Preface to 2024-25 BM214 Workshop 3: Enumeration of Bacteria and Bacteriophage</span></a>
   </div>
 </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a href="./part-01_16s.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">16S Sequence Identification</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
@@ -143,7 +143,7 @@ ul.task-list li input[type="checkbox"] {
       <div class="sidebar-item-container"> 
             <a href="./part-02_yeast.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Yeast Growth Experiment</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
@@ -160,7 +160,7 @@ ul.task-list li input[type="checkbox"] {
       <div class="sidebar-item-container"> 
             <a href="./part-03_reporter.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Reporter Gene Expression</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
@@ -260,7 +260,7 @@ ul.task-list li input[type="checkbox"] {
 <li>NCBI’s <a href="https://blast.ncbi.nlm.nih.gov/Blast.cgi"><code>BLAST</code> tool</a> (you have already met this in <a href="https://sipbs-compbiol.github.io/BM214-Workshop-2/scenario-1.html">Workshop 2</a>)</li>
 <li><a href="https://www.arb-silva.de/"><code>silva</code></a>, a quality-checked and curated 16S sequence database service</li>
 </ol>
-<div id="fig-biokittenformatics" class="quarto-figure quarto-figure-center quarto-float anchored">
+<div id="fig-biokittenformatics" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-biokittenformatics-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="assets/images/biokittenformatics.jpg" class="img-fluid figure-img" style="width:60.0%">
@@ -353,7 +353,7 @@ Answer: The <code>BLAST</code> tool to use
 <div id="callout-4" class="callout-4-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <p>This is a <strong>nucleotide vs nucleotide</strong> search, so use the <code>Nucleotide BLAST</code> tool.</p>
-<div id="fig-nucleotide-blast-cover" class="quarto-figure quarto-figure-center quarto-float anchored">
+<div id="fig-nucleotide-blast-cover" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-nucleotide-blast-cover-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="assets/images/nucleutide-blast-cover.png" class="img-fluid figure-img" style="width:80.0%">
@@ -385,7 +385,7 @@ Answer: Entering the query sequence
 <ol type="1">
 <li>Open your 16S sequence file in a text editor, copy the data, and paste the data into the <code>Enter Query Sequence</code> field.</li>
 </ol>
-<div id="fig-scenario-1-query" class="quarto-figure quarto-figure-center quarto-float anchored">
+<div id="fig-scenario-1-query" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-scenario-1-query-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="assets/images/scenario-1-query.png" class="img-fluid figure-img" style="width:80.0%">
@@ -398,7 +398,7 @@ Figure&nbsp;1.3: Query sequence pasted into the query field
 <ol start="2" type="1">
 <li>Click on the <code>Browse…</code> button to open a file selection dialogue box, then select your 16S sequence file. The uploaded file’s name will then be visible next to the <code>Browse…</code> button.</li>
 </ol>
-<div id="fig-blastn-filename" class="quarto-figure quarto-figure-center quarto-float anchored">
+<div id="fig-blastn-filename" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-blastn-filename-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="assets/images/blastn_with_filename.png" class="img-fluid figure-img" style="width:80.0%">
@@ -445,7 +445,7 @@ Answer: Which database to use
 <div class="callout-body-container callout-body">
 <p>The NCBI <code>BLAST</code> webservice provides specialised databases for common, well-defined search tasks, including searching for 16S or ITS (Internally-Transcribed Spacer) sequences when identifying unknown microorganisms.</p>
 <p><strong>Select the <code>rRNA/ITS databases</code> radio button, and ensure that the “Bacteria and Archaea” database is selected.</strong></p>
-<div id="fig-scenario-1-database" class="quarto-figure quarto-figure-center quarto-float anchored">
+<div id="fig-scenario-1-database" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-scenario-1-database-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="assets/images/scenario-1-database.png" class="img-fluid figure-img" style="width:80.0%">
@@ -474,7 +474,7 @@ Answer: Running the <code>BLAST</code> search
 <div id="callout-8" class="callout-8-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <p>Click on the <code>BLAST</code> button.</p>
-<div id="fig-scenario-1-button-1" class="quarto-figure quarto-figure-center quarto-float anchored">
+<div id="fig-scenario-1-button-1" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-scenario-1-button-1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="assets/images/ncbi-blast-button.png" class="img-fluid figure-img" style="width:80.0%">
@@ -601,7 +601,7 @@ What is the alignment percentage identity for the best matching alignment?
 <ul>
 <li><a href="https://www.arb-silva.de/aligner"><code>silva</code> ACT</a> (Alignment, Classification, and Tree) service</li>
 </ul>
-<div id="fig-silva-01" class="quarto-figure quarto-figure-center quarto-float anchored">
+<div id="fig-silva-01" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-silva-01-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="assets/images/01-silva.png" class="img-fluid figure-img" style="width:80.0%">
@@ -630,7 +630,7 @@ Answer: Entering the query sequence
 <ol type="1">
 <li>Open your 16S sequence file in a text editor, copy the data, and paste the data into the <code>Input data</code> field (where it says “Paste your FASTA sequence here”).</li>
 </ol>
-<div id="fig-silva-02" class="quarto-figure quarto-figure-center quarto-float anchored">
+<div id="fig-silva-02" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-silva-02-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="assets/images/02-silva.png" class="img-fluid figure-img" style="width:80.0%">
@@ -643,7 +643,7 @@ Figure&nbsp;1.8: <code>silva</code> landing page with sequence pasted into the <
 <ol start="2" type="1">
 <li>Click on the <code>Select file</code> button to open a file selection dialogue box, then select your 16S sequence file. The uploaded file’s name will then be visible in the field next to the <code>Select file</code> button.</li>
 </ol>
-<div id="fig-silva-03" class="quarto-figure quarto-figure-center quarto-float anchored">
+<div id="fig-silva-03" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-silva-03-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="assets/images/03-silva.png" class="img-fluid figure-img" style="width:80.0%">
@@ -691,7 +691,7 @@ Answer: What parameters to set
 <p>You need to tell <code>silva</code> that you want to <strong>search</strong> with your sequence <strong>and classify</strong> it. So <strong>check the box marked <code>Search and classify</code>.</strong></p>
 <p>The default settings (95% minimum sequence identity, reporting ten neighbours) are a good starting point.</p>
 <p>Once you select <code>Search and classify</code>, a new set of options will appear in the window (<a href="#fig-silva-04" class="quarto-xref">Figure&nbsp;<span>1.10</span></a>) and these can also be left as they are.</p>
-<div id="fig-silva-04" class="quarto-figure quarto-figure-center quarto-float anchored">
+<div id="fig-silva-04" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-silva-04-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="assets/images/04-silva.png" class="img-fluid figure-img" style="width:80.0%">
@@ -735,7 +735,7 @@ Caution
 <div class="callout-body-container callout-body">
 <p><strong><code>silva</code> does not provide results as quickly as NCBI’s <code>BLAST</code> server. Keep your eye on the <code>Aligner Taskmanager</code> section of the page, to monitor progress.</strong></p>
 <p><code>silva</code>’s progress will run through several stages, from <code>initialising</code> to <code>finished</code>.</p>
-<div id="fig-silva-05" class="quarto-figure quarto-figure-center quarto-float anchored">
+<div id="fig-silva-05" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-silva-05-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="assets/images/05-silva.png" class="img-fluid figure-img" style="width:80.0%">
@@ -751,7 +751,7 @@ Figure&nbsp;1.11: <code>silva</code>’s <code>Aligner Taskmanager</code> table
 <section id="interpret-the-silva-report-myplace-questions" class="level3" data-number="1.4.5">
 <h3 data-number="1.4.5" class="anchored" data-anchor-id="interpret-the-silva-report-myplace-questions"><span class="header-section-number">1.4.5</span> Interpret the <code>silva</code> report (<strong>MyPlace Questions</strong>)</h3>
 <p>Unlike <code>BLAST</code>, <code>silva</code> provides the identity of the <a href="https://evolution.berkeley.edu/glossary/most-recent-common-ancestor/"><em>last common ancestor</em> (LCA)</a>, rather than reporting a sequence search match. It displays results in the <code>Alignment Result Table</code> (<a href="#fig-silva-06" class="quarto-xref">Figure&nbsp;<span>1.12</span></a>). This table displays scores but, by clicking on the <code>Display Classification</code> button, you can see the taxonomic identification <code>silva</code> has made for your sequence (<a href="#fig-silva-07" class="quarto-xref">Figure&nbsp;<span>1.13</span></a>).</p>
-<div id="fig-silva-06" class="quarto-figure quarto-figure-center quarto-float anchored">
+<div id="fig-silva-06" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-silva-06-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="assets/images/06-silva.png" class="img-fluid figure-img" style="width:80.0%">
@@ -761,7 +761,7 @@ Figure&nbsp;1.12: <code>silva</code>’s <code>Alignment Result Table</code>
 </figcaption>
 </figure>
 </div>
-<div id="fig-silva-07" class="quarto-figure quarto-figure-center quarto-float anchored">
+<div id="fig-silva-07" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-silva-07-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="assets/images/07-silva.png" class="img-fluid figure-img" style="width:80.0%">
@@ -784,7 +784,7 @@ Help! I can’t see the full classification!
 <div id="callout-20" class="callout-20-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <p>Use the “handles” to drag the size of the column headers to the left or right, until you can see the classification, as in <a href="#fig-silva-08" class="quarto-xref">Figure&nbsp;<span>1.14</span></a>.</p>
-<div id="fig-silva-08" class="quarto-figure quarto-figure-center quarto-float anchored">
+<div id="fig-silva-08" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-silva-08-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="assets/images/08-silva.png" class="img-fluid figure-img" style="width:80.0%">
@@ -944,18 +944,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
     return false;
   }
-  const clipboard = new window.ClipboardJS('.code-copy-button', {
-    text: function(trigger) {
-      const codeEl = trigger.previousElementSibling.cloneNode(true);
-      for (const childEl of codeEl.children) {
-        if (isCodeAnnotation(childEl)) {
-          childEl.remove();
-        }
-      }
-      return codeEl.innerText;
-    }
-  });
-  clipboard.on('success', function(e) {
+  const onCopySuccess = function(e) {
     // button target
     const button = e.trigger;
     // don't keep focus
@@ -987,7 +976,27 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }, 1000);
     // clear code selection
     e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
   });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
       var filterRegex = new RegExp('/' + window.location.host + '/');
@@ -995,7 +1004,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }
     // Inspect non-navigation links and adorn them if external
- 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
     for (var i=0; i<links.length; i++) {
       const link = links[i];
       if (!isInternal(link.href)) {
@@ -1092,7 +1101,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       if (window.Quarto?.typesetMath) {
         window.Quarto.typesetMath(note);
       }
-      // TODO in 1.5, we should make sure this works without a callout special case
       if (note.classList.contains("callout")) {
         return note.outerHTML;
       } else {
