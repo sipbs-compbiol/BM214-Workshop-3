@@ -1453,6 +1453,12 @@ Important
 </div>
 </div>
 </div>
+<p>Your data contains three columns:</p>
+<ul>
+<li><code>sample</code>: this indicates which sample was measured (control, or plasmid ID)</li>
+<li><code>conc</code>: the concentration of kanamycin that was applied</li>
+<li><code>abs_ratio</code>: the measure <span class="math inline">\(\frac{\textrm{OD700}}{\textrm{OD600}}\)</span> ratio</li>
+</ul>
 <section id="make-a-basic-ggplot2-figure-of-your-reporter-data" class="level3" data-number="3.2.1">
 <h3 data-number="3.2.1" class="anchored" data-anchor-id="make-a-basic-ggplot2-figure-of-your-reporter-data"><span class="header-section-number">3.2.1</span> Make a basic <code>ggplot2</code> figure of your reporter data</h3>
 <p>You have loaded absorbance ratio data for nine candidate kanamycin reporters and a control sample. You’re going to plot these in the same way as you plotted the yeast growth data in <a href="exercise-02_yeast.html" class="quarto-xref"><span>Chapter 2</span></a>.</p>
@@ -1630,7 +1636,7 @@ Figure&nbsp;3.2: A <code>ggplot()</code> graph of reporter absorbance ratios aga
 </section>
 <section id="use-facets-to-make-the-visualisation-clearer" class="level3" data-number="3.2.3">
 <h3 data-number="3.2.3" class="anchored" data-anchor-id="use-facets-to-make-the-visualisation-clearer"><span class="header-section-number">3.2.3</span> Use <strong>facets</strong> to make the visualisation clearer</h3>
-<p>Another advantage of <code>ggplot2</code> is that we can quickly make major changes to the layout of a plot, in order to improve visualisation. Here, you will use <em>facets</em> to plot each sample separately in its own smaller subplot (called a <em>facet</em>). This will avoid the visualisation problems caused by overlapping lines with similar colours.</p>
+<p>Another advantage of <code>ggplot2</code> is that we can quickly make major changes to the layout of a plot, in order to improve visualisation. Here, you will use <em>facets</em> to plot each sample separately in its own smaller subplot (called a <em>facet</em>). This is a common way to present data for multiple factors of interest, and will avoid the visualisation problems caused by overlapping lines with similar colours.</p>
 <p>To do this, we use the <code>facet_wrap()</code> styling layer. We need to tell <code>facet_wrap()</code> what variable should be plotted in each separate <em>facet</em>. If we want to place each sample in its own facet, we would use <code>facet_wrap(~sample)</code> - <strong>NOTE: the variable <code>sample</code> is preceded by a <em>tilde</em> (<code>~</code>)</strong>.</p>
 <div class="callout callout-style-default callout-important callout-titled" title="Task">
 <div class="callout-header d-flex align-content-center">
