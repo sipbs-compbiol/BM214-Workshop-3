@@ -75,6 +75,12 @@ glimpse(data)
 ```
 :::
 
+Your data contains three columns: 
+
+- `sample`: this indicates which sample was measured (control, or plasmid ID)
+- `conc`: the concentration of kanamycin that was applied
+- `abs_ratio`: the measure $\frac{\textrm{OD700}}{\textrm{OD600}}$ ratio
+
 ### Make a basic `ggplot2` figure of your reporter data
 
 You have loaded absorbance ratio data for nine candidate kanamycin reporters and a control sample. You're going to plot these in the same way as you plotted the yeast growth data in @sec-yeast-expt.
@@ -170,7 +176,7 @@ The lines help to follow individual candidate reporters, but the plot is still j
 
 ### Use **facets** to make the visualisation clearer
 
-Another advantage of `ggplot2` is that we can quickly make major changes to the layout of a plot, in order to improve visualisation. Here, you will use _facets_ to plot each sample separately in its own smaller subplot (called a _facet_). This will avoid the visualisation problems caused by overlapping lines with similar colours.
+Another advantage of `ggplot2` is that we can quickly make major changes to the layout of a plot, in order to improve visualisation. Here, you will use _facets_ to plot each sample separately in its own smaller subplot (called a _facet_). This is a common way to present data for multiple factors of interest, and will avoid the visualisation problems caused by overlapping lines with similar colours.
 
 To do this, we use the `facet_wrap()` styling layer. We need to tell `facet_wrap()` what variable should be plotted in each separate _facet_. If we want to place each sample in its own facet, we would use `facet_wrap(~sample)` - **NOTE: the variable `sample` is preceded by a _tilde_ (`~`)**.
 
