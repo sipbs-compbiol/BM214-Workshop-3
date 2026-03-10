@@ -12,6 +12,17 @@ filters:
 
 library(ggplot2)
 library(tidyverse)
+
+download_data <- function(session, bay, group) {
+  url <- "https://raw.githubusercontent.com/sipbs-compbiol/BM214-Workshop-3/main/assets/data"
+  bay_prefix <- paste(session, "Bay", bay, sep="_")
+  filestem <- paste(session, "Bay", bay, group, sep="_")
+  filename <- paste(filestem, "csv", sep=".")
+  remotefile <- paste(url, bay_prefix, filename, sep="/")
+  
+  download.file(remotefile, filename)
+  read.csv(filename)
+}
 ```
 
 ## Introduction
@@ -23,9 +34,9 @@ In this exercise you will use the absorbance data obtained from your yeast growt
 
 There are many great tools capable of plotting your data (Numbers, Excel, Prism, GNUplot, Minitab, SPSS, MatLab, Python, JavaScript, etc.) and the choice of tool should in general reflect your data presentation needs, and your level of comfort with the tool.
 
-Here, we use `R` because it is a very powerful means of carrying out many computational aspects of biology, including data visualisation, quickly and easily. Many of the topics you may meet later in your degree - phylogenetic, pharmacokinetics, microbial genomics, and so on - are supported by _packages_ in `R` designed specifically for those subjects, and can make your work much easier. Also, skills in `R` are highly sought-after by industrial and other employers. Having some experience of `R` is an advantage.
+Here, we use `R` because it is a very powerful means of carrying out many computational aspects of biology, including data visualisation, quickly and easily. Many of the topics you may meet later in your degree - phylogenetics, pharmacokinetics, microbial genomics, and so on - are supported by _packages_ in `R` designed specifically for those subjects, and can make your work much easier. Also, skills in `R` are highly sought-after by industrial and other employers. Having some experience of `R` is an advantage.
 
-`R` may be unfamiliar to you just now, but we provide step-by-step instructions for completing the exercise and, by the end of it, we hope you feel a bit more confident in how to use it.
+`R` may be unfamiliar to you just now, but we provide step-by-step instructions for completing the exercise and, by the end of it, we hope you feel a bit more confident in how to use this tool.
 :::
 
 In your experiment you saw that as the yeast grew in your liquid culture, the cuvette became _turbid_ (@fig-turbidity), proportionally to the density of cells in the culture. The turbidities of your samples were measured over a 24 hour period using a spectrophotometer, as _optical density_ (OD600).
@@ -45,30 +56,19 @@ You will have been assigned a filename that corresponds to the absorbance data o
 - `PM_Bay_02_01.csv`
 
 ::: { .callout-important }
-To download the file to this page for your own use, use the `R` command:
+To download the file to this page for your own use, you need to know three items of information:
+
+1. The laboratory **session** you attended: morning (`AM`) or afternoon (`PM`)
+2. The number of the **bay** you worked in as a two-digit number, e.g. `01`, `09`, `12`, etc.
+3. The number of your **group** in the bay as a two-digit number, e.g. `01`, `02`, etc.
+
+You then need to use the `R` function `download_data` to download your experimental data from our repository as in the command below, but substituting your own values for each itsm:
 
 ```r
-download.file('https://raw.githubusercontent.com/sipbs-compbiol/BM214-Workshop-3/main/assets/data/AM_Bay_01/AM_Bay_01_01.csv', 'AM_Bay_01_01.csv')
+data <- download_data(session="AM", bay="01", group="01")
 ```
 
-Where you replace `AM_Bay_01` in each of the **three** places it occurs with your own session and bay (e.g. `PM_Bay_04`), and the group number with your own group number for your bay (e.g. `05`) to get a command like:
-
-```r
-download.file('https://raw.githubusercontent.com/sipbs-compbiol/BM214-Workshop-3/main/assets/data/PM_Bay_04/PM_Bay_04_05.csv', 'AM_Bay_04_05.csv')
-```
-::: 
-
-
-To load your data into the `WebR` instance below, you would then issue the command:
-
-```{r}
-#| eval: false
-
-# Of course, you would substitute the name of your own file
-data <- read.csv("AM_Bay_24_03.csv")
-```
-
-and, to get information about the contents of the dataset, you could use the `glimpse()` function:
+You can get information about the contents of the dataset using the `glimpse()` function:
 
 ```{r}
 #| eval: false
@@ -92,6 +92,8 @@ In the code cell above, the `#` symbol at the start of the line means it is a **
 If you put a `#` at the start of a line in the WebR cell, that line will not run - watch out for that!
 :::
 
+:::
+
 ::: { .callout-important title="Task" }
 **Use the `WebR` cell below to load your dataset and inspect its contents.**
 :::
@@ -100,17 +102,18 @@ If you put a `#` at the start of a line in the WebR cell, that line will not run
 # Load your yeast growth data.
 # DOWNLOAD YOUR EXPERIMENTAL DATA FIRST
 # If your filename is, e.g. PM_Bay_40_03.csv, you would enter the command below
-# data = read.csv("PM_Bay_40_03.csv")
+# data <- download_data(session="AM", bay="01", group="01")
+# head(data)
 
 ```
 
 ::: { .callout-tip collapse="true" }
 ## I need a hint!
 
-- If you can't see what your data looks like, don't forget to load your data and `glimpse()` it in the same cell
+- If you can't see what your data looks like, don't forget to load your data and `glimpse()` it in the same cell by entering the text below and clicking on the `Run Code` button.
 
 ```r
-data = read.csv("PM_Bay_40_03.csv")
+data <- download_data(session="AM", bay="01", group="01")
 glimpse(data)
 ```
 :::
@@ -135,15 +138,17 @@ but it has been pre-imported for you, for this workshop.
 
 When you inspected your dataset in the `WebR` cell above, you will have seen that there are three _variables_ in the dataset:
 
-- `time` (the time in hours after the experiment started at which the measurement was taken)
-- `OD600` (the absorbance measurement)
-- `medium` (the liquid medium in which the yeast were grown)
+- `time` (the time in hours after the experiment started at which the measurement was taken) - _time_ is the _independent variable_
+- `OD600` (the absorbance measurement) - _OD600_ is the _dependent variable_
+- `medium` (the liquid medium in which the yeast were grown) - _medium_ is a _factor of interest_
 
+::: { .callout-tip title="Our goal" }
 We want to plot this data in the following way:
 
-- `time` should extend along the $x$-axis from left to right to indicate the progression of the experiment
-- `OD600` should extend up the $y$-axis to indicate how much light was absorbed by the yeast at each timepoint
+- `time` should extend along the $x$-axis (_independent variable_ axis) from left to right to indicate the progression of the experiment
+- `OD600` should extend up the $y$-axis (_dependent variable_ axis) to indicate how much light was absorbed by the yeast at each timepoint
 - `medium` will be used to separate datapoints into distinct curves in the graph
+:::
 
 To _declare_ the base dataset, we can create a `ggplot()` object, specifying the dataset we will be using (the `data` argument), and the variables to be used along the `x` and `y` axes in the _aesthetics_ `aes()` argument:
 
@@ -163,7 +168,7 @@ fig <- ggplot(data, aes(x=time, y=OD600)) +  # Declare the dataset/base layer
 ```
 
 ::: { .callout-note }
-In `ggplot2` we **add** layers together to filter the data into an image, like lenses in a telescope.
+In `ggplot2` we **add** layers together to filter the data into an image, like lenses in a telescope, or Instagram filters on an image.
 
 **We have to use the `+` character to join layers together.**
 :::
@@ -300,11 +305,11 @@ This kind of curve tends to _overfit_ the dataset, as might be seen by the tende
 :::
 
 ::: { .callout-note collapse="true"}
-## What does that ribbom mean?
+## What does that ribbon mean?
 
-You will see that `geom_smoot()` has fitted a _line_ (the model fit), and a semitransparent _ribbon_ that looks like it might be describing error in your data.
+You will see that `geom_smooth()` has fitted a _line_ (the model fit), and a semitransparent _ribbon_ that looks like it might be describing error in your data.
 
-However, the ribbon isn't describing error in your data - it's describing error in the model fit. Many models fit your data more-or-less well, and the ribbon shows the extent of what models might fit well.
+However, the ribbon isn't describing error in your data - it's describing error in the model fit. Some models fit your data closely, others not so closely, and the ribbon shows the range of models that might reasonably fit your data.
 
 More technically, the ribbon shows the **standard error** of the model fit.
 :::
@@ -313,7 +318,7 @@ More technically, the ribbon shows the **standard error** of the model fit.
 
 It is usual to draw growth curves using a logarithmic $y$-axis. There are a number of reasons for doing this, but the main one is that plotting OD on a _linear_ $y$-axis is misleading about the start of the logarithmic phase of growth.
 
-The beginning of logarithmic growth - though logarithmic - involves small changes in absolute OD that are not easy to distinguish on a linear scale. Plotting OD on a _logarithmic_ scale makes it easier to identify the start of the log phase.
+The beginning of logarithmic growth - though logarithmic - involves small changes in absolute OD that are not easy to distinguish on a linear scale because they are numerically very small. Plotting OD on a _logarithmic_ scale makes it easier to identify the start of the log phase.
 
 To set a logarithmic $y$-axis, we add a _style layer_: `scale_y_log10()`
 
@@ -350,7 +355,7 @@ fig <- ggplot(data, aes(x=time, y=OD600, color=medium)) +  # Declare the dataset
 ::: { .callout-caution collapse="true" }
 ## Result
 
-The figure (@fig-ggplot-04) now has a logarithmic $y$-axis (and a linear $x$-axis, hence "semilog plot"), and it is clear that, compared to @fig-ggplot-04, the logarithmic growth visibly starts earlier.
+The figure (@fig-ggplot-04) now has a logarithmic $y$-axis (and a linear $x$-axis, hence "semilog plot"), and it is clear that, compared to @fig-ggplot-04, the logarithmic growth phase visibly starts earlier than it appeared to when a linear $y$-axis scale was used. We can also see more clearly that there is some growth in the control sample, which is not evident in the plot with a linear scale.
 
 ![A `ggplot()` graph of three growth curves, with growth medium indicated by colour and a best-fit `loess` curve, using a logarithmic $y$-axis.](assets/images/ggplot-04.png){#fig-ggplot-04 width=80%}
 
@@ -360,7 +365,8 @@ The figure (@fig-ggplot-04) now has a logarithmic $y$-axis (and a linear $x$-axi
 
 The plot looks pretty good just now but, for publication, we might want to make the plot black and white, or _greyscale_ to suit a publisher's requirements. There are three things we can do to make our plot publication-ready in this way.
 
-First, we need to set the colour scheme to greyscale. We can do this by adding the `scale_colour_grey()` style layer. Next, we change the overall `ggplot2` theme to be black-and-white, with the `theme_bw()` style layer. Finally, we turn off the grid markings, with specific `theme()` style layer instructions. Putting these together, we get:
+1. We can to set the colour scheme to greyscale. We can do this by adding the `scale_colour_grey()` style layer. 
+2. We could change the overall `ggplot2` theme to be black-and-white, with the `theme_bw()` style layer. 3. We might turn off the grid markings, with specific `theme()` style layer instructions. Putting these together, we get:
 
 ```{r}
 #| eval: false

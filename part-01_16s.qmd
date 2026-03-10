@@ -8,7 +8,7 @@ As part of BM214 Laboratories 1 and 2 (@fig-expt-2), you:
 
 ![Overview of BM214 Laboratory 3, experiment 2.](assets/images/experiment-2.png){#fig-expt-2 width="80%"}
 
-In Laboratory 3, you set up a PCR reaction with primers that annealed specifically to the 16S rRNA gene (@fig-pcr), so that you could specifically amplify and sequence that gene in order to identify your unknown organism.
+In Laboratory 3, you set up a PCR reaction with primers that annealed specifically to the 16S rRNA gene (@fig-pcr), so that you could amplify and sequence that gene in order to identify your unknown organism.
 
 ![Schematic of 16S PCR amplification](assets/images/16s-amplification.png){#fig-pcr}
 

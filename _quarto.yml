@@ -20,7 +20,7 @@ book:
   repo-actions: [edit, issue]
   
   author: "Leighton Pritchard and Morgan Feeney"
-  date: "2025-03-24"
+  date: "2026-03-16"
   
   chapters:
     - index.qmd
@@ -36,7 +36,7 @@ book:
         - exercise-03_reporter.qmd
     - playground.qmd        
     - summary.qmd
-#    - glossary.qmd
+    - glossary.qmd
     - resources.qmd
     - references.qmd
 

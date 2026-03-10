@@ -1,6 +1,6 @@
 # Summary
 
-In this workshop, you have learned about 16S sequence-based taxonomic classification using online bioinforamtics tools, and how to plot and interpret experimental data using `R`.
+In this workshop, you have learned about 16S sequence-based taxonomic classification using online bioinformatics tools, and how to plot and interpret experimental data using `R`.
 
 These tools - `BLAST`, `silva`, and `R`, are the same research-level tools that biologists and bioinformaticians use on a daily basis.
 
