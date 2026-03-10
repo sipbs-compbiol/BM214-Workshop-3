@@ -16,14 +16,14 @@ To do this, you will use two online bioinformatics services:
 
 It might tempting to take computational results at face value, and to believe that the "computer can't be wrong." But, _in bioinformatics as elsewhere in life_, **computers and databases can sometimes be in error or give imprecise answers**. In general the results of a sequence database search, like querying a 16S sequence against a public database, depend on a number of factors, including:
 
-- the query sequence (obviously)
+- the query sequence (perhaps obviously)
 - the contents of the database
 - the search tool used to query the database
 - the parameter settings for the search tool
 
 and even if the query sequence is the same, using a different service will often change at least one of the other three factors - and maybe other thigs besides.
 
-**This exercise will give you experience in using alternative bioinformatics tools for the same task.**
+**This exercise will give you experience in using and comparing the outputs from alternative bioinformatics tools that claim to perform the same task.**
 :::
 
 ## Your data
@@ -173,6 +173,10 @@ Check the `Per. Ident` column under "Sequences producing significant alignments"
 
 1. Open your 16S sequence file in a text editor, copy the data, and paste the data into the `Input data` field (where it says "Paste your FASTA sequence here").
 
+::: { .callout-important title="WARNING" }
+When you paste the sequence into the SILVA field it may look like no sequence was pasted (the interface design could be better)
+:::
+
 ![`silva` landing page with sequence pasted into the `Input data` field](assets/images/02-silva.png){#fig-silva-02 width=80%}
 
 2. Click on the `Select file` button to open a file selection dialogue box, then select your 16S sequence file. The uploaded file's name will then be visible in the field next to the `Select file` button.
@@ -221,6 +225,10 @@ Click on the `Run Tool` button (lower right of @fig-silva-04).
 :::
 
 ### Interpret the `silva` report (**MyPlace Questions**)
+
+::: { .callout-important title="View your result" }
+To see your alignment and classification result, select your run and click the "Show Result" button that appears.
+:::
 
 Unlike `BLAST`, `silva` provides the identity of the [_last common ancestor_ (LCA)](https://evolution.berkeley.edu/glossary/most-recent-common-ancestor/), rather than reporting a sequence search match. It displays results in the `Alignment Result Table` (@fig-silva-06). This table displays scores but, by clicking on the `Display Classification` button, you can see the taxonomic identification `silva` has made for your sequence (@fig-silva-07).
 
